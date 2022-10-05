@@ -7,6 +7,8 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <p>
+    お腹減った
+  </p>
 </body>
 </html>
