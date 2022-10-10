@@ -158,6 +158,10 @@ select {
   height: 100px;
 }
 
+.l-wrapper {
+  background-color: red;
+}
+
 .u-hidden {
   display: none;
 }
