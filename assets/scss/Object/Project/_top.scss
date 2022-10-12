@@ -1,4 +1,141 @@
 @use '../../Foundation/global'as *;
-.l-wrapper {
-    background-color: red;
+
+.p-business {
+    &__background {
+        background-color: $color-main;
+        padding: 160px 0px;
+    }
+    &__titleBox {
+        text-align: center;
+
+    }
+    &__title {
+        font-size: 32px;
+        color: $color-background-sub;
+    }
+    &__subTitle {
+        font-size: $font-size-base;
+        margin-top: 10px;
+        color: $color-background;
+    }
+    &__list {
+        margin-top: 40px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+    }
+    &__listItem {
+        width: 33%;
+        max-width: 350px;
+        position: relative;
+    }
+    &__listImg img {
+        height: 510px;
+        object-fit: cover;
+    }
+    &__textBox {
+        padding: $padding-pc;
+        position: absolute;
+        bottom: 0;
+        background-color: #000000;
+        opacity: $hover-opacity;
+    }
+    &__listTitle {
+        font-size: 32px;
+        color: $color-background-sub;
+    }
+    &__listText {
+        margin-top: 25px;
+        font-size: $font-size-base;
+        color: $color-background-sub;
+    }
+    &__btn {
+        display: block;
+        margin: 80px auto 0px;
+        font-size: $font-base;
+        color: $color-background-sub;
+        width: 250px;
+        height: 80px;
+        text-align: center;
+        border: 2px solid $color-background-sub;
+        background-color: $color-main;
+
+    }
+}
+
+.p-works {
+    padding: 160px 0px;
+    &__titleBox {
+        text-align: center;
+    }
+    &__title {
+        font-size: 32px;
+        color: $color-text;
+    }
+    &__subTitle {
+        font-size: $font-size-base;
+        margin-top: 10px;
+        color: $color-text;
+    }
+    &__list {
+        margin-top: 40px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        position: relative;
+    }
+    &__listItem {
+        width: 33%;
+        max-width: 350px;
+        position: relative;
+    }
+    &__textBox {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 70px;
+        &:hover {
+            color: $color-background-sub;
+            opacity: $hover-opacity;
+            background-color: black;
+        }
+    }
+
+}
+
+.p-company {
+    padding-bottom: 160px;
+    &__titleBox {
+        text-align: center;
+    }
+    &__title {
+        font-size: 32px;
+        color: $color-text;
+    }
+    &__subTitle {
+        font-size: $font-size-base;
+        margin-top: 10px;
+        color: $color-text;
+    }
+    &__list {
+        margin-top: 80px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        row-gap: 40px;
+        column-gap: 5%;
+    }
+    &__listItem {
+        width: 20%;
+        max-width: 280px;
+    }
 }
