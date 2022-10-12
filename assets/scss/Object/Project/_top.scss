@@ -1,5 +1,65 @@
 @use '../../Foundation/global'as *;
 
+.p-aboutUs {
+    padding-bottom: 400px;
+    position: relative;
+    &__background {
+        border-top: 400px solid $color-main;
+        border-right: 1400px solid transparent;
+    }
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    &__title {
+        text-align: center;
+        font-size: 160px;
+        -webkit-text-stroke: 1px $color-background-sub;
+        opacity: 0.3;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__imgList {
+        list-style: none;
+        display: flex;
+        padding: 0;
+
+    }
+    &__imgListItem {
+        &:nth-child(1) {
+            margin-top: 50px;
+        }
+        &:nth-child(2) {
+            margin-top: 70px;
+        }
+    }
+    &__img {
+        width: 150px;
+    }
+    &__img img {
+        height: 300px;
+        object-fit: cover;
+    }
+    &__textBox {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+    &__subTitle {
+        font-size: 32px;
+    }
+    &__textWrap {
+        margin-top: 40px;
+    }
+    &__text:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
 .p-business {
     &__background {
         background-color: $color-main;
