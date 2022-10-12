@@ -158,6 +158,41 @@ select {
   height: 100px;
 }
 
+.p-hero__background {
+  background-color: #26226B;
+  position: relative;
+}
+.p-hero__img {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.p-hero__title {
+  display: none;
+}
+.p-hero__newsBox {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  width: 550px;
+  height: 100px;
+  text-align: center;
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+.p-hero__newsContent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
 .p-aboutUs {
   padding-bottom: 400px;
   position: relative;

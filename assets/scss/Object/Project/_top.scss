@@ -1,5 +1,36 @@
 @use '../../Foundation/global'as *;
 
+.p-hero {
+    &__background {
+        background-color: $color-main;
+        position: relative;
+    }
+    &__img {
+        width: 1300px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    &__title {
+        display: none;
+    }
+    &__newsBox {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+        width: 550px;
+        height: 100px;
+        text-align: center;
+        background-color: $color-background-sub;
+        display: flex;
+        gap: 40px;
+        padding: 40px;
+    }
+    &__newsContent {
+        display: flex;
+        gap: 10px;
+    }
+}
+
 .p-aboutUs {
     padding-bottom: 400px;
     position: relative;
