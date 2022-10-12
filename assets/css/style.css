@@ -162,6 +162,7 @@ select {
   background-color: white;
   padding: 15px;
   width: 100%;
+  z-index: 100;
 }
 
 .p-header {
@@ -248,6 +249,15 @@ select {
   .p-header__nav {
     display: none;
   }
+  .p-header__img {
+    height: 50px;
+  }
+  .p-header__text {
+    line-height: 60px;
+    margin-left: 5%;
+    font-family: monospace;
+    font-size: 2.5vw;
+  }
   #c-humberger {
     position: relative;
     height: 40px;
@@ -331,11 +341,10 @@ select {
 
 .p-article__imgContainer {
   max-width: 600px;
-  height: 400px;
 }
 
 .p-article__image {
-  height: 100%;
+  width: 100%;
 }
 
 .p-article__work {
@@ -377,20 +386,32 @@ select {
 
 @media (max-width: 599px) {
   .p-article__work {
-    padding: 100px 100px 40px;
-    top: 250px;
-    right: 30px;
-    max-width: 550px;
+    position: absolute;
+    padding: 20% 10% 10%;
+    top: 70%;
+    left: 5%;
+    /* max-width: 559px; */
+    background-color: aqua;
+  }
+  .p-article__title {
+    font-size: 4vw;
+  }
+  .p-article__subTitle {
+    font-size: 2vw;
+  }
+  .p-article__text {
+    font-size: 3vw;
+    white-space: nowrap;
   }
   .p-article__work--reverse {
-    padding: 100px 100px 40px;
-    top: 250px;
-    left: 30px;
+    position: absolute;
+    padding: 20% 10% 10%;
+    top: 70%;
+    right: 5%;
     max-width: 550px;
   }
   .p-article__imgContainer {
     max-width: 600px;
-    height: 330px;
     z-index: 30;
   }
   .c-btn {
@@ -401,10 +422,10 @@ select {
     font-size: 24px;
   }
   .p-article__container + .p-article__container--reverse {
-    margin-top: 80%;
+    margin-top: 70%;
   }
   .p-article__container--reverse + .p-article__container {
-    margin-top: 80%;
+    margin-top: 70%;
   }
 }
 .u-hidden {
