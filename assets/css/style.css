@@ -159,10 +159,6 @@ select {
 }
 
 .l-header {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: white;
   padding: 15px;
   width: 100%;
@@ -187,22 +183,23 @@ select {
   margin-left: 5%;
 }
 
-.c-header__img {
-  height: 50px;
+.p-header__img {
+  height: 60px;
 }
 
-.c-header__text {
-  line-height: 50px;
+.p-header__text {
+  line-height: 60px;
   margin-left: 5%;
   font-family: monospace;
   font-size: 2.5vw;
 }
 
-.c-header__nav {
+.p-header__nav {
   margin-right: 5%;
+  line-height: 30px;
 }
 
-.c-header__navList {
+.p-header__navList {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -210,12 +207,12 @@ select {
   list-style: none;
 }
 
-.c-header__items {
+.p-header__items {
   font-size: 1vw;
   white-space: nowrap;
 }
 
-.c-header__contact {
+.p-header__contact {
   font-size: 1vw;
   white-space: nowrap;
 }
@@ -224,13 +221,6 @@ select {
   margin-right: 20px;
   text-decoration: none;
   color: black;
-}
-
-.p-aaa {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c-contactBtn {
@@ -243,6 +233,50 @@ select {
   background: linear-gradient(to right, rgb(3, 3, 83), rgb(218, 214, 244));
 }
 
+.c-btn {
+  padding: 5px;
+  width: 180px;
+  margin-top: 10%;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(3, 3, 83)), to(rgb(218, 214, 244)));
+  background: -webkit-linear-gradient(left, rgb(3, 3, 83), rgb(218, 214, 244));
+  background: linear-gradient(to right, rgb(3, 3, 83), rgb(218, 214, 244));
+  border: none;
+}
+
+@media (max-width: 599px) {
+  .p-header__nav {
+    display: none;
+  }
+  #c-humberger {
+    position: relative;
+    height: 40px;
+    width: 60px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #c-humberger div {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 40px;
+    background-color: #444;
+    border-radius: 2px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #c-humberger div:nth-of-type(1) {
+    bottom: 20px;
+  }
+  #c-humberger div:nth-of-type(2) {
+    bottom: 10px;
+  }
+  #c-humberger div:nth-of-type(3) {
+    bottom: 0;
+  }
+}
 .p-hero {
   margin: 0 auto;
   text-align: center;
@@ -257,6 +291,13 @@ select {
   margin-top: 30px;
 }
 
+@media (max-width: 599px) {
+  .p-hero {
+    margin-top: 100px;
+    text-align: center;
+    padding: 0;
+  }
+}
 .p-article {
   margin-top: 100px;
 }
@@ -326,62 +367,15 @@ select {
   margin-top: 10%;
 }
 
-.c-btn {
-  padding: 5px;
-  width: 180px;
-  margin-top: 10%;
-  color: white;
-  background: -webkit-gradient(linear, left top, right top, from(rgb(3, 3, 83)), to(rgb(218, 214, 244)));
-  background: -webkit-linear-gradient(left, rgb(3, 3, 83), rgb(218, 214, 244));
-  background: linear-gradient(to right, rgb(3, 3, 83), rgb(218, 214, 244));
-  border: none;
-}
-
 .p-article__container + .p-article__container--reverse {
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 .p-article__container--reverse + .p-article__container {
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 @media (max-width: 599px) {
-  .c-header__nav {
-    display: none;
-  }
-  #c-humberger {
-    position: relative;
-    height: 40px;
-    width: 60px;
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  #c-humberger div {
-    position: absolute;
-    left: 0;
-    height: 2px;
-    width: 40px;
-    background-color: #444;
-    border-radius: 2px;
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  #c-humberger div:nth-of-type(1) {
-    bottom: 20px;
-  }
-  #c-humberger div:nth-of-type(2) {
-    bottom: 10px;
-  }
-  #c-humberger div:nth-of-type(3) {
-    bottom: 0;
-  }
-  .p-hero {
-    margin-top: 100px;
-    text-align: center;
-    padding: 0;
-  }
   .p-article__work {
     padding: 100px 100px 40px;
     top: 250px;
@@ -407,10 +401,10 @@ select {
     font-size: 24px;
   }
   .p-article__container + .p-article__container--reverse {
-    margin-top: 60%;
+    margin-top: 80%;
   }
   .p-article__container--reverse + .p-article__container {
-    margin-top: 60%;
+    margin-top: 80%;
   }
 }
 .u-hidden {
