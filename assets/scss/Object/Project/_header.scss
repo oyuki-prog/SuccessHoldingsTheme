@@ -1,14 +1,18 @@
 @use "../../Foundation/global" as *;
 
 .l-header {
-  display: flex;
   justify-content: space-between;
   background-color: white;
   padding: 15px;
   width: 100%;
 }
 
-.c-header {
+.p-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-header__imgContainer {
   display: flex;
   margin-left: 5%;
 }
@@ -47,6 +51,10 @@
   margin-right: 20px;
   text-decoration: none;
   color: black;
+}
+
+.p-aaa {
+  display: flex;
 }
 
 .c-contactBtn {
