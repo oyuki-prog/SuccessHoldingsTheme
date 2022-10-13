@@ -1,7 +1,7 @@
 @use "../../Foundation/global" as *;
 
 .p-article {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .p-article__container {
@@ -9,7 +9,7 @@
   position: relative;
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .p-article__container--reverse {
@@ -18,11 +18,10 @@
   position: relative;
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .p-article__imgContainer {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .p-article__image {
@@ -33,30 +32,48 @@
   position: absolute;
   background-color: white;
   text-align: center;
-  padding: 90px 120px;
+  padding: 8% 10% 18%;
   z-index: 10;
-  top: 70px;
+  top: 20%;
   right: 0;
+  max-width: 500px;
+  max-height: 400px;
 }
 .p-article__work--reverse {
   position: absolute;
   background-color: white;
   text-align: center;
-  padding: 90px 120px;
+  padding: 8% 10% 18%;
   z-index: 10;
-  top: 70px;
+  top: 20%;
   left: 0;
+  max-width: 500px;
+  max-height: 400px;
 }
 
 .p-article__title {
-  font-size: 32px;
+  font-size: 3vw;
   font-weight: bold;
+}
+
+.p-article__subTitle {
+  font-size: 2vw;
 }
 
 .p-article__textContainer {
   margin-top: 10%;
 }
 
+.p-article__text {
+  font-size: 2vw;
+  white-space: nowrap;
+}
+
+.p-articleBtn {
+  padding: 5px;
+  width: 100%;
+  margin-top: 10%;
+}
 .p-article__container + .p-article__container--reverse {
   margin-top: 20%;
 }
@@ -83,9 +100,6 @@
     font-size: 2vw;
   }
 
-  .p-article__textContainer {
-  }
-
   .p-article__text {
     font-size: 3vw;
     white-space: nowrap;
@@ -100,12 +114,7 @@
 
   .p-article__imgContainer {
     max-width: 600px;
-    // height: 330px;
     z-index: 30;
-  }
-
-  .p-article__image {
-    // width: 100;
   }
 
   .c-btn {
@@ -114,7 +123,7 @@
 
   .p-article__textContainer {
     margin-top: 5px;
-    font-size: 24px;
+    // font-size: 24px;
   }
 
   .p-article__container + .p-article__container--reverse {
