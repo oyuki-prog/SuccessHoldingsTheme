@@ -1,6 +1,10 @@
 @use "../../Foundation/global" as *;
 
-@media (max-width: 599px) {
+@include mq("sp") {
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+  width: calc(100% - #{$padding-sp} * 2);
+
   #c-humberger {
     position: relative;
     height: 50px;

@@ -82,13 +82,16 @@
   margin-top: 20%;
 }
 
-@media (max-width: 599px) {
+@include mq("sp") {
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+  width: calc(100% - #{$padding-sp} * 2);
+
   .p-article__work {
     position: absolute;
     padding: 20% 10% 10%;
     top: 70%;
     left: 5%;
-    /* max-width: 559px; */
     background-color: aqua;
   }
 
@@ -117,13 +120,8 @@
     z-index: 30;
   }
 
-  .c-btn {
-    width: 100%;
-  }
-
   .p-article__textContainer {
     margin-top: 5px;
-    // font-size: 24px;
   }
 
   .p-article__container + .p-article__container--reverse {

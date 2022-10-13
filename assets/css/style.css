@@ -426,9 +426,6 @@ select {
     max-width: 600px;
     z-index: 30;
   }
-  .c-btn {
-    width: 100%;
-  }
   .p-article__textContainer {
     margin-top: 5px;
   }
