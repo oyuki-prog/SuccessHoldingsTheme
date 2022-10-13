@@ -1,0 +1,54 @@
+@use '../../Foundation/global'as *;
+
+.p-aboutusNav {
+    padding: 0 50px;
+    margin-top: 50px;
+    &__ul {
+        display: flex;
+        justify-content: center;
+    }
+    &__list {
+        position: relative;
+        list-style: none;
+        text-align: center;
+        max-width: 300px;
+        width: 100%;
+        padding-bottom: 20px;
+        border-left: solid 2px black;
+        &:last-child {
+            border-right: solid 2px black;
+        }
+    }
+    &__text {
+        font-size: 24px;
+    }
+    &__arrow {
+        width: 12px;
+        height: 12px;
+        border: 2px solid;
+        border-color:  transparent transparent $color-main $color-main;
+        transform: rotate(-45deg);
+        cursor: pointer;
+        position: absolute;
+        left: 48%;
+        right: 52%;
+    }
+}
+
+.c-sectionTitle {
+    margin-top: 174px;
+    width: 100%;
+    text-align: center;
+    &__mainTitle {
+        font-size: 32pt;
+    }
+    &__subTitle {
+        font-size: 16px;
+    }
+}
+.p-aboutusMessage {
+    &__container {
+        display: flex;
+        margin-top: 80px;
+    }
+}

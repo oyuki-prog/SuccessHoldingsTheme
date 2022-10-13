@@ -14,6 +14,9 @@
   <main class="l-main">
 
     <section class="c-pageTitle">
+      <div class="c-pageTitle__imgWrapper">
+        <img class="c-pageTitle__img" src="../assets/images/img-sample.jpg" alt="">
+      </div>
       <div class="c-PageTitle__container">
         <h1 class="c-pageTitle__mainTitle">会社情報</h1>
         <p class="c-pageTitle__subTitle">About Us</p>
@@ -21,48 +24,57 @@
     </section>
 
     <section class="p-aboutusNav">
-      <div class="p-aboutusNav__container">
-        <ul>
-          <li class="p-aboutNav__list">
-            <p class="p-aboutusNav__text">代表挨拶</p>
-            <a class="p-aboutusNav__arrow" href=""></a>
-          </li>
-          <li class="p-aboutNav__list">
-            <p class="p-aboutusNav__text">企業理念</p>
-            <a class="p-aboutusNav__arrow" href=""></a>
-          </li>
-          <li class="p-aboutNav__list">
-            <p class="p-aboutusNav__text">会社概要</p>
-            <a class="p-aboutusNav__arrow" href=""></a>
-          </li>
-          <li class="p-aboutNav__list">
-            <p class="p-aboutusNav__text">社員紹介</p>
-            <a class="p-aboutusNav__arrow" href=""></a>
-          </li>
-        </ul>
-      </div>
+      <ul class="p-aboutusNav__ul">
+        <li class="p-aboutusNav__list">
+          <p class="p-aboutusNav__text">代表挨拶</p>
+          <a class="p-aboutusNav__link" href="#aboutusMessage">
+              <div class="p-aboutusNav__arrow"></div>
+          </a>
+        </li>
+        <li class="p-aboutusNav__list">
+          <p class="p-aboutusNav__text">企業理念</p>
+          <a class="p-aboutusNav__link" href="#aboutusPhilosophy">
+            <div class="p-aboutusNav__arrow"></div>
+          </a>
+        </li>
+        <li class="p-aboutusNav__list">
+          <p class="p-aboutusNav__text">会社概要</p>
+          <a class="p-aboutusNav__link" href="#aboutusCompany">
+            <div class="p-aboutusNav__arrow"></div>
+          </a>
+        </li>
+        <li class="p-aboutusNav__list">
+          <p class="p-aboutusNav__text">社員紹介</p>
+          <a class="p-aboutusNav__link" href="#aboutusMember">
+            <div class="p-aboutusNav__arrow"></div>
+          </a>
+        </li>
+      </ul>
     </section>
 
-    <section class="p-aboutusMessage">
-      <div class="c-sectionTitle__container">
+    <section class="p-aboutusMessage" id="aboutusMessage">
+      <div class="c-sectionTitle">
         <h2 class="c-sectionTitle__mainTitle">代表挨拶</h2>
         <p class="c-sectionTitle__subTitle">Message</p>
       </div>
       <div class="p-aboutusMessage__container">
-        <div class="p-aboutusMessage__textBox">
-          <p class="p-aboutusMessage__textTitle">サンプルサンプルサンプルサンプル</p>
-          <p class="p-aboutusMessage__companyName">株式会社サクセスストーリー</p>
-          <p class="p-aboutusMessage__president">代表取締役社長　<span style="font-size:150%;">小林　大輔</span></p>
-          <div class="c-button"></div>
+        <div class="p-aboutusMessage__contents">
+          <div class="p-aboutusMessage__textBox">
+            <p class="p-aboutusMessage__textTitle">サンプルサンプルサンプルサンプル</p>
+            <p class="p-aboutusMessage__companyName">株式会社サクセスストーリー</p>
+            <p class="p-aboutusMessage__president">代表取締役社長　<span style="font-size:150%;">小林　大輔</span></p>
+            <div class="c-button"></div>
+            </div>
           </div>
-        </div>
-        <div class="p-aboutusMessage__img">
-          <img src="../assets/images/img-sample.jpg" alt="">
-        </div>
+          <div class="p-aboutusMessage__img">
+            <img src="../assets/images/img-sample.jpg" alt="">
+          </div>
+      </div>
       </div>
     </section>
-    <section class="p-aboutusPhilosophy">
-      <div class="c-sectionTitle__container">
+
+    <section class="p-aboutusPhilosophy" id="aboutusPhilosophy">
+      <div class="c-sectionTitle">
         <h2 class="c-sectionTitle__mainTitle">企業理念</h2>
         <p class="c-sectionTitle__subTitle">philosophy</p>
       </div>
@@ -137,8 +149,8 @@
       </div>
     </section>
 
-    <section class="p-aboutusCompany">
-      <div class="c-sectionTitle__container">
+    <section class="p-aboutusCompany" id="aboutusCompany">
+      <div class="c-sectionTitle">
         <h2 class="c-sectionTitle__mainTitle">会社概要</h2>
         <p class="c-sectionTitle__subTitle">Company</p>
       </div>
@@ -204,8 +216,8 @@
       </div>
     </section>
 
-    <section class="p-aboutusMember">
-      <div class="c-sectionTitle__container">
+    <section class="p-aboutusMember" id="aboutusMember">
+      <div class="c-sectionTitle">
         <h2 class="c-sectionTitle__mainTitle">社員紹介</h2>
         <p class="c-sectionTitle__subTitle">Member</p>
       </div>
