@@ -1,0 +1,19 @@
+@use '../../Foundation/global'as *;
+.p-main__wrapper {
+    margin: 0 auto;
+    text-align: center;
+    color: #3B4043;
+}
+
+.p-main__title {
+    font-size: 40px;
+}
+
+.p-main__lead {
+    font-size: 20px;
+}
+
+.p-main__list {
+    list-style: none;
+    display: flex;
+}
