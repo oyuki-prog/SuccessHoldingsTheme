@@ -1,0 +1,33 @@
+@use '../../Foundation/global'as *;
+
+.c-pageTitle {
+    &__imgWrapper {
+        position: relative;
+        max-width: 1400px;
+        height: auto;
+        margin: 0 auto;
+    }
+    &__img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    }
+    &__container {
+        position: absolute;
+        top: 2.2%;
+        left: 45%;
+        text-align: center;
+    }
+    &__mainTitle {
+        font-size: 48px;
+        font-weight: bold;
+        color: white;
+        line-height: 1;
+    }
+    &__subTitle {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        line-height: 1.2;
+    }
+}
