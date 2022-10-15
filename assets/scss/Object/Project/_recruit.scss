@@ -1,19 +1,49 @@
 @use '../../Foundation/global'as *;
-.p-main__wrapper {
-    margin: 0 auto;
-    text-align: center;
+.p-main {
+    margin: 0;
+    padding: 40px 10%;
+    // width: 80%;
+    min-width: 250px;
+    background-color: #EDEBEB;
     color: #3B4043;
-}
-
-.p-main__title {
-    font-size: 40px;
-}
-
-.p-main__lead {
-    font-size: 20px;
-}
-
-.p-main__list {
-    list-style: none;
-    display: flex;
+    &__wrapper {
+        text-align: center;
+    }
+    &__title {
+        font-size: 40px;
+    }
+    &__lead {
+        font-size: 20px;
+    }
+    &__list {
+        padding: 0;
+    }
+    &__listItem {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+    
+    &__listTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        max-width: 250px;
+        height: 100%;
+        // line-height: 100px;
+        text-align: center;
+        background-color: #26226B;
+        color: #fff;
+    }
+    
+    &__listText {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        background-color: #fff;
+        height: 100%;
+    }
 }
