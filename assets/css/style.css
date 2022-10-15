@@ -126,6 +126,10 @@ select {
   }
 }
 
+.l-footer {
+  width: 100%;
+}
+
 .l-wrapper {
   min-height: 100vh;
   position: relative;
@@ -145,6 +149,11 @@ select {
   background-color: #26226B;
   padding: 80px 0px 40px;
 }
+@media (max-width: 900px) {
+  .p-footer {
+    padding: 40px 0px;
+  }
+}
 .p-footer__content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -154,6 +163,15 @@ select {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .p-footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .p-footer__textBox {
   list-style: none;
@@ -167,6 +185,18 @@ select {
           align-items: center;
   color: #FFF;
   gap: 40px;
+  padding: 0;
+}
+@media (max-width: 900px) {
+  .p-footer__textBox {
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
 }
 .p-footer__text {
   position: relative;
@@ -179,6 +209,11 @@ select {
   right: -20px;
   background-color: #FFF;
 }
+@media (max-width: 900px) {
+  .p-footer__text:first-child::after {
+    content: none;
+  }
+}
 .p-footer__menu {
   display: -webkit-box;
   display: -webkit-flex;
@@ -187,6 +222,26 @@ select {
   list-style: none;
   gap: 20px;
   padding: 0;
+}
+@media (max-width: 900px) {
+  .p-footer__menu {
+    margin: 0 auto;
+    margin-top: 20px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: 30px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 900px) {
+  .p-footer__menuItem {
+    width: 20%;
+  }
 }
 .p-footer__copyRight {
   margin-top: 50px;
