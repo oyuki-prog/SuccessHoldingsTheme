@@ -333,8 +333,8 @@ select {
 }
 
 .p-article__imgContainer {
-  max-width: 600px;
-  width: 60%;
+  max-width: 700px;
+  width: 70%;
   max-height: 400px;
   position: absolute;
   bottom: 20%;
@@ -345,7 +345,7 @@ select {
 }
 
 .p-article__work {
-  width: 40%;
+  width: 50%;
   position: relative;
   background-color: white;
   text-align: center;
@@ -383,7 +383,7 @@ select {
 }
 
 .p-articleBtn {
-  padding: 5px;
+  padding: 1vw;
   width: 100%;
   margin-top: 10%;
 }
@@ -397,42 +397,54 @@ select {
 }
 
 @media (max-width: 599px) {
-  .p-article__work {
-    position: absolute;
-    padding: 20% 10% 10%;
-    top: 70%;
-    left: 5%;
-    background-color: aqua;
+  .p-article {
+    margin-top: 30%;
   }
-  .p-article__title {
-    font-size: 4vw;
-  }
-  .p-article__subTitle {
-    font-size: 2vw;
-  }
-  .p-article__text {
-    font-size: 3vw;
-    white-space: nowrap;
-  }
-  .p-article__work--reverse {
-    position: absolute;
-    padding: 20% 10% 10%;
-    top: 70%;
-    right: 5%;
-    max-width: 550px;
+  .p-article__container {
+    margin: 0 auto;
+    position: relative;
   }
   .p-article__imgContainer {
-    max-width: 600px;
-    z-index: 30;
+    min-width: 280px;
+    width: 60%;
+    position: absolute;
+    bottom: 40%;
+  }
+  .p-article__work {
+    width: 50%;
+    position: relative;
+    padding: 5% 5% 8%;
+    padding-top: 10%;
+    z-index: 10;
+  }
+  .p-article__work--reverse {
+    width: 50%;
+    position: relative;
+    padding: 5% 5% 8%;
+  }
+  .p-article__title {
+    font-size: 2.5vw;
+  }
+  .p-article__subTitle {
+    font-size: 1vw;
+  }
+  .p-article__text {
+    font-size: 1vw;
   }
   .p-article__textContainer {
-    margin-top: 5px;
+    margin-top: 5%;
+  }
+  .p-articleBtn {
+    padding: 3%;
+    font-size: 1vw;
+    width: 100%;
+    margin-top: 10%;
   }
   .p-article__container + .p-article__container--reverse {
-    margin-top: 70%;
+    margin-top: 30%;
   }
   .p-article__container--reverse + .p-article__container {
-    margin-top: 70%;
+    margin-top: 30%;
   }
 }
 .u-hidden {
