@@ -16,10 +16,6 @@
 }
 
 @include mq("sp") {
-  padding-left: $padding-sp;
-  padding-right: $padding-sp;
-  width: calc(100% - #{$padding-sp} * 2);
-
   .p-hero {
     margin-top: 100px;
     text-align: center;
