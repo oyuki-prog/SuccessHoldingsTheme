@@ -1,39 +1,79 @@
 @use '../../Foundation/global'as *;
 
 .p-hero {
-    &__background {
-        background-color: $color-main;
-        position: relative;
-    }
+    display: flex;
+    position: relative;
+    background-color: $color-main;
     &__img {
-        width: 1300px;
+        width: 90%;
         margin-left: auto;
         margin-right: 0;
+        height: auto;
+        @include mq('tab') {
+            width: 95%;
+        }
+        & img {
+            @include mq('tab') {
+                height: 500px;
+            }
+            
+        }
+    }
+    &__titleBox {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        background-color: $color-background-sub;
+        @include mq('tab') {
+            left: 5%;
+        }
     }
     &__title {
-        display: none;
+        font-size: 42px;
+        border: 1px solid $color-text;
+        @include mq('tab') {
+            font-size: 32px;
+        }
+        @include mq('sp') {
+            font-size: 28px;
+        }
     }
     &__newsBox {
         position: absolute;
         bottom: 0;
-        left: 100px;
-        width: 550px;
+        left: 10%;
         height: 100px;
         text-align: center;
         background-color: $color-background-sub;
         display: flex;
         gap: 40px;
         padding: 40px;
+        @include mq('tab') {
+            padding: 10px 20px;
+            left: 5%;
+            align-items: center;
+            font-size: 14px;
+            width: 95%;
+            right: 0;
+        }
     }
     &__newsContent {
         display: flex;
         gap: 10px;
+        @include mq('sp') {
+            flex-direction: column;
+            text-align: left;
+        }
     }
 }
 
 .p-aboutUs {
     padding-bottom: 400px;
     position: relative;
+    overflow: hidden;
+    @include mq('sp') {
+        padding-bottom: 700px;
+    }
     &__background {
         border-top: 400px solid $color-main;
         border-right: 1400px solid transparent;
@@ -46,18 +86,29 @@
     }
     &__title {
         text-align: center;
-        font-size: 160px;
+        font-size: 11.5vw; /*  vw=160px(フォントサイズ)/1400px(画面幅)*100 */
         -webkit-text-stroke: 1px $color-background-sub;
         opacity: 0.3;
+        @include mq('sp') {
+            // font-size: 60px;
+        }
     }
     &__content {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        @include mq('sp') {
+            flex-direction: column;
+        }
     }
     &__imgList {
         list-style: none;
         display: flex;
         padding: 0;
+        width: 45%;
+        @include mq('sp') {
+            justify-content: center;
+            width: 100%;
+        }
 
     }
     &__imgListItem {
@@ -69,7 +120,7 @@
         }
     }
     &__img {
-        width: 150px;
+        max-width: 150px;
     }
     &__img img {
         height: 300px;
@@ -78,13 +129,25 @@
     &__textBox {
         display: flex;
         flex-direction: column;
-        width: 450px;
+        width: 45%;
+        @include mq('sp') {
+            flex-direction: column;
+            margin-top: 40px;
+            width: 100%;
+        }
     }
     &__subTitle {
-        font-size: 32px;
+        font-size: 3vw;
+        @include mq('sp') {
+            font-size: 20px;
+            width: 80%;
+        }
     }
     &__textWrap {
         margin-top: 40px;
+        @include mq('sp') {
+            margin-top: 20px;
+        }
     }
     &__text:not(:first-child) {
         margin-top: 20px;
@@ -95,6 +158,9 @@
     &__background {
         background-color: $color-main;
         padding: 160px 0px;
+        @include mq('sp') {
+            padding: 80px 0px;
+        }
     }
     &__titleBox {
         text-align: center;
@@ -103,11 +169,17 @@
     &__title {
         font-size: 32px;
         color: $color-background-sub;
+        @include mq('sp') {
+            font-size: 24px;
+        }
     }
     &__subTitle {
         font-size: $font-size-base;
         margin-top: 10px;
         color: $color-background;
+        @include mq('sp') {
+            font-size: 14px;
+        }
     }
     &__list {
         margin-top: 40px;
@@ -116,31 +188,64 @@
         flex-wrap: wrap;
         justify-content: space-between;
         list-style: none;
+        @include mq('tab') {
+            gap: 30px;
+        }
+        @include mq('sp') {
+            flex-direction: column;
+            gap: 40px;
+        }
     }
     &__listItem {
-        width: 33%;
+        width: 30%;
         max-width: 350px;
         position: relative;
+        @include mq('tab') {
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+        @include mq('sp') {
+            max-width: 350px;
+        }
     }
     &__listImg img {
-        height: 510px;
+        height: 40vw;
         object-fit: cover;
+        @include mq('tab') {
+            height: 60vw;
+        }
+        @include mq('sp') {
+            height: 340px;
+
+        }
     }
     &__textBox {
-        padding: $padding-pc;
+        padding: 10%;
         position: absolute;
         bottom: 0;
         background-color: #000000;
         opacity: $hover-opacity;
+        @include mq('tab') {
+            padding: 5%;
+        }
     }
     &__listTitle {
-        font-size: 32px;
+        font-size: 2.2vw;
         color: $color-background-sub;
+        @include mq('tab') {
+            font-size: 24px;
+            
+        }
     }
     &__listText {
         margin-top: 25px;
         font-size: $font-size-base;
         color: $color-background-sub;
+        @include mq('sp') {
+            margin-top: 20px;
+            font-size: 14px;
+        }
     }
     &__btn {
         display: block;
@@ -152,12 +257,18 @@
         text-align: center;
         border: 2px solid $color-background-sub;
         background-color: $color-main;
-
+        @include mq('sp') {
+            height: 50px;
+            margin: 40px auto 0px;
+        }
     }
 }
 
 .p-works {
     padding: 160px 0px;
+    @include mq('sp') {
+        padding: 80px 0px;
+    }
     &__titleBox {
         text-align: center;
     }
@@ -178,11 +289,22 @@
         justify-content: space-between;
         list-style: none;
         position: relative;
+        @include mq('tab') {
+            flex-direction: column;
+            gap: 40px;
+        }
     }
     &__listItem {
         width: 33%;
         max-width: 350px;
         position: relative;
+        @include mq('tab') {
+           width: 100%;
+           margin: 0 auto;
+        }
+        & a {
+            text-decoration: none;
+        }
     }
     &__textBox {
         position: absolute;
@@ -196,6 +318,15 @@
             color: $color-background-sub;
             opacity: $hover-opacity;
             background-color: black;
+        }
+        @include mq('tab') {
+            position: static;
+            opacity: 1;
+            margin-top: 20px;
+            padding: 0;
+            text-align: left;
+            font-size: 16px;
+            color: $color-text;
         }
     }
 
@@ -220,13 +351,20 @@
         padding: 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         list-style: none;
         row-gap: 40px;
         column-gap: 5%;
+        @include mq('sp') {
+            margin-top: 60px;
+            row-gap: 20px;
+        }
     }
     &__listItem {
         width: 20%;
         max-width: 280px;
+        @include mq('tab') {
+            width: 45%;
+        }
     }
 }
