@@ -370,9 +370,9 @@ select {
 }
 .p-aboutUs__title {
   text-align: center;
+  color: transparent;
   font-size: 11.5vw; /*  vw=160px(フォントサイズ)/1400px(画面幅)*100 */
   -webkit-text-stroke: 1px #FFF;
-  opacity: 0.3;
 }
 .p-aboutUs__content {
   display: -webkit-box;
@@ -751,6 +751,123 @@ select {
   }
 }
 
+@media (max-width: 900px) {
+  .p-scroll {
+    display: none;
+  }
+}
+.p-scroll__text--message {
+  position: fixed;
+  left: 10px;
+  bottom: 200px; /* back to page  とかぶって見えなかったので200pxにしてあります */
+  display: block;
+  width: 20px;
+  height: 160px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.p-scroll__text--message span {
+  position: absolute;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: #FFF;
+  letter-spacing: 0.05em;
+}
+.p-scroll__text--message::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  width: 1px;
+  height: 100px;
+  background-color: #FFF;
+  -webkit-animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+          animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+  opacity: 1;
+  left: 54%;
+}
+.p-scroll__text--top {
+  position: fixed;
+  left: 10px;
+  bottom: 50px;
+  display: block;
+  width: 20px;
+  height: 180px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.p-scroll__text--top span {
+  position: absolute;
+  bottom: 0;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: #FFF;
+  letter-spacing: 0.05em;
+}
+.p-scroll__view {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+@-webkit-keyframes sdl {
+  0% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+  51% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+}
+
+@keyframes sdl {
+  0% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+  51% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+}
 .u-hidden {
   display: none;
 }
