@@ -169,11 +169,22 @@ select {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 599px) {
+  .c-pageTitle__img {
+    max-height: 300px;
+  }
+}
 .c-pageTitle__container {
   position: absolute;
-  top: calc(50% - 36px);
+  top: calc(50% - 24px);
   left: calc(50% - 96px);
   text-align: center;
+}
+@media (max-width: 599px) {
+  .c-pageTitle__container {
+    top: calc(50% - 16px);
+    left: calc(50% - 64px);
+  }
 }
 .c-pageTitle__mainTitle {
   font-size: clamp(2rem, 1.571rem + 1.9vw, 3rem);
