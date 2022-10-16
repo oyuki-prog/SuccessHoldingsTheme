@@ -62,26 +62,32 @@
     </main>
     <section class="p-recruitForm">
         <div class="p-recruitForm__wrapper">
+            <h2 class="p-recruitForm__title">採用フォーム</h2>
+            <p class="p-recruitForm__lead">Recruit&emsp;Form</p>
+            <p class="p-recruitForm__precautions">
+                以下のフォームに必要事項をご入力の上、ご登録ください。<br>
+                ※採用以外のお問合せに関しましては<a href="">こちらへ</a>
+            </p>
             <form action="" method="post">
                 <div class="p-recruitForm__inputColumn">
                     <label for="name">名前</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" placeholder="例）田中太郎">
                 </div>
                 <div class="p-recruitForm__inputColumn">
                     <label for="name">名前（フリガナ）</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" placeholder="例）タナカタロウ">
                 </div>
                 <div class="p-recruitForm__inputColumn">
                     <label for="tel">電話番号</label>
-                    <input type="tel" id="tel" name="tel">
+                    <input type="tel" id="tel" name="tel" placeholder="例）0312345678">
                 </div>
                 <div class="p-recruitForm__inputColumn">
                     <label for="email">メールアドレス</label>
-                    <input type="mail" id="email" name="email">
+                    <input type="mail" id="email" name="email" placeholder="例）info@example.com">
                 </div>
-                <div class="p-recruitForm__inputColumn">
+                <div class="p-recruitForm__choiceColumn">
                     <label for="prefecture">都道府県</label>
-                    <select name="prefecture">
+                    <select required name="prefecture">
                         <option value="" selected>ご選択ください</option>
                         <option value="北海道">北海道</option>
                         <option value="青森県">青森県</option>
@@ -134,15 +140,15 @@
                 </div>
                 <div class="p-recruitForm__inputColumn">
                     <label for="municipalities">市区町村</label>
-                    <input type="text" id="municipalities" name="municipalities">
+                    <input type="text" id="municipalities" name="municipalities" placeholder="ご選択ください">
                 </div>
                 <div class="p-recruitForm__inputColumn">
                     <label for="address">番地・マンション名など</label>
-                    <input type="text" id="address" name="address">
+                    <input type="text" id="address" name="address" placeholder="ご選択ください">
                 </div>
-                <div class="p-recruitForm__inputColumn">
-                    <label for="message">内容</label>
-                    <textarea id="message" name="message"></textarea>
+                <div class="p-recruitForm__otherColumn">
+                    <label for="message">その他</label>
+                    <textarea id="message" name="message" placeholder="ご自由にご記入ください。"></textarea>
                 </div>
                 <input type="submit" value="問い合わせる">
             </form>

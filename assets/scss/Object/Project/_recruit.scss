@@ -6,33 +6,27 @@
     font-family: '游ゴシック体';
     background-color: #EDEBEB;
     color: #3B4043;
-
     &__wrapper {
         text-align: center;
     }
-
     &__title {
         font-size: 40px;
     }
-
     &__lead {
         font-size: 20px;
     }
-
     &__list {
         margin-top: 100px;
         padding: 0;
         border: solid 1px #707070;
     }
-
     &__listItem {
-        list-style: none;
+        list-style: solid 1px #DDDDDD;
         display: flex;
         align-items: center;
         width: 100%;
         height: 100px;
     }
-    
     &__listTitle {
         display: flex;
         align-items: center;
@@ -44,12 +38,10 @@
         text-align: center;
         background-color: #26226B;
         color: #fff;
-
         &:not(:last-child) {
             border-bottom: solid 2px #F0F1F3;
         }
     }
-    
     &__listText {
         display: flex;
         align-items: center;
@@ -58,7 +50,6 @@
         background-color: #fff;
         height: 100%;
         font-size: 12px;
-
         &:not(:first-child) {
             border-bottom: solid 2px #C1C1C1;
         }
@@ -67,18 +58,50 @@
 
 .p-recruitForm {
     background-color: #EDEBEB;
-
     &__wrapper {
         margin: 0 auto;
-        max-width: 680px;
-        & input {
-            width: 100%;
-        }
+        width: 50%;
+        min-width: 300px;
     }
-
     &__inputColumn {
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding-top: 30px;
+        & input {
+            margin-top: 10px;
+            border-radius: 5px;
+            border: solid 1px #DDDDDD;
+            height: 45px;
+        }
+    }
+    &__choiceColumn {
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+        width: 100%;
+        padding-top: 30px;
+        & > select {
+            margin-top: 10px;
+            border-radius: 5px;
+            border: solid 1px #DDDDDD;
+            height: 45px;
+        }
+        & > select:invalid {
+            color: #828282;
+        }
+    }
+    &__otherColumn {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 30px;
+        & textarea {
+            margin-top: 30px;
+            border-radius: 5px;
+            border: solid 1px #DDDDDD;
+            width: 100%;
+            height: 240px;
+        }
     }
 }
