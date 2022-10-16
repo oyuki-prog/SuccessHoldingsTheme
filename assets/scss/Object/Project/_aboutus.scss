@@ -1,9 +1,9 @@
 @use '../../Foundation/global'as *;
 
-.p-aboutusWrapper {
-    max-width: 1400px;
-    margin: 0 auto;
-}
+// .p-aboutusWrapper {
+//     max-width: 1400px;
+//     margin: 0 auto;
+// }
 .p-aboutusNav {
     padding: 0 50px;
     margin-top: 80px;
@@ -72,7 +72,6 @@
     }
     &__container {
         margin-top: 80px;
-        // align-items: center;
     }
     &__contents {
         gap: 0 10%;
@@ -114,10 +113,13 @@
 }
 
 .p-aboutusPhilosophy {
+    background-color: #26226B;
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
     &__inner {
-        padding: 144px 100px;
-        margin-top: 160px;
-        background-color: $color-main;
+        padding: 144px 20px;
+        max-width: 1400px;
     }
     &__imgContainer {
         display: flex;
@@ -129,6 +131,7 @@
         height: 480px;
     }
     &__imgContainerPic {
+        aspect-ratio: 16/9;
         position: absolute;
         top: 0%;
         right: 0%;
@@ -138,6 +141,7 @@
     &__imgContainerMessage {
         width: 55%;
         height: 400px;
+        padding-right: 5%;
         background-color: $color-background-sub;
     }
     &__imgContainerTextwrapper {
@@ -211,6 +215,7 @@
 }
 
 .p-aboutusValue {
+    max-width: 1200px;
     &__TitleContainer {
         margin-top: 80px;
         text-align: center;
@@ -238,7 +243,7 @@
     &__ul {
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         padding: 0;
     }
@@ -270,12 +275,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 20px;
         margin-top: 80px;
     }
     &__ul {
         list-style: none;
         padding: 0;
-        margin: 0 20px;
+        margin: 0;
         width: 100%;
         max-width: 1200px;
     }
@@ -318,25 +324,35 @@
 }
 
 .p-aboutusMember {
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    background-color: #26226B;
     &__inner {
-        padding: 144px 100px;
-        margin-top: 160px;
-        background-color: $color-main;
+        max-width: 1400px;
+        padding: 144px 20px;
+    }
+    &__title {
+        width: 100%;
     }
     &__wrapper {
         margin-top: 80px;
+        max-width: 1200px;
     }
     &__ul {
         list-style: none;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 80px 8%;
-        padding: 0;
+        justify-content: space-around;
+        padding: 0px;
         margin: 0;
     }
     &__container {
         width: 41%;
+        &:nth-child(n+3) {
+            margin-top: 80px;
+        }
     }
     &__img {
         width: 100%;

@@ -156,9 +156,10 @@ select {
   background-color: #26226B;
 }
 
-.c-pageTitle__imgWrapper {
+.c-pageTitle {
   position: relative;
-  max-width: 1400px;
+}
+.c-pageTitle__imgWrapper {
   height: auto;
   margin: 0 auto;
 }
@@ -190,11 +191,6 @@ select {
 .p-example {
   width: 300px;
   height: 100px;
-}
-
-.p-aboutusWrapper {
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
 .p-aboutusNav {
@@ -323,10 +319,21 @@ select {
   max-height: 378px;
 }
 
-.p-aboutusPhilosophy__inner {
-  padding: 144px 100px;
-  margin-top: 160px;
+.p-aboutusPhilosophy {
   background-color: #26226B;
+  margin-top: 160px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.p-aboutusPhilosophy__inner {
+  padding: 144px 20px;
+  max-width: 1400px;
 }
 .p-aboutusPhilosophy__imgContainer {
   display: -webkit-box;
@@ -344,6 +351,7 @@ select {
   height: 480px;
 }
 .p-aboutusPhilosophy__imgContainerPic {
+  aspect-ratio: 16/9;
   position: absolute;
   top: 0%;
   right: 0%;
@@ -353,6 +361,7 @@ select {
 .p-aboutusPhilosophy__imgContainerMessage {
   width: 55%;
   height: 400px;
+  padding-right: 5%;
   background-color: #FFF;
 }
 .p-aboutusPhilosophy__imgContainerTextwrapper {
@@ -425,6 +434,9 @@ select {
   background-color: #26226B;
 }
 
+.p-aboutusValue {
+  max-width: 1200px;
+}
 .p-aboutusValue__TitleContainer {
   margin-top: 80px;
   text-align: center;
@@ -453,10 +465,9 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -495,12 +506,13 @@ select {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 20px;
   margin-top: 80px;
 }
 .p-aboutusCompany__ul {
   list-style: none;
   padding: 0;
-  margin: 0 20px;
+  margin: 0;
   width: 100%;
   max-width: 1200px;
 }
@@ -558,16 +570,32 @@ select {
   font-weight: bold;
 }
 
-.p-aboutusMember__inner {
-  padding: 144px 100px;
+.p-aboutusMember {
   margin-top: 160px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #26226B;
+}
+.p-aboutusMember__inner {
+  max-width: 1400px;
+  padding: 144px 20px;
+}
+.p-aboutusMember__title {
+  width: 100%;
 }
 .p-aboutusMember__wrapper {
   margin-top: 80px;
+  max-width: 1200px;
 }
 .p-aboutusMember__ul {
   list-style: none;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -575,16 +603,17 @@ select {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 80px 8%;
-  padding: 0;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 0px;
   margin: 0;
 }
 .p-aboutusMember__container {
   width: 41%;
+}
+.p-aboutusMember__container:nth-child(n+3) {
+  margin-top: 80px;
 }
 .p-aboutusMember__img {
   width: 100%;

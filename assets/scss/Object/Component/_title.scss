@@ -1,9 +1,8 @@
 @use '../../Foundation/global'as *;
 
 .c-pageTitle {
+    position: relative;
     &__imgWrapper {
-        position: relative;
-        max-width: 1400px;
         height: auto;
         margin: 0 auto;
     }
