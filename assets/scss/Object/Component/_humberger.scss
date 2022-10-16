@@ -4,13 +4,13 @@
   #c-humberger {
     position: relative;
     height: 50px;
-    width: 80px;
+    width: 70px;
     display: inline-block;
     box-sizing: border-box;
   }
   #c-humberger div {
     position: absolute;
-    left: 0;
+    left: 20px;
     height: 2px;
     width: 50%;
     background-color: #444;

@@ -13,13 +13,15 @@
 }
 
 .p-header__img {
-  height: 60px;
+  height: 70px;
+  margin: auto;
 }
 
 .p-header__text {
   line-height: 60px;
   font-family: monospace;
-  font-size: 2vw;
+  font-size: 2.5vw;
+  margin: auto 5%;
 }
 
 .p-header__nav {
@@ -35,7 +37,7 @@
 .p-header__items {
   font-size: 1.2vw;
   white-space: nowrap;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .p-header__contact {
@@ -44,12 +46,8 @@
   margin-right: 30px;
 }
 
-.p-headerLink {
-  // margin-right: 20px;
-}
-
 .p-header__contactBtn {
-  padding: 10% 15%;
+  padding: 15% 20%;
   margin-right: 10px;
 }
 
@@ -59,13 +57,15 @@
   }
 
   .p-header__img {
-    height: 50px;
+    height: 40px;
+    margin: auto;
   }
 
   .p-header__text {
     line-height: 60px;
     margin-left: 5%;
-    font-family: monospace;
-    font-size: 2.5vw;
+    // font-family: monospace;
+    font-weight: lighter;
+    font-size: 4vw;
   }
 }

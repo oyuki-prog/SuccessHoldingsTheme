@@ -66,6 +66,7 @@
 
 .p-article__subTitle {
   font-size: 1.5vw;
+  color: rgb(160, 154, 154);
 }
 
 .p-article__textContainer {
@@ -75,29 +76,23 @@
 .p-article__text {
   font-size: 1.5vw;
   word-break: break-all;
+  color: rgb(160, 154, 154);
 }
 
 .p-articleBtn {
   padding: 1vw;
-  width: 100%;
+  width: 60%;
   margin-top: 10%;
 }
-// .p-article__container + .p-article__container--reverse {
-//   margin-top: 20%;
-// }
-
-// .p-article__container--reverse + .p-article__container {
-//   margin-top: 20%;
-// }
 
 @include mq("sp") {
   .p-article {
-    margin-top: 30%;
+    margin-top: 20%;
   }
   .p-article__container {
     margin: 0 auto;
     position: relative;
-    padding-top: 50%;
+    padding-top: 45%;
     margin-top: 10%;
   }
 
@@ -137,8 +132,7 @@
   }
 
   .p-article__title {
-    font-size: 4vw;
-    font-weight: bold;
+    font-size: 6vw;
   }
 
   .p-article__subTitle {
@@ -146,7 +140,7 @@
   }
 
   .p-article__text {
-    font-size: 4vw;
+    font-size: 5.5vw;
   }
 
   .p-article__textContainer {
@@ -154,17 +148,9 @@
   }
 
   .p-articleBtn {
-    padding: 3%;
+    padding: 4%;
     font-size: 4vw;
-    width: 100%;
+    width: 80%;
     margin-top: 10%;
-  }
-
-  .p-article__container + .p-article__container--reverse {
-    margin-top: 40%;
-  }
-
-  .p-article__container--reverse + .p-article__container {
-    margin-top: 40%;
   }
 }
