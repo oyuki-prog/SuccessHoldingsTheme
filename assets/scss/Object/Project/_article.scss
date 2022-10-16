@@ -87,19 +87,16 @@
 
 @include mq("sp") {
   .p-article {
-    margin-top: 20%;
+    margin-top: 60px;
   }
   .p-article__container {
     margin: 0 auto;
     position: relative;
-    padding-top: 45%;
-    margin-top: 10%;
+    padding-top: 140px;
   }
 
-  .p-article__container--reverse {
-    margin: 0 auto;
-    position: relative;
-    padding-top: 50%;
+  .p-article__container + .p-article__container {
+    margin-top: 40px;
   }
 
   .p-article__imgContainer {
@@ -119,33 +116,28 @@
   .p-article__work {
     width: 100%;
     position: relative;
-    padding: 25% 5% 10%;
+    padding: 80px 5% 40px;
     z-index: 10;
   }
 
   .p-article__work--reverse {
     width: 100%;
     position: relative;
-    padding: 25% 5% 10%;
+    padding: 80px 5% 40px;
     z-index: 10;
     right: 0;
   }
 
-  .p-article__title {
-    font-size: 6vw;
-  }
-
   .p-article__subTitle {
-    font-size: 4vw;
+    margin-top: 20px;
   }
 
   .p-article__text {
-    font-size: 5.5vw;
+    margin-top: 20px;
   }
 
   .p-articleBtn {
     padding: 4%;
-    font-size: 4vw;
     width: 80%;
   }
 }
