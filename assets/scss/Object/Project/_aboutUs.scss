@@ -9,12 +9,12 @@
   }
   &__background {
     position: absolute;
-    height: 300px;
+    height: 500px;
     width: 100%;
     background: $color-background;
     background-image: linear-gradient(to left top,transparent 50%, $color-main 50%);
     @include mq('tab') {
-      height: 200px;
+      height: 350px;
     }
   }
   &__title {
@@ -70,8 +70,7 @@
     }
   }
   &__subTitle {
-    font-size: 3vw;
-    font-size:min(3vw,42px);
+    font-size: 28px;
     color: #000000;
     @include mq('sp') {
       font-size: 20px;

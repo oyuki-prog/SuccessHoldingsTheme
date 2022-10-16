@@ -47,7 +47,7 @@
   &__menu {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 20px;
     padding: 0;
     text-align: left;
     @include mq('tab') {
@@ -60,9 +60,10 @@
     }
   }
   &__menuItem {
+    width: 80px;
     @include mq('tab') {
       width: 20%;
-       text-align: center;
+      text-align: center;
     }
   }
   &__listBox {
@@ -70,6 +71,8 @@
     list-style: none;
     font-size: 14px;
     margin-top: 20px;
+    white-space: nowrap;
+    text-align: left;
     @include mq('tab') {
      display: none;
     }

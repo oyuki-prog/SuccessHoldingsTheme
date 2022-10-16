@@ -273,7 +273,7 @@ select {
 }
 .p-aboutUs__background {
   position: absolute;
-  height: 300px;
+  height: 500px;
   width: 100%;
   background: #EDEBEB;
   background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, #26226B));
@@ -282,7 +282,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-aboutUs__background {
-    height: 200px;
+    height: 350px;
   }
 }
 .p-aboutUs__title {
@@ -369,8 +369,7 @@ select {
   }
 }
 .p-aboutUs__subTitle {
-  font-size: 3vw;
-  font-size: min(3vw, 42px);
+  font-size: 28px;
   color: #000000;
 }
 @media (max-width: 599px) {
@@ -486,7 +485,7 @@ select {
   }
 }
 .p-business__textBox {
-  padding: 10%;
+  padding: 40px;
   position: absolute;
   bottom: 0;
   background-color: #000000;
@@ -494,7 +493,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-business__textBox {
-    padding: 5%;
+    padding: 20px;
   }
 }
 .p-business__listTitle {
@@ -874,7 +873,7 @@ select {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  gap: 25px;
+  gap: 20px;
   padding: 0;
   text-align: left;
 }
@@ -893,6 +892,9 @@ select {
     font-size: 14px;
   }
 }
+.p-footer__menuItem {
+  width: 80px;
+}
 @media (max-width: 900px) {
   .p-footer__menuItem {
     width: 20%;
@@ -904,6 +906,8 @@ select {
   list-style: none;
   font-size: 14px;
   margin-top: 20px;
+  white-space: nowrap;
+  text-align: left;
 }
 @media (max-width: 900px) {
   .p-footer__listBox {
