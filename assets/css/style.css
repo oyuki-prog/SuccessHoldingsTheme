@@ -341,8 +341,10 @@ select {
   position: absolute;
   bottom: 0;
   left: 10%;
-  height: 100px;
-  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #FFF;
   display: -webkit-box;
   display: -webkit-flex;
@@ -353,7 +355,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-hero__newsBox {
-    padding: 10px 20px;
+    padding: 25px 20px;
     left: 5%;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -370,6 +372,10 @@ select {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 599px) {
   .p-hero__newsContent {
@@ -379,7 +385,14 @@ select {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: left;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
+}
+.p-hero__newsText {
+  text-align: left;
 }
 
 .p-aboutUs {
@@ -392,7 +405,7 @@ select {
     padding-bottom: 80px;
   }
 }
-.p-aboutUs__wrapper {
+.p-aboutUs__background {
   position: absolute;
   height: 300px;
   width: 100%;
@@ -402,7 +415,7 @@ select {
   background-image: linear-gradient(to left top, transparent 50%, #26226B 50%);
 }
 @media (max-width: 900px) {
-  .p-aboutUs__wrapper {
+  .p-aboutUs__background {
     height: 200px;
   }
 }
