@@ -1,7 +1,7 @@
 @use "../../Foundation/global" as *;
 
 .p-article {
-  margin-top: 10%;
+  margin-top: 160px;
 }
 
 .p-article__container {
@@ -13,7 +13,7 @@
 }
 
 .p-article__container + .p-article__container {
-  margin-top: 10%;
+  margin-top: 80px;
 }
 
 .p-article__container--reverse {
@@ -49,7 +49,7 @@
   width: 45%;
   background-color: white;
   text-align: center;
-  padding: 5% 5% 7%;
+  padding: 80px 5% 60px;
   z-index: 10;
   margin-left: auto;
 }
@@ -57,36 +57,32 @@
   width: 45%;
   background-color: white;
   text-align: center;
-  padding: 5% 5% 7%;
+  padding: 80px 5% 60px;
   z-index: 10;
   margin-right: auto;
 }
 
 .p-article__title {
-  font-size: 2.5vw;
   font-weight: bold;
   color: black;
 }
 
 .p-article__subTitle {
-  font-size: 1.5vw;
   color: rgb(160, 154, 154);
-}
-
-.p-article__textContainer {
-  margin-top: 10%;
+  margin-top: 10px;
 }
 
 .p-article__text {
-  font-size: 1.5vw;
   word-break: break-all;
   color: rgb(160, 154, 154);
+  margin-top: 40px;
 }
 
 .p-articleBtn {
-  padding: 1vw;
-  width: 60%;
-  margin-top: 15%;
+  padding: 17px;
+  width: 100%;
+  margin-top: 40px;
+  max-width: 250px;
 }
 
 @include mq("sp") {
@@ -145,10 +141,6 @@
 
   .p-article__text {
     font-size: 5.5vw;
-  }
-
-  .p-article__textContainer {
-    margin-top: 5%;
   }
 
   .p-articleBtn {
