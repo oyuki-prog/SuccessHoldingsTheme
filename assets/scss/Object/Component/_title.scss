@@ -10,7 +10,7 @@
     width: 100%;
     max-height: 400px;
     object-fit: cover;
-    @include mq('sp') {
+    @include mq('tab') {
         max-height: 300px;
     }
     }
@@ -19,7 +19,7 @@
         top: calc(50% - 24px);
         left: calc(50% - 96px);
         text-align: center;
-        @include mq('sp') {
+        @include mq('tab') {
             top: calc(50% - 16px);
             left: calc(50% - 64px);
         }

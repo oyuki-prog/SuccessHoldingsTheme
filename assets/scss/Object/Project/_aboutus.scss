@@ -6,8 +6,9 @@
     &__ul {
         display: flex;
         justify-content: center;
-        @include mq('tab') {
-
+        @include mq('sp') {
+            flex-wrap: wrap;
+            padding: 0;
         }
     }
     &__list {
@@ -20,6 +21,15 @@
         border-left: solid 2px black;
         &:last-child {
             border-right: solid 2px black;
+        }
+        @include mq('sp') {
+            width: 50%;
+            &:nth-child(2n) {
+                border-right: solid 2px black;
+            }
+            &:nth-child(n+3) {
+                margin-top: 20px;
+            }
         }
     }
     &__text {
@@ -67,21 +77,40 @@
 
 .p-aboutusMessage {
     margin-top: 174px;
+    @include mq('sp') {
+        margin-top: 80px;
+    }
     &__container {
         margin-top: 80px;
+        @include mq('tab') {
+            display: flex;
+            justify-content: center;
+            margin-top: 42px;
+        }
     }
     &__contents {
         gap: 0 10%;
         display: flex;
         justify-content: center;
+        @include mq('tab') {
+            width: 600px;
+            flex-direction: column-reverse;
+            margin-top: 42px;
+        }
     }
     &__textWrapper {
         margin-top: 48px;
         max-width: 256px;
+        @include mq('tab') {
+            margin-top: 40px
+        }
     }
     &__textTitle {
         font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
         font-weight: bold;
+        @include mq('tab') {
+            text-align: center;
+        }
     }
     &__companyName {
         margin-top: 24px;
@@ -101,6 +130,9 @@
     &__img {
         width: 100%;
         max-width: 648px;
+        @include mq('tab') {
+            max-width: 100%;
+        }
     }
 }
 
@@ -109,34 +141,62 @@
     margin-top: 160px;
     display: flex;
     justify-content: center;
+    @include mq('sp') {
+        margin-top: 80px;
+    }
     &__inner {
         padding-top: 144px;
         padding-bottom: 144px;
         margin: 0;
+        @include mq('sp') {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
     }
     &__imgContainer {
         position: relative;
         margin-top: 100px;
         padding-top: 64px;
-        // height: 480px;
+        @include mq('tab') {
+            padding-top: 180px;
+        }
+        @include mq('sp') {
+            margin-top: 40px;
+        }
     }
     &__imgContainerPic {
-        aspect-ratio: 16/9;
         position: absolute;
         top: 0%;
         right: 0%;
         max-width: 50%;
-        // height: 400px;
+        @include mq('tab') {
+            right: -5%;
+            max-width: 100%;
+            height: 200px;
+            padding-left: 30px;
+        }
     }
     &__imgContainerMessage {
         height: 400px;
         width: 55%;
         padding-right: 40px;
         background-color: $color-background-sub;
+        @include mq('tab') {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 335px;
+            height: 200px;
+            padding: 50px;
+        }
     }
     &__imgContainerTextwrapper {
         padding-top: 64px;
         padding-left: 36px;
+        @include mq('tab') {
+            padding: 0;
+        }
+
     }
     &__imgContainerTitle {
         position: relative;
@@ -156,9 +216,22 @@
         letter-spacing: 1.4px;
     }
     &__imgContainerText {
+        visibility: visible;
         margin-top: 28px;
         font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
         font-weight: bold;
+        @include mq('tab') {
+            visibility: hidden;
+        }
+    }
+    &__imgContainerText--tab {
+        visibility: hidden;
+        @include mq('tab') {
+            visibility: visible;
+            margin-top: 28px;
+            font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+            font-weight: bold;
+        }
     }
 
     &__imgContainerReverse {
@@ -168,14 +241,12 @@
         padding-top: 64px;
         margin-top: 80px;
         max-width: 1200px;
-        // height: 480px;
     }
     &__imgContainerPicReverse {
         position: absolute;
         top: 0;
         left: 0;
         max-width: 50%;
-        // height: 400px;
     }
     &__imgContainerMessageReverse {
         height: 400px;
@@ -203,6 +274,11 @@
             background-color: $color-main;
         }
         letter-spacing: 1.4px;
+    }
+    &__imgContainerTextReverse {
+        margin-top: 28px;
+        font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+        font-weight: bold;
     }
 }
 
@@ -235,12 +311,24 @@
         justify-content: space-around;
         flex-wrap: wrap;
         padding: 0;
+        margin-top: 76px;
+        @include mq('sp') {
+            flex-direction: column;
+            margin-top: 56px;
+        }
     }
     &__container {
-        margin-top: 80px;
         max-width: 500px;
         width: 41%;
-        // max-height: 120px;
+        &:nth-child(n+3) {
+            margin-top: 80px;
+        }
+        @include mq('sp') {
+            width: 100%;
+            &:nth-child(n+2) {
+                margin-top: 44px;
+            }
+        }
     }
     &__textTitle {
         font-size: 24px;
@@ -259,6 +347,9 @@
 .p-aboutusCompany {
     &__title {
         margin-top: 174px;
+        @include mq('sp') {
+            margin-top: 80px;
+        }
     }
     &__wrapper {
         width: 100%;
@@ -266,6 +357,9 @@
         justify-content: center;
         align-items: center;
         margin-top: 80px;
+        @include mq('sp') {
+            margin-top: 40px;
+        }
     }
     &__ul {
         list-style: none;
@@ -314,10 +408,17 @@
     display: flex;
     justify-content: center;
     background-color: #26226B;
+    @include mq('sp') {
+        margin-top: 80px;
+    }
     &__inner {
         padding-top: 144px;
         padding-bottom: 144px;
         margin: 0;
+        @include mq('sp') {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
     }
     &__title {
         width: 100%;
@@ -325,6 +426,9 @@
     &__wrapper {
         margin-top: 80px;
         max-width: 1200px;
+        @include mq('sp') {
+            margin-top: 52px;
+        }
     }
     &__ul {
         list-style: none;
@@ -334,21 +438,33 @@
         justify-content: space-around;
         padding: 0px;
         margin: 0;
+        @include mq('sp') {
+            flex-direction: column;
+        }
     }
     &__container {
         width: 41%;
         &:nth-child(n+3) {
             margin-top: 80px;
         }
+        @include mq('sp') {
+            width: 100%;
+            &:nth-child(n+2) {
+                margin-top: 40px;
+            }
+        }
     }
     &__img {
         width: 100%;
     }
     &__textWrapper {
-        height: 150px;
+        padding: 56px 0;
         display: flex;
         align-items: center;
         border-bottom: solid 2px $color-background-sub;
+        @include mq('sp') {
+            padding: 40px 0;
+        }
     }
     &__text {
         color: $color-background-sub;

@@ -169,7 +169,7 @@ select {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 599px) {
+@media (max-width: 900px) {
   .c-pageTitle__img {
     max-height: 300px;
   }
@@ -180,7 +180,7 @@ select {
   left: calc(50% - 96px);
   text-align: center;
 }
-@media (max-width: 599px) {
+@media (max-width: 900px) {
   .c-pageTitle__container {
     top: calc(50% - 16px);
     left: calc(50% - 64px);
@@ -218,6 +218,14 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 599px) {
+  .p-aboutusNav__ul {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 0;
+  }
+}
 .p-aboutusNav__list {
   position: relative;
   list-style: none;
@@ -229,6 +237,17 @@ select {
 }
 .p-aboutusNav__list:last-child {
   border-right: solid 2px black;
+}
+@media (max-width: 599px) {
+  .p-aboutusNav__list {
+    width: 50%;
+  }
+  .p-aboutusNav__list:nth-child(2n) {
+    border-right: solid 2px black;
+  }
+  .p-aboutusNav__list:nth-child(n+3) {
+    margin-top: 20px;
+  }
 }
 .p-aboutusNav__text {
   font-size: clamp(1rem, 0.786rem + 0.95vw, 1.5rem);
@@ -277,8 +296,26 @@ select {
 .p-aboutusMessage {
   margin-top: 174px;
 }
+@media (max-width: 599px) {
+  .p-aboutusMessage {
+    margin-top: 80px;
+  }
+}
 .p-aboutusMessage__container {
   margin-top: 80px;
+}
+@media (max-width: 900px) {
+  .p-aboutusMessage__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 42px;
+  }
 }
 .p-aboutusMessage__contents {
   gap: 0 10%;
@@ -291,13 +328,34 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 900px) {
+  .p-aboutusMessage__contents {
+    width: 600px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 42px;
+  }
+}
 .p-aboutusMessage__textWrapper {
   margin-top: 48px;
   max-width: 256px;
 }
+@media (max-width: 900px) {
+  .p-aboutusMessage__textWrapper {
+    margin-top: 40px;
+  }
+}
 .p-aboutusMessage__textTitle {
   font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
   font-weight: bold;
+}
+@media (max-width: 900px) {
+  .p-aboutusMessage__textTitle {
+    text-align: center;
+  }
 }
 .p-aboutusMessage__companyName {
   margin-top: 24px;
@@ -324,6 +382,11 @@ select {
   width: 100%;
   max-width: 648px;
 }
+@media (max-width: 900px) {
+  .p-aboutusMessage__img {
+    max-width: 100%;
+  }
+}
 
 .p-aboutusPhilosophy {
   background-color: #26226B;
@@ -337,22 +400,50 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy {
+    margin-top: 80px;
+  }
+}
 .p-aboutusPhilosophy__inner {
   padding-top: 144px;
   padding-bottom: 144px;
   margin: 0;
+}
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy__inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 .p-aboutusPhilosophy__imgContainer {
   position: relative;
   margin-top: 100px;
   padding-top: 64px;
 }
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainer {
+    padding-top: 180px;
+  }
+}
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy__imgContainer {
+    margin-top: 40px;
+  }
+}
 .p-aboutusPhilosophy__imgContainerPic {
-  aspect-ratio: 16/9;
   position: absolute;
   top: 0%;
   right: 0%;
   max-width: 50%;
+}
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainerPic {
+    right: -5%;
+    max-width: 100%;
+    height: 200px;
+    padding-left: 30px;
+  }
 }
 .p-aboutusPhilosophy__imgContainerMessage {
   height: 400px;
@@ -360,9 +451,30 @@ select {
   padding-right: 40px;
   background-color: #FFF;
 }
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainerMessage {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 335px;
+    height: 200px;
+    padding: 50px;
+  }
+}
 .p-aboutusPhilosophy__imgContainerTextwrapper {
   padding-top: 64px;
   padding-left: 36px;
+}
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainerTextwrapper {
+    padding: 0;
+  }
 }
 .p-aboutusPhilosophy__imgContainerTitle {
   position: relative;
@@ -383,9 +495,26 @@ select {
   background-color: #26226B;
 }
 .p-aboutusPhilosophy__imgContainerText {
+  visibility: visible;
   margin-top: 28px;
   font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
   font-weight: bold;
+}
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainerText {
+    visibility: hidden;
+  }
+}
+.p-aboutusPhilosophy__imgContainerText--tab {
+  visibility: hidden;
+}
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainerText--tab {
+    visibility: visible;
+    margin-top: 28px;
+    font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+    font-weight: bold;
+  }
 }
 .p-aboutusPhilosophy__imgContainerReverse {
   position: relative;
@@ -439,6 +568,11 @@ select {
           transform: translateX(-50%);
   background-color: #26226B;
 }
+.p-aboutusPhilosophy__imgContainerTextReverse {
+  margin-top: 28px;
+  font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+  font-weight: bold;
+}
 
 .p-aboutusValue {
   max-width: 1200px;
@@ -478,11 +612,32 @@ select {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   padding: 0;
+  margin-top: 76px;
+}
+@media (max-width: 599px) {
+  .p-aboutusValue__ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 56px;
+  }
 }
 .p-aboutusValue__container {
-  margin-top: 80px;
   max-width: 500px;
   width: 41%;
+}
+.p-aboutusValue__container:nth-child(n+3) {
+  margin-top: 80px;
+}
+@media (max-width: 599px) {
+  .p-aboutusValue__container {
+    width: 100%;
+  }
+  .p-aboutusValue__container:nth-child(n+2) {
+    margin-top: 44px;
+  }
 }
 .p-aboutusValue__textTitle {
   font-size: 24px;
@@ -499,6 +654,11 @@ select {
 .p-aboutusCompany__title {
   margin-top: 174px;
 }
+@media (max-width: 599px) {
+  .p-aboutusCompany__title {
+    margin-top: 80px;
+  }
+}
 .p-aboutusCompany__wrapper {
   width: 100%;
   display: -webkit-box;
@@ -514,6 +674,11 @@ select {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 80px;
+}
+@media (max-width: 599px) {
+  .p-aboutusCompany__wrapper {
+    margin-top: 40px;
+  }
 }
 .p-aboutusCompany__ul {
   list-style: none;
@@ -585,10 +750,21 @@ select {
           justify-content: center;
   background-color: #26226B;
 }
+@media (max-width: 599px) {
+  .p-aboutusMember {
+    margin-top: 80px;
+  }
+}
 .p-aboutusMember__inner {
   padding-top: 144px;
   padding-bottom: 144px;
   margin: 0;
+}
+@media (max-width: 599px) {
+  .p-aboutusMember__inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 .p-aboutusMember__title {
   width: 100%;
@@ -596,6 +772,11 @@ select {
 .p-aboutusMember__wrapper {
   margin-top: 80px;
   max-width: 1200px;
+}
+@media (max-width: 599px) {
+  .p-aboutusMember__wrapper {
+    margin-top: 52px;
+  }
 }
 .p-aboutusMember__ul {
   list-style: none;
@@ -613,17 +794,34 @@ select {
   padding: 0px;
   margin: 0;
 }
+@media (max-width: 599px) {
+  .p-aboutusMember__ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .p-aboutusMember__container {
   width: 41%;
 }
 .p-aboutusMember__container:nth-child(n+3) {
   margin-top: 80px;
 }
+@media (max-width: 599px) {
+  .p-aboutusMember__container {
+    width: 100%;
+  }
+  .p-aboutusMember__container:nth-child(n+2) {
+    margin-top: 40px;
+  }
+}
 .p-aboutusMember__img {
   width: 100%;
 }
 .p-aboutusMember__textWrapper {
-  height: 150px;
+  padding: 56px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -633,6 +831,11 @@ select {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: solid 2px #FFF;
+}
+@media (max-width: 599px) {
+  .p-aboutusMember__textWrapper {
+    padding: 40px 0;
+  }
 }
 .p-aboutusMember__text {
   color: #FFF;
