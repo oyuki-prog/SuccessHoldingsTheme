@@ -239,6 +239,29 @@ select {
   border-bottom: solid 2px #C1C1C1;
 }
 
+.p-recruitForm {
+  background-color: #EDEBEB;
+}
+.p-recruitForm__wrapper {
+  margin: 0 auto;
+  max-width: 680px;
+}
+.p-recruitForm__wrapper input {
+  width: 100%;
+}
+.p-recruitForm__inputColumn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
 .u-hidden {
   display: none;
 }
