@@ -293,7 +293,7 @@ select {
 .p-hero__img {
   position: absolute;
   top: 0;
-  left: clamp(100px, 900px - 50vw, 110px);
+  left: clamp(0px, 900px - 50vw, 100px);
   width: calc(100% + (100vw - 100%) / 2);
   overflow: hidden;
   height: 100%;
@@ -312,7 +312,7 @@ select {
 .p-hero__titleBox {
   position: absolute;
   top: 30%;
-  left: clamp(100px, 900px - 50vw, 110px);
+  left: clamp(0px, 900px - 50vw, 100px);
 }
 @media (max-width: 900px) {
   .p-hero__titleBox {
@@ -340,7 +340,7 @@ select {
 .p-hero__newsBox {
   position: absolute;
   bottom: 0;
-  left: clamp(100px, 900px - 50vw, 110px);
+  left: clamp(0px, 900px - 50vw, 100px);
   height: 100px;
   text-align: center;
   background-color: #FFF;
@@ -596,14 +596,14 @@ select {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 900px) {
+@media (max-width: 599px) {
   .p-business__listImg img {
-    height: 60vw;
+    min-height: 400px;
   }
 }
 @media (max-width: 599px) {
   .p-business__listImg img {
-    height: 340px;
+    min-height: 340px;
   }
 }
 .p-business__textBox {
