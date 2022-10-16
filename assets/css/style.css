@@ -293,7 +293,6 @@ select {
 .p-hero__img {
   position: absolute;
   top: 0;
-  left: clamp(0px, 900px - 50vw, 100px);
   width: calc(100% + (100vw - 100%) / 2);
   overflow: hidden;
   height: 100%;
@@ -312,7 +311,6 @@ select {
 .p-hero__titleBox {
   position: absolute;
   top: 30%;
-  left: clamp(0px, 900px - 50vw, 100px);
 }
 @media (max-width: 900px) {
   .p-hero__titleBox {
@@ -340,7 +338,6 @@ select {
 .p-hero__newsBox {
   position: absolute;
   bottom: 0;
-  left: clamp(0px, 900px - 50vw, 100px);
   height: 100px;
   text-align: center;
   background-color: #FFF;
@@ -768,10 +765,10 @@ select {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   list-style: none;
   row-gap: 40px;
   -webkit-column-gap: 5%;
@@ -785,12 +782,11 @@ select {
   }
 }
 .p-company__listItem {
-  width: 20%;
-  max-width: 280px;
+  width: 21%;
 }
 @media (max-width: 900px) {
   .p-company__listItem {
-    width: 45%;
+    width: 47%;
   }
 }
 
