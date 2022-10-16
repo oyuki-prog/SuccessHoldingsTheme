@@ -54,6 +54,7 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -262,13 +263,15 @@ select {
   position: relative;
   background-color: #26226B;
   overflow: hidden;
+  height: 80vh;
 }
 .p-hero__img {
   position: absolute;
   top: 0;
-  left: calc((100vw - 1280px) / 2);
-  width: calc(100vw - 100px);
+  left: clamp(100px, 900px - 50vw, 110px);
+  width: calc(100% + (100vw - 100%) / 2);
   overflow: hidden;
+  height: 100%;
 }
 @media (max-width: 900px) {
   .p-hero__img {
@@ -278,17 +281,13 @@ select {
 }
 .p-hero__img img {
   width: 100%;
-}
-@media (max-width: 900px) {
-  .p-hero__img img {
-    height: 500px;
-  }
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-hero__titleBox {
   position: absolute;
   top: 30%;
-  left: calc((100vw - 1280px) / 2);
-  background-color: #FFF;
+  left: clamp(100px, 900px - 50vw, 110px);
 }
 @media (max-width: 900px) {
   .p-hero__titleBox {
@@ -296,8 +295,12 @@ select {
   }
 }
 .p-hero__title {
-  font-size: 3vw;
+  font-size: 3.5vw;
   border: 1px solid #3B4043;
+  background-color: #FFF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media (max-width: 900px) {
   .p-hero__title {
@@ -312,7 +315,7 @@ select {
 .p-hero__newsBox {
   position: absolute;
   bottom: 0;
-  left: calc((100vw - 1280px) / 2);
+  left: clamp(100px, 900px - 50vw, 110px);
   height: 100px;
   text-align: center;
   background-color: #FFF;
