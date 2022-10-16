@@ -102,7 +102,7 @@
         margin-top: 48px;
         max-width: 256px;
         @include mq('tab') {
-            margin-top: 40px
+            margin: 40px auto 0;
         }
     }
     &__textTitle {
@@ -158,10 +158,11 @@
         margin-top: 100px;
         padding-top: 64px;
         @include mq('tab') {
-            padding-top: 180px;
+            padding-top: 310px;
         }
         @include mq('sp') {
             margin-top: 40px;
+            padding-top: 164px;
         }
     }
     &__imgContainerPic {
@@ -170,58 +171,83 @@
         right: 0%;
         max-width: 50%;
         @include mq('tab') {
-            right: -5%;
-            max-width: 100%;
-            height: 200px;
+            right: -30px;
+            max-width: 540px;
+            height: 360px;
             padding-left: 30px;
+        }
+        @include mq('sp') {
+            max-width: 320px;
+            height: 200px;
+            right: -20px;
         }
     }
     &__imgContainerMessage {
         height: 400px;
         width: 55%;
-        padding-right: 40px;
+        padding: 64px 200px 64px 36px;
         background-color: $color-background-sub;
         @include mq('tab') {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             text-align: center;
-            width: 335px;
-            height: 200px;
-            padding: 50px;
+            max-width: 540px;
+            width: 100%;
+            min-height: 360px;
+            height: auto;
+            padding: 96px 10px 10px;
         }
-    }
-    &__imgContainerTextwrapper {
-        padding-top: 64px;
-        padding-left: 36px;
-        @include mq('tab') {
-            padding: 0;
+        @include mq('sp') {
+            max-width: 335px;
+            min-height: 200px;
+            padding: 60px 20px 20px;
         }
-
     }
     &__imgContainerTitle {
         position: relative;
         font-size: clamp(1.25rem, 1.036rem + 0.95vw, 1.75rem);
         font-weight: bold;
+        padding-bottom: 12px;
+        letter-spacing: 1.4px;
         &::after {
             content: "";
             position: absolute;
-            left: 32px;
-            bottom: -7px;
+            left: 0;
+            bottom: 0;
             display: inline-block;
             width: 65px;
             height: 3px;
-            transform: translateX(-50%);
             background-color: $color-main;
+            @include mq('tab') {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            @include mq('sp') {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
-        letter-spacing: 1.4px;
     }
     &__imgContainerText {
-        visibility: visible;
         margin-top: 28px;
         font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
         font-weight: bold;
-        @include mq('tab') {
-            visibility: hidden;
+        &--span {
+            @include mq('tab') {
+                display: none;
+            }
+            @include mq('sp') {
+                display: none;
+            }
+        }
+        &--br {
+            display: none;
+            @include mq('tab') {
+                display: inline;
+            }
+            @include mq('sp') {
+                display: inline;
+            }
         }
     }
     &__imgContainerText--tab {
@@ -238,40 +264,76 @@
         position: relative;
         display: flex;
         justify-content: end;
+        margin-top: 100px;
         padding-top: 64px;
-        margin-top: 80px;
-        max-width: 1200px;
+        @include mq('tab') {
+            padding-top: 310px;
+        }
+        @include mq('sp') {
+            margin-top: 40px;
+            padding-top: 164px;
+        }
     }
     &__imgContainerPicReverse {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 0%;
+        left: 0%;
         max-width: 50%;
+        @include mq('tab') {
+            left: -30px;
+            max-width: 540px;
+            height: 360px;
+            padding-right: 30px;
+        }
+        @include mq('sp') {
+            max-width: 320px;
+            height: 200px;
+            left: -20px;
+        }
     }
     &__imgContainerMessageReverse {
         height: 400px;
-        display: flex;
-        justify-content: end;
         width: 55%;
-        padding: 100px 36px 0 52px;
+        padding: 64px 36px 64px 200px;
         background-color: $color-background-sub;
-    }
-    &__imgContainerTextwrapperReverse {
+        @include mq('tab') {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            max-width: 540px;
+            width: 100%;
+            min-height: 360px;
+            height: auto;
+            padding: 96px 20px 20px;
+        }
+        @include mq('sp') {
+            max-width: 335px;
+            min-height: 200px;
+            padding: 60px 10px 10px;
+        }
     }
     &__imgContainerTitleReverse {
         position: relative;
         font-size: clamp(1.25rem, 1.036rem + 0.95vw, 1.75rem);
         font-weight: bold;
+        padding-bottom: 12px;
         &::after {
             content: "";
             position: absolute;
-            left: 32px;
-            bottom: -7px;
+            left: 0;
+            bottom: 0;
             display: inline-block;
             width: 65px;
             height: 3px;
-            transform: translateX(-50%);
             background-color: $color-main;
+            @include mq('tab') {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            @include mq('sp') {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
         letter-spacing: 1.4px;
     }

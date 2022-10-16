@@ -345,7 +345,7 @@ select {
 }
 @media (max-width: 900px) {
   .p-aboutusMessage__textWrapper {
-    margin-top: 40px;
+    margin: 40px auto 0;
   }
 }
 .p-aboutusMessage__textTitle {
@@ -423,12 +423,13 @@ select {
 }
 @media (max-width: 900px) {
   .p-aboutusPhilosophy__imgContainer {
-    padding-top: 180px;
+    padding-top: 310px;
   }
 }
 @media (max-width: 599px) {
   .p-aboutusPhilosophy__imgContainer {
     margin-top: 40px;
+    padding-top: 164px;
   }
 }
 .p-aboutusPhilosophy__imgContainerPic {
@@ -439,16 +440,23 @@ select {
 }
 @media (max-width: 900px) {
   .p-aboutusPhilosophy__imgContainerPic {
-    right: -5%;
-    max-width: 100%;
-    height: 200px;
+    right: -30px;
+    max-width: 540px;
+    height: 360px;
     padding-left: 30px;
+  }
+}
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy__imgContainerPic {
+    max-width: 320px;
+    height: 200px;
+    right: -20px;
   }
 }
 .p-aboutusPhilosophy__imgContainerMessage {
   height: 400px;
   width: 55%;
-  padding-right: 40px;
+  padding: 64px 200px 64px 36px;
   background-color: #FFF;
 }
 @media (max-width: 900px) {
@@ -457,52 +465,83 @@ select {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
-    width: 335px;
-    height: 200px;
-    padding: 50px;
+    max-width: 540px;
+    width: 100%;
+    min-height: 360px;
+    height: auto;
+    padding: 96px 10px 10px;
   }
 }
-.p-aboutusPhilosophy__imgContainerTextwrapper {
-  padding-top: 64px;
-  padding-left: 36px;
-}
-@media (max-width: 900px) {
-  .p-aboutusPhilosophy__imgContainerTextwrapper {
-    padding: 0;
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy__imgContainerMessage {
+    max-width: 335px;
+    min-height: 200px;
+    padding: 60px 20px 20px;
   }
 }
 .p-aboutusPhilosophy__imgContainerTitle {
   position: relative;
   font-size: clamp(1.25rem, 1.036rem + 0.95vw, 1.75rem);
   font-weight: bold;
+  padding-bottom: 12px;
   letter-spacing: 1.4px;
 }
 .p-aboutusPhilosophy__imgContainerTitle::after {
   content: "";
   position: absolute;
-  left: 32px;
-  bottom: -7px;
+  left: 0;
+  bottom: 0;
   display: inline-block;
   width: 65px;
   height: 3px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   background-color: #26226B;
 }
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainerTitle::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy__imgContainerTitle::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
 .p-aboutusPhilosophy__imgContainerText {
-  visibility: visible;
   margin-top: 28px;
   font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
   font-weight: bold;
 }
 @media (max-width: 900px) {
-  .p-aboutusPhilosophy__imgContainerText {
-    visibility: hidden;
+  .p-aboutusPhilosophy__imgContainerText--span {
+    display: none;
+  }
+}
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy__imgContainerText--span {
+    display: none;
+  }
+}
+.p-aboutusPhilosophy__imgContainerText--br {
+  display: none;
+}
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainerText--br {
+    display: inline;
+  }
+}
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy__imgContainerText--br {
+    display: inline;
   }
 }
 .p-aboutusPhilosophy__imgContainerText--tab {
@@ -526,47 +565,103 @@ select {
   -webkit-justify-content: end;
       -ms-flex-pack: end;
           justify-content: end;
+  margin-top: 100px;
   padding-top: 64px;
-  margin-top: 80px;
-  max-width: 1200px;
+}
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainerReverse {
+    padding-top: 310px;
+  }
+}
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy__imgContainerReverse {
+    margin-top: 40px;
+    padding-top: 164px;
+  }
 }
 .p-aboutusPhilosophy__imgContainerPicReverse {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   max-width: 50%;
+}
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainerPicReverse {
+    left: -30px;
+    max-width: 540px;
+    height: 360px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy__imgContainerPicReverse {
+    max-width: 320px;
+    height: 200px;
+    left: -20px;
+  }
 }
 .p-aboutusPhilosophy__imgContainerMessageReverse {
   height: 400px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: end;
-      -ms-flex-pack: end;
-          justify-content: end;
   width: 55%;
-  padding: 100px 36px 0 52px;
+  padding: 64px 36px 64px 200px;
   background-color: #FFF;
+}
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainerMessageReverse {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    max-width: 540px;
+    width: 100%;
+    min-height: 360px;
+    height: auto;
+    padding: 96px 20px 20px;
+  }
+}
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy__imgContainerMessageReverse {
+    max-width: 335px;
+    min-height: 200px;
+    padding: 60px 10px 10px;
+  }
 }
 .p-aboutusPhilosophy__imgContainerTitleReverse {
   position: relative;
   font-size: clamp(1.25rem, 1.036rem + 0.95vw, 1.75rem);
   font-weight: bold;
+  padding-bottom: 12px;
   letter-spacing: 1.4px;
 }
 .p-aboutusPhilosophy__imgContainerTitleReverse::after {
   content: "";
   position: absolute;
-  left: 32px;
-  bottom: -7px;
+  left: 0;
+  bottom: 0;
   display: inline-block;
   width: 65px;
   height: 3px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   background-color: #26226B;
+}
+@media (max-width: 900px) {
+  .p-aboutusPhilosophy__imgContainerTitleReverse::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media (max-width: 599px) {
+  .p-aboutusPhilosophy__imgContainerTitleReverse::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 .p-aboutusPhilosophy__imgContainerTextReverse {
   margin-top: 28px;
