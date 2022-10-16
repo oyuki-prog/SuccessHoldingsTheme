@@ -9,7 +9,7 @@
 
 .p-header__imgContainer {
   display: flex;
-  margin: auto 5%;
+  margin: auto 4%;
 }
 
 .p-header__img {
@@ -18,13 +18,12 @@
 
 .p-header__text {
   line-height: 60px;
-  margin-left: 5%;
   font-family: monospace;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 
 .p-header__nav {
-  margin: auto 5%;
+  margin: auto 4%;
   line-height: 30px;
 }
 
@@ -34,17 +33,19 @@
 }
 
 .p-header__items {
-  font-size: 1vw;
+  font-size: 1.2vw;
   white-space: nowrap;
+  margin-right: 30px;
 }
 
 .p-header__contact {
   font-size: 1vw;
   white-space: nowrap;
+  margin-right: 30px;
 }
 
 .p-headerLink {
-  margin-right: 20px;
+  // margin-right: 20px;
 }
 
 .p-header__contactBtn {
