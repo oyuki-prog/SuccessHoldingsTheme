@@ -176,13 +176,13 @@ select {
   text-align: center;
 }
 .c-pageTitle__mainTitle {
-  font-size: 48px;
+  font-size: clamp(2rem, 1.571rem + 1.9vw, 3rem);
   font-weight: bold;
   color: white;
   line-height: 1;
 }
 .c-pageTitle__subTitle {
-  font-size: 20px;
+  font-size: clamp(1rem, 0.893rem + 0.48vw, 1.25rem);
   font-weight: bold;
   color: white;
   line-height: 1.2;
@@ -220,7 +220,7 @@ select {
   border-right: solid 2px black;
 }
 .p-aboutusNav__text {
-  font-size: 24px;
+  font-size: clamp(1rem, 0.786rem + 0.95vw, 1.5rem);
 }
 .p-aboutusNav__arrow {
   width: 12px;
@@ -240,13 +240,13 @@ select {
   text-align: center;
 }
 .c-sectionTitle__mainTitle {
-  font-size: 32pt;
+  font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
 }
 .c-sectionTitle__subTitle {
   font-size: 16px;
 }
 .c-sectionTitle__mainTitleWhite {
-  font-size: 32pt;
+  font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
   color: #FFF;
 }
 .c-sectionTitle__subTitleWhite {
@@ -285,7 +285,7 @@ select {
   max-width: 256px;
 }
 .p-aboutusMessage__textTitle {
-  font-size: 32px;
+  font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
   font-weight: bold;
 }
 .p-aboutusMessage__companyName {
@@ -355,7 +355,7 @@ select {
 }
 .p-aboutusPhilosophy__imgContainerTitle {
   position: relative;
-  font-size: 28px;
+  font-size: clamp(1.25rem, 1.036rem + 0.95vw, 1.75rem);
   font-weight: bold;
   letter-spacing: 1.4px;
 }
@@ -373,7 +373,7 @@ select {
 }
 .p-aboutusPhilosophy__imgContainerText {
   margin-top: 28px;
-  font-size: 32px;
+  font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
   font-weight: bold;
 }
 .p-aboutusPhilosophy__imgContainerReverse {
@@ -412,7 +412,7 @@ select {
 }
 .p-aboutusPhilosophy__imgContainerTitleReverse {
   position: relative;
-  font-size: 28px;
+  font-size: clamp(1.25rem, 1.036rem + 0.95vw, 1.75rem);
   font-weight: bold;
   letter-spacing: 1.4px;
 }
@@ -482,6 +482,7 @@ select {
 .p-aboutusValue__text {
   margin-top: 20px;
   color: #FFF;
+  font-size: clamp(0.875rem, 0.821rem + 0.24vw, 1rem);
 }
 
 .p-aboutusCompany__title {
@@ -535,7 +536,7 @@ select {
   background-color: #26226B;
 }
 .p-aboutusCompany__textTitle {
-  font-size: 20px;
+  font-size: clamp(1rem, 0.893rem + 0.48vw, 1.25rem);
   font-weight: bold;
   color: #FFF;
 }
@@ -557,7 +558,7 @@ select {
 }
 .p-aboutusCompany__text {
   margin-left: 10%;
-  font-size: 20px;
+  font-size: clamp(1rem, 0.893rem + 0.48vw, 1.25rem);
   font-weight: bold;
 }
 
