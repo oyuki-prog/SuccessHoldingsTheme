@@ -220,7 +220,7 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: auto 4%;
+  margin: auto auto auto 5%;
 }
 
 .p-header__img {
@@ -233,11 +233,11 @@ select {
   font-family: monospace;
   font-size: 2.5vw;
   margin: auto 5%;
+  color: black;
 }
 
 .p-header__nav {
-  margin: auto 4%;
-  line-height: 30px;
+  margin: auto 5% auto auto;
 }
 
 .p-header__navList {
@@ -249,15 +249,15 @@ select {
 }
 
 .p-header__items {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   white-space: nowrap;
-  margin-right: 25px;
+  margin-right: 30px;
 }
 
 .p-header__contact {
-  font-size: 1vw;
+  font-size: 1.3vw;
   white-space: nowrap;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .p-header__contactBtn {
@@ -290,6 +290,7 @@ select {
 .p-hero__title {
   font-size: 32px;
   font-weight: bold;
+  color: black;
 }
 
 .p-hero__text {
@@ -311,7 +312,7 @@ select {
   }
 }
 .p-article {
-  margin-top: 80px;
+  margin-top: 10%;
 }
 
 .p-article__container {
@@ -323,6 +324,9 @@ select {
   margin-left: auto;
   position: relative;
   padding-top: 75px;
+}
+
+.p-article__container + .p-article__container {
   margin-top: 10%;
 }
 
@@ -363,7 +367,7 @@ select {
 }
 
 .p-article__work {
-  width: 50%;
+  width: 45%;
   background-color: white;
   text-align: center;
   padding: 5% 5% 7%;
@@ -372,7 +376,7 @@ select {
 }
 
 .p-article__work--reverse {
-  width: 50%;
+  width: 45%;
   background-color: white;
   text-align: center;
   padding: 5% 5% 7%;
@@ -383,6 +387,7 @@ select {
 .p-article__title {
   font-size: 2.5vw;
   font-weight: bold;
+  color: black;
 }
 
 .p-article__subTitle {
@@ -403,7 +408,7 @@ select {
 .p-articleBtn {
   padding: 1vw;
   width: 60%;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 @media (max-width: 599px) {
@@ -462,7 +467,6 @@ select {
     padding: 4%;
     font-size: 4vw;
     width: 80%;
-    margin-top: 10%;
   }
 }
 .u-hidden {
