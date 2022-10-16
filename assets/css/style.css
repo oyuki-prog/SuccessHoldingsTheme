@@ -261,17 +261,23 @@ select {
   display: flex;
   position: relative;
   background-color: #26226B;
+  overflow: hidden;
 }
 .p-hero__img {
-  width: 90%;
-  margin-left: auto;
-  margin-right: 0;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: calc((100vw - 1280px) / 2);
+  width: calc(100vw - 100px);
+  overflow: hidden;
 }
 @media (max-width: 900px) {
   .p-hero__img {
-    width: 95%;
+    width: calc(100vw - 5%);
+    left: 5%;
   }
+}
+.p-hero__img img {
+  width: 100%;
 }
 @media (max-width: 900px) {
   .p-hero__img img {
@@ -281,7 +287,7 @@ select {
 .p-hero__titleBox {
   position: absolute;
   top: 30%;
-  left: 10%;
+  left: calc((100vw - 1280px) / 2);
   background-color: #FFF;
 }
 @media (max-width: 900px) {
@@ -290,7 +296,7 @@ select {
   }
 }
 .p-hero__title {
-  font-size: 42px;
+  font-size: 3vw;
   border: 1px solid #3B4043;
 }
 @media (max-width: 900px) {
@@ -306,7 +312,7 @@ select {
 .p-hero__newsBox {
   position: absolute;
   bottom: 0;
-  left: 10%;
+  left: calc((100vw - 1280px) / 2);
   height: 100px;
   text-align: center;
   background-color: #FFF;
@@ -349,32 +355,39 @@ select {
 }
 
 .p-aboutUs {
-  padding-bottom: 400px;
+  padding-bottom: 160px;
   position: relative;
   overflow: hidden;
 }
 @media (max-width: 599px) {
   .p-aboutUs {
-    padding-bottom: 700px;
+    padding-bottom: 80px;
   }
-}
-.p-aboutUs__background {
-  border-top: 400px solid #26226B;
-  border-right: 1400px solid transparent;
 }
 .p-aboutUs__wrapper {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  height: 300px;
+  width: 100%;
+  background: #EDEBEB;
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, #26226B));
+  background-image: -webkit-linear-gradient(right bottom, transparent 50%, #26226B 50%);
+  background-image: linear-gradient(to left top, transparent 50%, #26226B 50%);
+}
+@media (max-width: 900px) {
+  .p-aboutUs__wrapper {
+    height: 200px;
+  }
 }
 .p-aboutUs__title {
+  position: relative;
+  z-index: 2;
   text-align: center;
   color: transparent;
-  font-size: 11.5vw; /*  vw=160px(フォントサイズ)/1400px(画面幅)*100 */
+  font-size: min(11.5vw, 160px);
   -webkit-text-stroke: 1px #FFF;
 }
 .p-aboutUs__content {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -450,6 +463,8 @@ select {
 }
 .p-aboutUs__subTitle {
   font-size: 3vw;
+  font-size: min(3vw, 42px);
+  color: #000000;
 }
 @media (max-width: 599px) {
   .p-aboutUs__subTitle {
@@ -549,7 +564,7 @@ select {
   }
 }
 .p-business__listImg img {
-  height: 40vw;
+  min-height: 520px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -576,7 +591,7 @@ select {
   }
 }
 .p-business__listTitle {
-  font-size: 2.2vw;
+  font-size: min(2.2vw, 32px);
   color: #FFF;
 }
 @media (max-width: 900px) {
