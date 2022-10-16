@@ -10,10 +10,10 @@
         text-align: center;
     }
     &__title {
-        font-size: 40px;
+        font-size: 35px;
     }
     &__lead {
-        font-size: 20px;
+        font-size: 15px;
     }
     &__list {
         margin-top: 100px;
@@ -57,23 +57,50 @@
 }
 
 .p-recruitForm {
-    background-color: #EDEBEB;
     &__wrapper {
+        padding-top: 100px;
         margin: 0 auto;
         width: 50%;
         min-width: 300px;
+
+        & label {
+            font-size: 18px;
+            font-weight: 900;
+            font-family: 'Yu Gothic';
+        }
+    }
+    &__title {
+        font-size: 40px;
+        text-align: center;
+    }
+    &__lead {
+        font-size: 15px;
+        text-align: center;
+    }
+    &__precautions {
+        max-width: 450px;
+        margin: 10px auto 0;
     }
     &__inputColumn {
         display: flex;
         flex-direction: column;
         width: 100%;
         padding-top: 30px;
-        & input {
+        & > input {
             margin-top: 10px;
+            padding-left: 10px;
             border-radius: 5px;
             border: solid 1px #DDDDDD;
             height: 45px;
         }
+    }
+    &__attention {
+        margin-left: 10px;
+        padding: 5px 10px;
+        font-size: 15px;
+        font-weight: 100;
+        background-color: #FF7F00;
+        color: #fff;
     }
     &__choiceColumn {
         display: flex;
@@ -83,6 +110,7 @@
         padding-top: 30px;
         & > select {
             margin-top: 10px;
+            padding-left: 10px;
             border-radius: 5px;
             border: solid 1px #DDDDDD;
             height: 45px;
@@ -96,12 +124,34 @@
         flex-direction: column;
         width: 100%;
         padding-top: 30px;
-        & textarea {
+        & > textarea {
             margin-top: 30px;
+            padding: 20px 0 0 10px;
             border-radius: 5px;
             border: solid 1px #DDDDDD;
             width: 100%;
             height: 240px;
+        }
+        & > p {
+            margin-top: 30px;
+            & > a {
+                text-decoration: none;
+            }
+        }
+    }
+    &__btm {
+        margin-top: 30px;
+        text-align: center;
+        & > input {
+            padding: 0;
+            margin-top: 30px;
+            min-width: 330px;
+            width: 70%;
+            height: 80px;
+            background-color: #F2F2F2;
+            border: none;
+            color: #828282;
+            font-size: 22px;
         }
     }
 }
