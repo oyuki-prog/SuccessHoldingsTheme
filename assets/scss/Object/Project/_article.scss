@@ -37,16 +37,19 @@
 
   &__imgContainer {
     max-width: 700px;
-    padding-right: 30px;
-    /* width: 70%; */
+    width: 70%;
     max-height: 400px;
     position: absolute;
     top: 0;
+    @include mq("tab") {
+      min-height: 400px;
+    }
     @include mq("sp") {
       width: calc(100% + 20px);
       position: absolute;
       z-index: 15;
       left: -20px;
+      height: 200px;
     }
   }
 
@@ -62,6 +65,7 @@
       position: absolute;
       z-index: 15;
       right: -20px;
+      height: 200px;
     }
   }
 
@@ -71,7 +75,6 @@
 
   &__work {
     width: 500px;
-    /* max-width: 500px; */
     background-color: white;
     text-align: center;
     padding: 80px 5% 60px;
@@ -86,7 +89,7 @@
   }
 
   &__work--reverse {
-    width: 45%;
+    width: 500px;
     background-color: white;
     text-align: center;
     padding: 80px 5% 60px;
@@ -107,7 +110,7 @@
   }
 
   &__subTitle {
-    color: rgb(160, 154, 154);
+    color: #acacac;
     margin-top: 10px;
     @include mq("sp") {
       margin-top: 20px;
@@ -116,7 +119,7 @@
 
   &__text {
     word-break: break-all;
-    color: rgb(160, 154, 154);
+    color: #707070;
     margin-top: 40px;
     @include mq("sp") {
       margin-top: 20px;
