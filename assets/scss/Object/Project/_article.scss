@@ -1,143 +1,136 @@
 @use "../../Foundation/global" as *;
+@use "../../Foundation/mixin" as *;
 
 .p-article {
   margin-top: 160px;
-}
-
-.p-article__container {
-  display: flex;
-  width: 100%;
-  margin-left: auto;
-  position: relative;
-  padding-top: 75px;
-}
-
-.p-article__container + .p-article__container {
-  margin-top: 80px;
-}
-
-.p-article__container--reverse {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100%;
-  position: relative;
-  padding-top: 75px;
-}
-
-.p-article__imgContainer {
-  max-width: 700px;
-  width: 70%;
-  max-height: 400px;
-  position: absolute;
-  top: 0;
-}
-
-.p-article__imgContainer--reverse {
-  max-width: 700px;
-  width: 70%;
-  max-height: 400px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.p-article__image {
-  width: 100%;
-}
-
-.p-article__work {
-  width: 45%;
-  background-color: white;
-  text-align: center;
-  padding: 80px 5% 60px;
-  z-index: 10;
-  margin-left: auto;
-}
-.p-article__work--reverse {
-  width: 45%;
-  background-color: white;
-  text-align: center;
-  padding: 80px 5% 60px;
-  z-index: 10;
-  margin-right: auto;
-}
-
-.p-article__title {
-  font-weight: bold;
-  color: black;
-}
-
-.p-article__subTitle {
-  color: rgb(160, 154, 154);
-  margin-top: 10px;
-}
-
-.p-article__text {
-  word-break: break-all;
-  color: rgb(160, 154, 154);
-  margin-top: 40px;
-}
-
-.p-articleBtn {
-  padding: 17px;
-  width: 100%;
-  margin-top: 40px;
-  max-width: 250px;
-}
-
-@include mq("sp") {
-  .p-article {
+  @include mq("sp") {
     margin-top: 60px;
   }
-  .p-article__container {
-    margin: 0 auto;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
     position: relative;
-    padding-top: 140px;
+    padding-top: 75px;
+    @include mq("sp") {
+      margin: 0 auto;
+      position: relative;
+      padding-top: 140px;
+    }
   }
 
-  .p-article__container + .p-article__container {
-    margin-top: 40px;
+  &__container + &__container {
+    margin-top: 80px;
+    @include mq("sp") {
+      margin-top: 40px;
+    }
   }
 
-  .p-article__imgContainer {
-    width: calc(100% + 20px);
-    position: absolute;
-    z-index: 15;
-    left: -20px;
-  }
-
-  .p-article__imgContainer--reverse {
-    width: calc(100% + 20px);
-    position: absolute;
-    z-index: 15;
-    right: -20px;
-  }
-
-  .p-article__work {
+  &__container--reverse {
+    display: flex;
+    flex-direction: row-reverse;
     width: 100%;
     position: relative;
-    padding: 80px 5% 40px;
-    z-index: 10;
+    padding-top: 75px;
   }
 
-  .p-article__work--reverse {
-    width: 100%;
-    position: relative;
-    padding: 80px 5% 40px;
-    z-index: 10;
+  &__imgContainer {
+    max-width: 700px;
+    padding-right: 30px;
+    /* width: 70%; */
+    max-height: 400px;
+    position: absolute;
+    top: 0;
+    @include mq("sp") {
+      width: calc(100% + 20px);
+      position: absolute;
+      z-index: 15;
+      left: -20px;
+    }
+  }
+
+  &__imgContainer--reverse {
+    max-width: 700px;
+    width: 70%;
+    max-height: 400px;
+    position: absolute;
+    top: 0;
     right: 0;
+    @include mq("sp") {
+      width: calc(100% + 20px);
+      position: absolute;
+      z-index: 15;
+      right: -20px;
+    }
   }
 
-  .p-article__subTitle {
-    margin-top: 20px;
+  &__image {
+    width: 100%;
   }
 
-  .p-article__text {
-    margin-top: 20px;
+  &__work {
+    width: 500px;
+    /* max-width: 500px; */
+    background-color: white;
+    text-align: center;
+    padding: 80px 5% 60px;
+    z-index: 10;
+    margin-left: auto;
+    @include mq("sp") {
+      width: 100%;
+      position: relative;
+      padding: 80px 5% 40px;
+      z-index: 10;
+    }
   }
 
-  .p-articleBtn {
-    padding: 4%;
-    width: 80%;
+  &__work--reverse {
+    width: 45%;
+    background-color: white;
+    text-align: center;
+    padding: 80px 5% 60px;
+    z-index: 10;
+    margin-right: auto;
+    @include mq("sp") {
+      width: 100%;
+      position: relative;
+      padding: 80px 5% 40px;
+      z-index: 10;
+      right: 0;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    color: black;
+  }
+
+  &__subTitle {
+    color: rgb(160, 154, 154);
+    margin-top: 10px;
+    @include mq("sp") {
+      margin-top: 20px;
+    }
+  }
+
+  &__text {
+    word-break: break-all;
+    color: rgb(160, 154, 154);
+    margin-top: 40px;
+    @include mq("sp") {
+      margin-top: 20px;
+    }
+  }
+
+  &__btn {
+    padding: 17px;
+    width: 100%;
+    margin-top: 40px;
+    max-width: 250px;
+    @include mq("sp") {
+      padding: 4%;
+      width: 80%;
+    }
   }
 }

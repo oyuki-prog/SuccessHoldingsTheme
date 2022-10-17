@@ -1,35 +1,31 @@
 @use "../../Foundation/global" as *;
+@use "../../Foundation/mixin" as *;
 
 .p-hero {
   margin: 0 auto;
   text-align: center;
   padding: 80px 0 0;
   max-width: 700px;
-}
-
-.p-hero__title {
-  font-size: 32px;
-  font-weight: bold;
-  color: black;
-}
-
-.p-hero__text {
-  margin-top: 30px;
-}
-
-@include mq("sp") {
-  .p-hero {
+  @include mq("sp") {
     margin-top: 20%;
     text-align: center;
     padding: 0;
   }
 
-  .p-hero__title {
-    font-size: 6.5vw;
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    @include mq("sp") {
+      font-size: 6.5vw;
+    }
   }
 
-  .p-hero__text {
+  &__text {
     margin-top: 30px;
-    font-size: 3vw;
+    @include mq("sp") {
+      margin-top: 30px;
+      font-size: 3vw;
+    }
   }
 }
