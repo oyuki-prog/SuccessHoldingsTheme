@@ -1,0 +1,36 @@
+@use "../../Foundation/global" as *;
+.p-company {
+  padding-bottom: 160px;
+  &__titleBox {
+    text-align: center;
+  }
+  &__title {
+    font-size: 32px;
+    color: $color-text;
+  }
+  &__subTitle {
+    font-size: $font-size-base;
+    margin-top: 10px;
+    color: $color-text;
+  }
+  &__list {
+    margin-top: 80px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    row-gap: 40px;
+    column-gap: 5%;
+    @include mq('sp') {
+      margin-top: 60px;
+      row-gap: 20px;
+    }
+  }
+  &__listItem {
+    width: 21%;
+    @include mq('tab') {
+      width: 47%;
+    }
+  }
+}

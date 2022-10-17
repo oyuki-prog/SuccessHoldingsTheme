@@ -1,0 +1,69 @@
+@use "../../Foundation/global" as *;
+
+.p-works {
+  padding: 160px 0px;
+  @include mq('sp') {
+    padding: 80px 0px;
+  }
+  &__titleBox {
+    text-align: center;
+  }
+  &__title {
+    font-size: 32px;
+    color: $color-text;
+  }
+  &__subTitle {
+    font-size: $font-size-base;
+    margin-top: 10px;
+    color: $color-text;
+  }
+  &__list {
+    margin-top: 40px;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+    @include mq('tab') {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+  &__listItem {
+    width: 30%;
+    max-width: 350px;
+    position: relative;
+    @include mq('tab') {
+      width: 100%;
+      margin: 0 auto;
+    }
+    & a {
+      text-decoration: none;
+    }
+  }
+  &__textBox {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 70px;
+    &:hover {
+      color: $color-background-sub;
+      opacity: $hover-opacity;
+      background-color: black;
+    }
+    @include mq('tab') {
+      position: static;
+      opacity: 1;
+      margin-top: 20px;
+      padding: 0;
+      text-align: left;
+      font-size: 16px;
+      color: $color-text;
+    }
+  }
+}
