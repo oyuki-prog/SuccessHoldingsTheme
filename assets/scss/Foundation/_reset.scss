@@ -15,12 +15,15 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+ul,
+li{
   margin: 0;
+  padding: 0;
 }
 
-ul[role="list"],
-ol[role="list"] {
+ul,
+ol{
   list-style: none;
 }
 
@@ -36,6 +39,12 @@ body {
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+a,
+a:hover,
+a:visited {
+  color: inherit;
 }
 
 img,
