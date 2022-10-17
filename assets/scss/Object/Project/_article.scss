@@ -13,6 +13,12 @@
     margin-left: auto;
     position: relative;
     padding-top: 75px;
+    &:last-child {
+      margin-bottom: 160px;
+    }
+    @include mq("tab") {
+      padding-top: 120px;
+    }
     @include mq("sp") {
       margin: 0 auto;
       position: relative;
@@ -41,6 +47,8 @@
     max-height: 400px;
     position: absolute;
     top: 0;
+    bottom: 0;
+    right: 30%;
     @include mq("tab") {
       min-height: 400px;
     }
@@ -50,6 +58,7 @@
       z-index: 15;
       left: -20px;
       height: 200px;
+      min-height: auto;
     }
   }
 
@@ -59,13 +68,19 @@
     max-height: 400px;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 30%;
+    bottom: 0;
+    @include mq("tab") {
+      min-height: 400px;
+    }
     @include mq("sp") {
       width: calc(100% + 20px);
       position: absolute;
       z-index: 15;
       right: -20px;
       height: 200px;
+      min-height: auto;
+      left: 0;
     }
   }
 
@@ -80,11 +95,15 @@
     padding: 80px 5% 60px;
     z-index: 10;
     margin-left: auto;
+    @include mq("tab") {
+      width: 70%;
+    }
     @include mq("sp") {
       width: 100%;
       position: relative;
       padding: 80px 5% 40px;
       z-index: 10;
+      margin-left: auto;
     }
   }
 
@@ -94,13 +113,17 @@
     text-align: center;
     padding: 80px 5% 60px;
     z-index: 10;
-    margin-right: auto;
+
+    @include mq("tab") {
+      width: 70%;
+    }
     @include mq("sp") {
       width: 100%;
       position: relative;
       padding: 80px 5% 40px;
       z-index: 10;
       right: 0;
+      margin-right: auto;
     }
   }
 
