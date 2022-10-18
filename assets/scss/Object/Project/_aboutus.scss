@@ -100,7 +100,7 @@
     }
     &__textWrapper {
         margin-top: 48px;
-        max-width: 256px;
+        min-width: 256px;
         @include mq('tab') {
             margin: 40px auto 0;
         }
@@ -183,9 +183,10 @@
         }
     }
     &__imgContainerMessage {
-        height: 400px;
-        width: 55%;
-        padding: 64px 200px 64px 36px;
+        height: 416px;
+        max-width: 654px;
+        width: 100%;
+        padding:  100px 213px 93px 40px;
         background-color: $color-background-sub;
         @include mq('tab') {
             display: flex;
@@ -200,7 +201,7 @@
         @include mq('sp') {
             max-width: 335px;
             min-height: 200px;
-            padding: 60px 20px 20px;
+            padding: 58px 20px 20px;
         }
     }
     &__imgContainerTitle {
@@ -232,6 +233,9 @@
         margin-top: 28px;
         font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
         font-weight: bold;
+        @include mq('sp') {
+            margin-top: 14px;
+        }
         &--span {
             @include mq('tab') {
                 display: none;
@@ -248,15 +252,6 @@
             @include mq('sp') {
                 display: inline;
             }
-        }
-    }
-    &__imgContainerText--tab {
-        visibility: hidden;
-        @include mq('tab') {
-            visibility: visible;
-            margin-top: 28px;
-            font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
-            font-weight: bold;
         }
     }
 
@@ -292,9 +287,9 @@
         }
     }
     &__imgContainerMessageReverse {
-        height: 400px;
+        height: 416px;
         width: 55%;
-        padding: 64px 36px 64px 200px;
+        padding: 91px 36px 154px 200px;
         background-color: $color-background-sub;
         @include mq('tab') {
             display: flex;
@@ -309,7 +304,7 @@
         @include mq('sp') {
             max-width: 335px;
             min-height: 200px;
-            padding: 60px 10px 10px;
+            padding: 50px 10px 10px;
         }
     }
     &__imgContainerTitleReverse {
@@ -341,6 +336,10 @@
         margin-top: 28px;
         font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
         font-weight: bold;
+        @include mq('sp') {
+            text-align: left;
+            margin-top: 14px;
+        }
     }
 }
 
@@ -433,7 +432,9 @@
         display: flex;
     }
     &__textTitleBox {
-        width: 21%;
+        max-width: 250px;
+        min-width: 117px;
+        width:100%;
         height: 100px;
         display: flex;
         justify-content: center;
@@ -450,8 +451,11 @@
     &__textWrapper {
         display: flex;
         align-items: center;
-        width: 79%;
+        max-width: 950px;
+        min-width: 218px;
+        width: 100%;
         height: 100px;
+        padding: 0 20px;
         border-top: solid 1px #C1C1C1;
         border-bottom: solid 1px #C1C1C1;
         border-right: solid 1px #C1C1C1;
@@ -461,6 +465,20 @@
         margin-left: 10%;
         font-size: clamp(1rem, 0.893rem + 0.48vw, 1.25rem);
         font-weight: bold;
+        @include mq('tab') {
+            margin: 0;
+        }
+    }
+    &__text--pc {
+        @include mq('sp') {
+            display: none;
+        }
+    }
+    &__text--sp {
+        display: none;
+        @include mq('sp') {
+            display: inline;
+        }
     }
 
 }
