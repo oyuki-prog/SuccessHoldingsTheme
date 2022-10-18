@@ -7,10 +7,9 @@
 
   &__inner {
     display: flex;
-    justify-content: space-between;
   }
-  &__imgContainer {
-    display: flex;
+  &__logoWrapper {
+    margin: auto 0;
   }
 
   &__img {
@@ -26,20 +25,19 @@
   }
 
   &__text {
-    line-height: 60px;
-    font-family: monospace;
-    margin: auto 5%;
+    margin: auto 0;
+    text-align: center;
+    margin: auto 0;
     color: black;
     @include mq("sp") {
       line-height: 60px;
       margin-left: 5%;
       font-weight: lighter;
-      // font-size: 4vw;
     }
   }
 
   &__nav {
-    margin: auto 0;
+    margin: auto 0 auto auto;
     @include mq("tab") {
       display: none;
     }

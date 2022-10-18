@@ -244,16 +244,9 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
-.p-header__imgContainer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.p-header__logoWrapper {
+  margin: auto 0;
 }
 .p-header__img {
   height: 70px;
@@ -271,9 +264,9 @@ select {
   }
 }
 .p-header__text {
-  line-height: 60px;
-  font-family: monospace;
-  margin: auto 5%;
+  margin: auto 0;
+  text-align: center;
+  margin: auto 0;
   color: black;
 }
 @media (max-width: 599px) {
@@ -284,7 +277,7 @@ select {
   }
 }
 .p-header__nav {
-  margin: auto 0;
+  margin: auto 0 auto auto;
 }
 @media (max-width: 900px) {
   .p-header__nav {
