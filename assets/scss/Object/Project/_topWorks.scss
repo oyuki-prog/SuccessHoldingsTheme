@@ -1,6 +1,6 @@
 @use "../../Foundation/global" as *;
 
-.p-works {
+.p-topWorks {
   padding: 160px 0px;
   @include mq('sp') {
     padding: 80px 0px;
