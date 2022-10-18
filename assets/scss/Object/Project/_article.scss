@@ -3,19 +3,18 @@
 
 .p-article {
   margin-top: 160px;
+  padding-bottom: 160px;
   @include mq("sp") {
     margin-top: 60px;
   }
 
   &__container {
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
     width: 100%;
-    margin-left: auto;
     position: relative;
     padding-top: 75px;
-    &:last-child {
-      margin-bottom: 160px;
-    }
     @include mq("tab") {
       padding-top: 120px;
     }
@@ -33,14 +32,6 @@
     }
   }
 
-  &__container--reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    position: relative;
-    padding-top: 75px;
-  }
-
   &__imgContainer {
     max-width: 700px;
     width: 70%;
@@ -48,7 +39,6 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 30%;
     @include mq("tab") {
       min-height: 400px;
     }
@@ -68,7 +58,8 @@
     max-height: 400px;
     position: absolute;
     top: 0;
-    left: 30%;
+    // left: auto;
+    right: 0;
     bottom: 0;
     @include mq("tab") {
       min-height: 400px;
@@ -94,6 +85,7 @@
     text-align: center;
     padding: 80px 5% 60px;
     z-index: 10;
+    margin-right: 0;
     margin-left: auto;
     @include mq("tab") {
       width: 70%;
@@ -113,6 +105,8 @@
     text-align: center;
     padding: 80px 5% 60px;
     z-index: 10;
+    margin-right: auto;
+    margin-left: 0;
 
     @include mq("tab") {
       width: 70%;
