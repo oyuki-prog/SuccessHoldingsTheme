@@ -1,8 +1,7 @@
 @use "../../Foundation/global" as *;
-@use "../../Foundation/mixin" as *;
 
 .p-header {
-  background-color: white;
+  background-color: $color-background-sub;
   height: 100%;
 
   &__inner {
@@ -13,7 +12,7 @@
   }
 
   &__img {
-    height: 70px;
+    height: 50px;
     margin: auto;
     @include mq("tab") {
       height: 40px;
@@ -25,27 +24,19 @@
   }
 
   &__text {
-    margin: auto 0;
+    margin: auto 0 auto 10px;
     text-align: center;
-    margin: auto 0;
     color: black;
     @include mq("sp") {
       line-height: 60px;
-      margin-left: 5%;
+      margin: auto 0 auto 5px;
       font-weight: lighter;
     }
   }
 
+  //画像幅900近くのとき、ロゴと重ならないようにマルチクラスにてtab以降はdisplay:noneを指定
   &__nav {
     margin: auto 0 auto auto;
-    @include mq("tab") {
-      display: none;
-    }
-    @include mq("sp") {
-      .p-header__nav {
-        display: none;
-      }
-    }
   }
 
   &__navList {
@@ -53,26 +44,21 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    gap: 40px;
+    gap: 30px;
   }
 
   &__items {
     white-space: nowrap;
-    // margin-right: 30px;
-    @include mq("tab") {
-      // margin-right: 10px;
-    }
   }
 
   &__contact {
     white-space: nowrap;
-    // margin-right: 30px;
   }
-
   &__contactBtn {
-    padding: 10% 0;
-    text-align: center;
     display: block;
-    width: 139px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
   }
 }

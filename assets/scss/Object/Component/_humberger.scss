@@ -1,5 +1,4 @@
 @use "../../Foundation/global" as *;
-@use "../../Foundation/mixin" as *;
 
 @include mq("tab") {
   #c-humberger {
@@ -8,6 +7,7 @@
     width: 70px;
     display: inline-block;
     box-sizing: border-box;
+    margin-left: auto;
   }
   #c-humberger div {
     position: absolute;
