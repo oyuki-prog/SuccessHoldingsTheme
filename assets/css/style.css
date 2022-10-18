@@ -597,8 +597,9 @@ select {
 }
 .p-aboutusPhilosophy__imgContainerMessageReverse {
   height: 416px;
-  width: 55%;
-  padding: 91px 36px 154px 200px;
+  max-width: 654px;
+  width: 100%;
+  padding: 91px 0px 154px 238px;
   background-color: #FFF;
 }
 @media (max-width: 900px) {
@@ -637,7 +638,7 @@ select {
 .p-aboutusPhilosophy__imgContainerTitleReverse::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 4px;
   bottom: 0;
   display: inline-block;
   width: 65px;
