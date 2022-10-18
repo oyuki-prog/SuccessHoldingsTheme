@@ -1,6 +1,6 @@
 @use '../../Foundation/global'as *;
 
-.p-scroll {
+.p-topScroll {
   @include mq('tab') {
     display: none;
   }
