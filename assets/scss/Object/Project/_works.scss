@@ -55,6 +55,7 @@
       color: $color-background-sub;
       opacity: $hover-opacity;
       background-color: black;
+      transition: 0.5s;
     }
     @include mq('tab') {
       position: static;
