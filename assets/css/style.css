@@ -318,34 +318,34 @@ select {
   width: 139px;
 }
 
-.p-hero {
+.p-main {
   margin: 0 auto;
   text-align: center;
   padding: 80px 0 0;
   max-width: 700px;
 }
 @media (max-width: 599px) {
-  .p-hero {
+  .p-main {
     margin-top: 20%;
     text-align: center;
     padding: 0;
   }
 }
-.p-hero__title {
+.p-main__title {
   font-size: 32px;
   font-weight: bold;
   color: black;
 }
 @media (max-width: 599px) {
-  .p-hero__title {
+  .p-main__title {
     font-size: 6.5vw;
   }
 }
-.p-hero__text {
+.p-main__text {
   margin-top: 30px;
 }
 @media (max-width: 599px) {
-  .p-hero__text {
+  .p-main__text {
     margin-top: 30px;
     font-size: 3vw;
   }
