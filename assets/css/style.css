@@ -359,8 +359,9 @@ select {
 }
 
 .p-article {
-  margin-top: 160px;
-  padding-bottom: 160px;
+  padding: 160px 0;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 @media (max-width: 599px) {
   .p-article {
@@ -368,8 +369,6 @@ select {
   }
 }
 .p-article__container {
-  max-width: 1100px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
