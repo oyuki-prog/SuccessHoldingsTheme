@@ -11,6 +11,9 @@
   &__title {
     font-size: 32px;
     color: $color-text;
+    @include mq('sp') {
+      font-size: 24px;
+    }
   }
   &__subTitle {
     font-size: $font-size-base;
