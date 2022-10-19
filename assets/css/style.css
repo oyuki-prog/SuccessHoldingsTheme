@@ -1250,6 +1250,21 @@ select {
   text-decoration: none;
 }
 
+.p-serviceShow {
+  padding: 160px 0;
+}
+.p-serviceShow__container + .p-serviceShow__container {
+  margin-top: 160px;
+}
+.p-serviceShow__title {
+  text-align: center;
+  color: #000000;
+}
+.p-serviceShow__text {
+  margin-top: 100px;
+  color: #3b4043;
+}
+
 .u-hidden {
   display: none;
 }

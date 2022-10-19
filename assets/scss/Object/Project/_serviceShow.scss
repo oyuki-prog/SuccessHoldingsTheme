@@ -1,0 +1,19 @@
+@use "../../Foundation/global" as *;
+
+.p-serviceShow {
+  padding: 160px 0;
+
+  &__container {
+  }
+  &__container + &__container {
+    margin-top: 160px;
+  }
+  &__title {
+    text-align: center;
+    color: #000000;
+  }
+  &__text {
+    margin-top: 100px;
+    color: #3b4043;
+  }
+}
