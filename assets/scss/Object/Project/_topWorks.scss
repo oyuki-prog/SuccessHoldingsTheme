@@ -24,7 +24,7 @@
     margin-top: 40px;
     padding: 0;
     display: flex;
-    gap: 20px;
+    column-gap: calc((100% - 90%) / 2);
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
@@ -36,7 +36,7 @@
   }
   &__listItem {
     width: 30%;
-    max-width: 350px;
+    max-width: 380px;
     position: relative;
     @include mq('tab') {
       width: 100%;
