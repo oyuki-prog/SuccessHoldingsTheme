@@ -1,0 +1,60 @@
+@use "../../Foundation/global" as *;
+
+@include mq("tab") {
+  #c-humberger {
+    position: relative;
+    height: 20px;
+    width: 70px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: auto;
+  }
+  #c-humberger div {
+    position: absolute;
+    left: 20px;
+    height: 2px;
+    width: 50%;
+    background-color: #444;
+    border-radius: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  #c-humberger div:nth-of-type(1) {
+    bottom: 20px;
+  }
+  #c-humberger div:nth-of-type(2) {
+    bottom: 10px;
+  }
+  #c-humberger div:nth-of-type(3) {
+    bottom: 0;
+  }
+}
+
+@include mq("sp") {
+  #c-humberger {
+    position: relative;
+    height: 20px;
+    width: 70px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  #c-humberger div {
+    position: absolute;
+    left: 20px;
+    height: 2px;
+    width: 50%;
+    background-color: #444;
+    border-radius: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  #c-humberger div:nth-of-type(1) {
+    bottom: 20px;
+  }
+  #c-humberger div:nth-of-type(2) {
+    bottom: 10px;
+  }
+  #c-humberger div:nth-of-type(3) {
+    bottom: 0;
+  }
+}

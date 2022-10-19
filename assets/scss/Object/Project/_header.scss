@@ -1,0 +1,61 @@
+@use "../../Foundation/global" as *;
+
+.p-header {
+  background-color: $color-background-sub;
+  height: 100%;
+
+  &__inner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &__logoWrapper {
+    height: 50px;
+  }
+
+  &__img {
+    @include mq("tab") {
+      height: 40px;
+    }
+    @include mq("sp") {
+      height: 40px;
+      margin: auto;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    color: black;
+    @include mq("sp") {
+      line-height: 60px;
+      margin: auto 0;
+      font-weight: lighter;
+    }
+  }
+
+  //画像幅900近くのとき、ロゴと重ならないようにマルチクラスにてtab以降はdisplay:noneを指定
+  &__nav {
+    margin-left: auto;
+  }
+
+  &__navList {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+  }
+
+  &__items {
+    white-space: nowrap;
+  }
+
+  &__contact {
+    white-space: nowrap;
+  }
+  &__contactBtn {
+    display: block;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+  }
+}
