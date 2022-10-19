@@ -6,14 +6,14 @@
 
   &__inner {
     display: flex;
+    gap: 10px;
+    align-items: center;
   }
   &__logoWrapper {
-    margin: auto 0;
+    height: 50px;
   }
 
   &__img {
-    height: 50px;
-    margin: auto;
     @include mq("tab") {
       height: 40px;
     }
@@ -24,24 +24,22 @@
   }
 
   &__text {
-    margin: auto 0 auto 10px;
     text-align: center;
     color: black;
     @include mq("sp") {
       line-height: 60px;
-      margin: auto 0 auto 5px;
+      margin: auto 0;
       font-weight: lighter;
     }
   }
 
   //画像幅900近くのとき、ロゴと重ならないようにマルチクラスにてtab以降はdisplay:noneを指定
   &__nav {
-    margin: auto 0 auto auto;
+    margin-left: auto;
   }
 
   &__navList {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     list-style: none;
     gap: 30px;
@@ -57,7 +55,6 @@
   &__contactBtn {
     display: block;
     width: 150px;
-    height: 50px;
     text-align: center;
     line-height: 50px;
   }
