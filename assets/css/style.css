@@ -1259,6 +1259,17 @@ select {
 .p-serviceShow__title {
   text-align: center;
   color: #000000;
+  position: relative;
+}
+.p-serviceShow__title::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  display: inline-block;
+  background-color: #000000;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 35px);
 }
 .p-serviceShow__text {
   margin-top: 100px;
