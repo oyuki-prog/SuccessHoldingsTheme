@@ -1,0 +1,95 @@
+@use '../../Foundation/global'as *;
+
+.p-footer {
+  background-color: $color-main;
+  padding: 80px 0px 40px;
+  @include mq('tab') {
+    padding: 40px 0px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    @include mq('tab') {
+      flex-direction: column;
+    }
+  }
+  &__textBox {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    color: $color-background-sub;
+    gap: 40px;
+    padding: 0;
+    @include mq('tab') {
+      margin: 0 auto;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+  &__text {
+    position: relative;
+    @include mq('tab') {
+      text-align: center;
+    }
+    &:first-child::after {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 1px;
+      right: -20px;
+      background-color: $color-background-sub;
+      @include mq('tab') {
+        content: none;
+      }
+    }
+  }
+  &__menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    text-align: left;
+    @include mq('tab') {
+      margin: 0 auto;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 30px;
+      font-size: 14px;
+    }
+  }
+  &__menuItem {
+    width: 80px;
+    @include mq('tab') {
+      width: 20%;
+      text-align: center;
+    }
+  }
+  &__listBox {
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    margin-top: 20px;
+    white-space: nowrap;
+    text-align: left;
+    @include mq('tab') {
+     display: none;
+    }
+  }
+  &__item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+  &__copyRight {
+    margin-top: 50px;
+    text-align: center;
+    color: $color-background-sub;
+    font-size: 12px;
+  }
+  & a {
+    color: $color-background-sub;
+    text-decoration: none;
+  }
+}
