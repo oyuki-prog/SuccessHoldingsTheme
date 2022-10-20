@@ -133,6 +133,10 @@
         @include mq('tab') {
             max-width: 100%;
         }
+        @include mq('sp') {
+            max-width: none;
+            width: 100vw;
+        }
     }
 }
 
@@ -443,6 +447,9 @@
         border-top: solid 1px #F0F1F3;
         border-bottom: solid 1px #F0F1F3;
         background-color: $color-main;
+        @include mq('sp') {
+            width: 120px;
+        }
     }
     &__textTitle {
         font-size: clamp(1rem, 0.893rem + 0.48vw, 1.25rem);

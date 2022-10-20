@@ -1,0 +1,39 @@
+@use "../../Foundation/global" as *;
+
+.c-pageTitle {
+    position: relative;
+    &__imgWrapper {
+        height: auto;
+        margin: 0 auto;
+    }
+    &__img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    @include mq('tab') {
+        max-height: 300px;
+    }
+    }
+    &__container {
+        position: absolute;
+        top: calc(50% - 24px);
+        left: calc(50% - 96px);
+        text-align: center;
+        @include mq('tab') {
+            top: calc(50% - 16px);
+            left: calc(50% - 64px);
+        }
+    }
+    &__mainTitle {
+        font-size: clamp(2rem, 1.571rem + 1.9vw, 3rem);
+        font-weight: bold;
+        color: white;
+        line-height: 1;
+    }
+    &__subTitle {
+        font-size: clamp(1rem, 0.893rem + 0.48vw, 1.25rem);
+        font-weight: bold;
+        color: white;
+        line-height: 1.2;
+    }
+}
