@@ -1,0 +1,70 @@
+@use "../../Foundation/global" as *;
+
+.p-works {
+  padding: 80px 0px 300px;
+  @include mq('tab') {
+    padding: 80px 0px 185px;
+  }
+  &__list {
+    display: flex;
+    column-gap: calc((100% - 90%) / 2);
+    row-gap: 80px;
+    flex-wrap: wrap;
+    @include mq('tab') {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+  &__listItem {
+    width: 30%;
+    max-width: 380px;
+    position: relative;
+    @include mq('tab') {
+      width: 100%;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+    & a {
+      text-decoration: none;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 22vw;
+    max-height: 320px;
+    @include mq('tab') {
+      height: 64vw;
+      max-height: 400px;
+    }
+  }
+  &__textBox {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 35% 0%;
+    &:hover {
+      color: $color-background-sub;
+      opacity: $hover-opacity;
+      background-color: black;
+      transition: 0.5s;
+    }
+    @include mq('tab') {
+      position: static;
+      opacity: 1;
+      margin-top: 20px;
+      padding: 0;
+      text-align: left;
+      font-size: 24px;
+      color: $color-text;
+    }
+    @include mq('sp') {
+      font-size: 16px;
+    }
+  }
+
+}
+
