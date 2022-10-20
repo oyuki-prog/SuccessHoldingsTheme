@@ -1253,8 +1253,18 @@ select {
 .p-serviceShow {
   padding: 160px 0;
 }
+@media (max-width: 599px) {
+  .p-serviceShow {
+    padding: 100px 0;
+  }
+}
 .p-serviceShow__container + .p-serviceShow__container {
   margin-top: 160px;
+}
+@media (max-width: 599px) {
+  .p-serviceShow__container + .p-serviceShow__container {
+    margin-top: 100px;
+  }
 }
 .p-serviceShow__title {
   text-align: center;
@@ -1269,11 +1279,19 @@ select {
   background-color: #000000;
   position: absolute;
   bottom: -10px;
-  left: calc(50% - 35px);
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 .p-serviceShow__text {
   margin-top: 100px;
-  color: #3b4043;
+  color: #3B4043;
+}
+@media (max-width: 599px) {
+  .p-serviceShow__text {
+    margin-top: 60px;
+  }
 }
 
 .u-hidden {
