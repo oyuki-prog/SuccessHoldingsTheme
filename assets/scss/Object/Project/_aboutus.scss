@@ -1,14 +1,13 @@
 @use '../../Foundation/global'as *;
 
 .p-aboutusNav {
-    padding: 0 50px;
     margin-top: 80px;
     &__ul {
         display: flex;
         justify-content: center;
+        padding: 0;
         @include mq('sp') {
             flex-wrap: wrap;
-            padding: 0;
         }
     }
     &__list {
@@ -145,6 +144,8 @@
     margin-top: 160px;
     display: flex;
     justify-content: center;
+    // padding: 0 calc(50vw - 50%);
+	// width: 100vw;
     @include mq('sp') {
         margin-top: 80px;
     }
