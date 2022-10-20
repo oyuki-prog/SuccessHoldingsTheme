@@ -1270,6 +1270,8 @@ select {
   text-align: center;
   color: #000000;
   position: relative;
+  padding-bottom: 10px;
+  font-size: 32px;
 }
 .p-serviceShow__title::after {
   content: "";
@@ -1278,11 +1280,11 @@ select {
   display: inline-block;
   background-color: #000000;
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   text-align: center;
-  margin: auto;
-  left: 0;
-  right: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .p-serviceShow__text {
   margin-top: 100px;
