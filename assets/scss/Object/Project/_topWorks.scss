@@ -54,6 +54,7 @@
     height: 100%;
     text-align: center;
     padding: 70px;
+    transition: 0.5s;
     &:hover {
       color: $color-background-sub;
       opacity: $hover-opacity;
