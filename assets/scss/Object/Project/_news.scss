@@ -1,0 +1,28 @@
+@use "../../Foundation/global" as *;
+
+.p-news {
+  padding: 160px 0 120px;
+
+  &__container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 20px 0;
+  }
+
+  &__date {
+    max-width: 100px;
+    white-space: nowrap;
+  }
+
+  &__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

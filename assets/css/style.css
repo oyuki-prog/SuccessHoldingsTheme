@@ -1296,6 +1296,35 @@ select {
   }
 }
 
+.p-news {
+  padding: 160px 0 120px;
+}
+.p-news__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.p-news__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 50px;
+  padding: 20px 0;
+}
+.p-news__date {
+  max-width: 100px;
+  white-space: nowrap;
+}
+.p-news__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .u-hidden {
   display: none;
 }
