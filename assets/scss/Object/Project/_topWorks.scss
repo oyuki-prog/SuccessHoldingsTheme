@@ -70,4 +70,10 @@
       color: $color-text;
     }
   }
+  &__text {
+    margin-top: 8px;
+    @include mq('sp') {
+      margin-top: 13px;
+    }
+  }
 }
