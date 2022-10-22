@@ -241,12 +241,6 @@
         @include mq('sp') {
             margin-top: 14px;
         }
-        &--br {
-            display: none;
-            @include mq('tab') {
-                display: inline;
-            }
-        }
     }
 
     &__ContainerReverse {
