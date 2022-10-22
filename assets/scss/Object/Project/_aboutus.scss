@@ -1,8 +1,11 @@
 @use '../../Foundation/global'as *;
 
 .p-aboutusNav {
-    margin-top: 80px;
-    &__ul {
+    padding-top: 80px;
+    @include mq('sp') {
+        padding-top: 40px;
+    }
+    &__list {
         display: flex;
         justify-content: center;
         padding: 0;
@@ -10,7 +13,7 @@
             flex-wrap: wrap;
         }
     }
-    &__list {
+    &__item {
         position: relative;
         list-style: none;
         text-align: center;
@@ -30,6 +33,10 @@
                 margin-top: 20px;
             }
         }
+    }
+    &__link {
+        color: inherit;
+        text-decoration: none;
     }
     &__text {
         font-size: clamp(1rem, 0.786rem + 0.95vw, 1.5rem);
@@ -75,33 +82,33 @@
 }
 
 .p-aboutusMessage {
-    margin-top: 174px;
+    padding: 174px 0 160px;
     @include mq('sp') {
-        margin-top: 80px;
+        padding: 80px 0;
     }
     &__container {
-        margin-top: 80px;
+        padding: 80px 50px 0;
         @include mq('tab') {
             display: flex;
             justify-content: center;
-            margin-top: 42px;
+            padding-top: 40px;
         }
     }
     &__contents {
         gap: 0 10%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         @include mq('tab') {
             width: 600px;
             flex-direction: column-reverse;
-            margin-top: 42px;
         }
     }
     &__textWrapper {
-        margin-top: 48px;
+        padding-top: 48px;
         min-width: 256px;
         @include mq('tab') {
-            margin: 40px auto 0;
+            padding-top: 40px;
+            margin: 0 auto;
         }
     }
     &__textTitle {
@@ -141,26 +148,16 @@
 
 .p-aboutusPhilosophy {
     background-color: #26226B;
-    margin-top: 160px;
     display: flex;
     justify-content: center;
-    margin-right: calc(50% - 50vw);
-    margin-left: calc(50% - 50vw);
-    padding-right: calc(50vw - 50%);
-    padding-left: calc(50vw - 50%);
+    padding-top: 144px;
+    padding-bottom: 144px;
+    margin: 0;
     @include mq('sp') {
-        margin-top: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
-    &__inner {
-        padding-top: 144px;
-        padding-bottom: 144px;
-        margin: 0;
-        @include mq('sp') {
-            padding-top: 80px;
-            padding-bottom: 80px;
-        }
-    }
-    &__imgContainer {
+    &__Container {
         position: relative;
         margin-top: 100px;
         padding-top: 64px;
@@ -172,7 +169,7 @@
             padding-top: 164px;
         }
     }
-    &__imgContainerPic {
+    &__imgContainer {
         position: absolute;
         top: 0%;
         right: 0%;
@@ -190,7 +187,7 @@
             margin-left: 41px;
         }
     }
-    &__imgContainerMessage {
+    &__ContainerMessage {
         height: 416px;
         max-width: 654px;
         width: 100%;
@@ -212,7 +209,7 @@
             padding: 58px 20px 13px;
         }
     }
-    &__imgContainerTitle {
+    &__ContainerTitle {
         position: relative;
         font-size: clamp(1.25rem, 1.036rem + 0.95vw, 1.75rem);
         font-weight: bold;
@@ -237,33 +234,22 @@
             }
         }
     }
-    &__imgContainerText {
+    &__ContainerText {
         margin-top: 28px;
         font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
         font-weight: bold;
         @include mq('sp') {
             margin-top: 14px;
         }
-        &--span {
-            @include mq('tab') {
-                display: none;
-            }
-            @include mq('sp') {
-                display: none;
-            }
-        }
         &--br {
             display: none;
             @include mq('tab') {
                 display: inline;
             }
-            @include mq('sp') {
-                display: inline;
-            }
         }
     }
 
-    &__imgContainerReverse {
+    &__ContainerReverse {
         position: relative;
         display: flex;
         justify-content: end;
@@ -277,7 +263,7 @@
             padding-top: 164px;
         }
     }
-    &__imgContainerPicReverse {
+    &__imgContainerReverse {
         position: absolute;
         top: 0%;
         left: 0%;
@@ -294,7 +280,7 @@
             margin-right: -25px;
         }
     }
-    &__imgContainerMessageReverse {
+    &__ContainerMessageReverse {
         height: 416px;
         max-width: 654px;
         width: 100%;
@@ -316,7 +302,7 @@
             padding: 50px 10px 10px;
         }
     }
-    &__imgContainerTitleReverse {
+    &__ContainerTitleReverse {
         position: relative;
         font-size: clamp(1.25rem, 1.036rem + 0.95vw, 1.75rem);
         font-weight: bold;
@@ -341,7 +327,7 @@
         }
         letter-spacing: 1.4px;
     }
-    &__imgContainerTextReverse {
+    &__ContainerTextReverse {
         margin-top: 28px;
         font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
         font-weight: bold;
@@ -354,12 +340,10 @@
 
 .p-aboutusValue {
     max-width: 1200px;
-    &__TitleContainer {
-        margin-top: 80px;
+    padding-top: 80px;
+    &__Title {
         text-align: center;
         position: relative;
-    }
-    &__Title {
         color: $color-background-sub;
         font-size: 28px;
         letter-spacing: 1.4px;
@@ -375,7 +359,7 @@
             background-color: $color-background-sub;
         }
     }
-    &__ul {
+    &__container {
         list-style: none;
         display: flex;
         justify-content: space-around;
@@ -387,7 +371,7 @@
             margin-top: 56px;
         }
     }
-    &__container {
+    &__item {
         max-width: 500px;
         width: 41%;
         &:nth-child(n+3) {
@@ -415,32 +399,32 @@
 }
 
 .p-aboutusCompany {
-    &__title {
-        margin-top: 174px;
-        @include mq('sp') {
-            margin-top: 80px;
-        }
+    padding: 160px 0;
+    @include mq('sp') {
+        padding: 80px 0;
     }
     &__wrapper {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 80px;
+        padding-top: 80px;
         @include mq('sp') {
-            margin-top: 40px;
+            padding-top: 40px;
         }
     }
-    &__ul {
+    &__container {
         list-style: none;
         padding: 0;
         margin: 0;
         width: 100%;
     }
-    &__container {
+    &__item {
         display: flex;
+        margin: 0 auto;
+        max-width: 1200px;
     }
-    &__textTitleBox {
+    &__textTitle {
         max-width: 250px;
         min-width: 117px;
         width:100%;
@@ -450,34 +434,33 @@
         align-items: center;
         border-top: solid 1px #F0F1F3;
         border-bottom: solid 1px #F0F1F3;
+        font-size: clamp(1rem, 0.893rem + 0.48vw, 1.25rem);
+        font-weight: bold;
+        color: $color-background-sub;
         background-color: $color-main;
         @include mq('sp') {
             width: 120px;
         }
     }
-    &__textTitle {
-        font-size: clamp(1rem, 0.893rem + 0.48vw, 1.25rem);
-        font-weight: bold;
-        color: $color-background-sub;
-    }
-    &__textWrapper {
+    &__text {
         display: flex;
         align-items: center;
         max-width: 950px;
+        min-width: 170px;
         width: 100%;
         height: 100px;
-        padding: 0 20px;
+        padding: 0 90px;
         border-top: solid 1px #C1C1C1;
         border-bottom: solid 1px #C1C1C1;
         border-right: solid 1px #C1C1C1;
-        background-color: $color-background-sub;
-    }
-    &__text {
-        margin-left: 10%;
         font-size: clamp(1rem, 0.893rem + 0.48vw, 1.25rem);
         font-weight: bold;
+        background-color: $color-background-sub;
         @include mq('tab') {
-            margin: 0;
+            padding: 0 24px;
+        }
+        @include mq('sp') {
+            padding: 0 12px;
         }
     }
     &__text--pc {
@@ -495,25 +478,15 @@
 }
 
 .p-aboutusMember {
-    margin-top: 160px;
     display: flex;
     justify-content: center;
     background-color: #26226B;
-    margin-right: calc(50% - 50vw);
-    margin-left: calc(50% - 50vw);
-    padding-right: calc(50vw - 50%);
-    padding-left: calc(50vw - 50%);
+    padding-top: 144px;
+    padding-bottom: 144px;
+    margin: 0;
     @include mq('sp') {
-        margin-top: 80px;
-    }
-    &__inner {
-        padding-top: 144px;
-        padding-bottom: 144px;
-        margin: 0;
-        @include mq('sp') {
-            padding-top: 80px;
-            padding-bottom: 80px;
-        }
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     &__title {
         width: 100%;
@@ -525,7 +498,7 @@
             margin-top: 52px;
         }
     }
-    &__ul {
+    &__container {
         list-style: none;
         width: 100%;
         display: flex;
@@ -537,7 +510,7 @@
             flex-direction: column;
         }
     }
-    &__container {
+    &__item {
         width: 41%;
         &:nth-child(n+3) {
             margin-top: 80px;
