@@ -8,7 +8,6 @@
 
   &__topLine {
     max-width: 900px;
-    text-align: center;
     margin: 0 auto;
     position: relative;
     &::before {
@@ -27,10 +26,6 @@
     }
   }
 
-  &__date {
-    white-space: nowrap;
-  }
-
   &__container {
     max-width: 900px;
     margin: 0 auto;
@@ -39,16 +34,25 @@
     gap: 50px;
     padding: 20px 0;
     @include mq("sp") {
-      gap: 20px;
       font-size: 14px;
     }
   }
 
-  //sp以降のテキストは2行で...だがそこはjavaScriptで対応かと
+  &__date {
+    white-space: nowrap;
+    max-width: 100px;
+    flex: 1;
+  }
+
   &__text {
     color: #1b224c;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: 2;
+
+    @include mq("sp") {
+      white-space: normal;
+    }
   }
 }
