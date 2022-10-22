@@ -7,7 +7,7 @@
   }
   &__list {
     display: flex;
-    column-gap: calc((100% - 90%) / 2);
+    column-gap: 40px;
     row-gap: 80px;
     flex-wrap: wrap;
     @include mq('tab') {
@@ -16,7 +16,7 @@
     }
   }
   &__listItem {
-    width: 30%;
+    width: calc((100% - 80px) / 3);
     max-width: 380px;
     position: relative;
     @include mq('tab') {
