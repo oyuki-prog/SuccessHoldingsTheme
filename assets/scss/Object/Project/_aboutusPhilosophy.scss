@@ -34,13 +34,11 @@
             right: -30px;
             max-width: 540px;
             min-height: 360px;
-            margin-left: 30px;
         }
         @include mq('sp') {
             max-width: 330px;
             min-height: 200px;
             right: -20px;
-            margin-left: 25px;
         }
         &--reverse {
             right: 0;
@@ -50,13 +48,9 @@
                 max-width: 540px;
                 left: -30px;
                 right: 0;
-                margin-right: 30px;
-                margin-left: 0;
             }
             @include mq('sp') {
                 max-width: 330px;
-                margin-right: 25px;
-                margin-left: 0;
             }
         }
     }
@@ -149,11 +143,12 @@
         color: $color-background-sub;
         font-size: 28px;
         letter-spacing: 1.4px;
+        padding-bottom: 10px;
         &::after {
             content: "";
             position: absolute;
             left: 50%;
-            bottom: -9px;
+            bottom: 0;
             display: inline-block;
             width: 68px;
             height: 3px;
