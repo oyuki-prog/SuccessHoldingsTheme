@@ -1,4 +1,12 @@
 @use "example";
+@use "topHero";
+@use "topAboutUs";
+@use "topBusiness";
+@use "topWorks";
+@use "topCompany";
+@use "topScroll";
+@use "works";
+@use "footer";
 @use "header";
 @use "main";
 @use "service";
@@ -14,3 +22,4 @@
 @use "scroll";
 @use "footer";
 @use "serviceShow";
+@use "news";
