@@ -1,0 +1,55 @@
+@use '../../Foundation/global'as *;
+
+.p-aboutusNav {
+    padding-top: 80px;
+    @include mq('sp') {
+        padding-top: 40px;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        @include mq('sp') {
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        position: relative;
+        list-style: none;
+        text-align: center;
+        max-width: 300px;
+        width: 100%;
+        padding-bottom: 20px;
+        border-left: solid 2px black;
+        &:last-child {
+            border-right: solid 2px black;
+        }
+        @include mq('sp') {
+            width: 50%;
+            &:nth-child(2n) {
+                border-right: solid 2px black;
+            }
+            &:nth-child(n+3) {
+                margin-top: 20px;
+            }
+        }
+    }
+    &__link {
+        color: inherit;
+        text-decoration: none;
+    }
+    &__text {
+        font-size: clamp(1rem, 0.786rem + 0.95vw, 1.5rem);
+    }
+    &__arrow {
+        width: 12px;
+        height: 12px;
+        border: 2px solid;
+        border-color:  transparent transparent $color-main $color-main;
+        transform: rotate(-45deg);
+        cursor: pointer;
+        position: absolute;
+        left: 48%;
+        right: 52%;
+    }
+}

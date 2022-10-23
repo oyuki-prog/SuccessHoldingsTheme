@@ -1,0 +1,75 @@
+@use '../../Foundation/global'as *;
+
+
+.p-aboutusMessage {
+    padding: 174px 0 160px;
+    @include mq('sp') {
+        padding: 80px 0;
+    }
+    &__container {
+        padding: 80px 50px 0;
+        @include mq('tab') {
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+    }
+    &__contents {
+        gap: 0 10%;
+        display: flex;
+        justify-content: space-between;
+        @include mq('tab') {
+            width: 600px;
+            flex-direction: column-reverse;
+        }
+    }
+    &__textWrapper {
+        padding-top: 48px;
+        min-width: 256px;
+        @include mq('tab') {
+            max-width: 256px;
+            padding-top: 40px;
+            margin: 0 auto;
+        }
+    }
+    &__textTitle {
+        font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+        font-weight: bold;
+        @include mq('tab') {
+            text-align: center;
+        }
+    }
+    &__company {
+        margin-top: 24px;
+    }
+    &__greeter {
+        display: flex;
+        align-items:flex-end
+    }
+    &__post {
+        line-height: 2;
+    }
+    &__name {
+        margin-left: 24px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__btn {
+        margin-top: 24px;
+    }
+    &__btnText {
+        padding: 32px 84px;
+        color: $color-background-sub;
+    }
+    &__img {
+        width: 100%;
+        max-width: 648px;
+        @include mq('tab') {
+            max-width: 100%;
+        }
+        @include mq('sp') {
+            max-width: none;
+            width: 100vw;
+        }
+    }
+}
