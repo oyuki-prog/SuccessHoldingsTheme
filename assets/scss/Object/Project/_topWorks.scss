@@ -1,15 +1,34 @@
 @use "../../Foundation/global" as *;
 
-.p-works {
-  padding: 80px 0px 300px;
-  @include mq('tab') {
-    padding: 80px 0px 185px;
+.p-topWorks {
+  padding: 160px 0px;
+  @include mq('sp') {
+    padding: 80px 0px;
+  }
+  &__titleBox {
+    text-align: center;
+  }
+  &__title {
+    font-size: 32px;
+    color: $color-text;
+    @include mq('sp') {
+      font-size: 24px;
+    }
+  }
+  &__subTitle {
+    font-size: $font-size-base;
+    margin-top: 10px;
+    color: $color-text;
   }
   &__list {
+    margin-top: 40px;
+    padding: 0;
     display: flex;
     column-gap: 40px;
-    row-gap: 80px;
     flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    position: relative;
     @include mq('tab') {
       flex-direction: column;
       gap: 40px;
@@ -47,7 +66,7 @@
       opacity: $hover-opacity;
       background-color: black;
       transition: 0.5s;
-      & .p-works__textBox {
+      & .p-topWorks__textBox {
         opacity: 1;
       }
     }
@@ -88,6 +107,14 @@
       margin-top: 13px;
     }
   }
-
+  &__btn {
+    display: block;
+    margin: 80px auto 0px;
+    width: 250px;
+    height: 80px;
+    @include mq('tab') {
+      height: 50px;
+      margin: 40px auto 0px;
+    }
+  }
 }
-
