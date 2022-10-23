@@ -1,0 +1,23 @@
+@use "../../Foundation/global" as *;
+
+.p-main {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 80px;
+  max-width: 700px;
+  @include mq("sp") {
+    padding-top: 60px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    @include mq("sp") {
+    }
+  }
+
+  &__text {
+    margin-top: 30px;
+  }
+}

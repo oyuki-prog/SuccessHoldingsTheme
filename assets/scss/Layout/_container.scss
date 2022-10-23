@@ -1,4 +1,4 @@
-@use '../Foundation/global'as *;
+@use "../Foundation/global" as *;
 .l-container {
   width: calc($width-base + $padding-pc * 2);
   max-width: 100%;
@@ -6,13 +6,13 @@
   height: inherit;
   padding: 0 $padding-pc;
 
-  @include mq('tab') {
+  @include mq("tab") {
     padding-left: $padding-tab;
     padding-right: $padding-tab;
     width: 100%;
   }
 
-  @include mq('sp') {
+  @include mq("sp") {
     padding-left: $padding-sp;
     padding-right: $padding-sp;
     width: 100%;
