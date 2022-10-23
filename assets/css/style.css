@@ -478,6 +478,7 @@ select {
   margin-top: 20px;
 }
 .p-topAboutUs__btn {
+  display: block;
   margin-top: 40px;
   width: 250px;
   height: 80px;
