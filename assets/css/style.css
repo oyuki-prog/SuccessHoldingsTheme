@@ -967,14 +967,7 @@ select {
 }
 .p-works__img {
   width: 100%;
-  height: 22vw;
-  max-height: 320px;
-}
-@media (max-width: 900px) {
-  .p-works__img {
-    height: 64vw;
-    max-height: 400px;
-  }
+  aspect-ratio: 19/16;
 }
 .p-works__textBox {
   position: absolute;
