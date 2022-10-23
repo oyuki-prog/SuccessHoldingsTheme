@@ -11,15 +11,21 @@
     max-width: 900px;
     margin: 0 auto;
     display: flex;
-    gap: 50px;
+    gap: 20px;
     padding: 20px 0;
     @include mq("sp") {
       font-size: 14px;
+      gap: 20px;
     }
   }
 
   &__date {
     white-space: nowrap;
+    display: inline-block;
+    width: 140px;
+    @include mq("sp") {
+      width: 90px;
+    }
   }
 
   &__text {
@@ -28,9 +34,11 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: left;
+    flex: 1;
 
     @include mq("sp") {
       white-space: normal;
+      line-height: 1.8;
     }
   }
 }
