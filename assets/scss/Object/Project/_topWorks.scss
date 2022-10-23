@@ -24,7 +24,7 @@
     margin-top: 40px;
     padding: 0;
     display: flex;
-    column-gap: calc((100% - 90%) / 2);
+    column-gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
@@ -35,7 +35,7 @@
     }
   }
   &__listItem {
-    width: 30%;
+    width: calc((100% - 80px) / 3);
     max-width: 380px;
     position: relative;
     @include mq('tab') {
@@ -51,24 +51,42 @@
     width: 100%;
     aspect-ratio: 19 / 16;
   }
-  &__textBox {
-    position: absolute;
-    opacity: 0;
-    top: 0;
+  &__hoverBox {
     width: 100%;
     height: 100%;
-    font-size: 20px;
-    text-align: center;
-    padding: 30% 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
     transition: 0.5s;
     &:hover {
       color: $color-background-sub;
       opacity: $hover-opacity;
       background-color: black;
       transition: 0.5s;
+      & .p-works__textBox {
+        opacity: 1;
+      }
     }
     @include mq('tab') {
       position: static;
+      opacity: 1;
+    }
+  }
+  &__textBox {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+    padding: 0% 10%;
+    transition: 0.1s;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    @include mq('tab') {
+      position: static;
+      transform: none;
       opacity: 1;
       margin-top: 20px;
       padding: 0;
