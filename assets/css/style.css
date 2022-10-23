@@ -477,6 +477,17 @@ select {
 .p-topAboutUs__text:not(:first-child) {
   margin-top: 20px;
 }
+.p-topAboutUs__btn {
+  margin-top: 40px;
+  width: 250px;
+  height: 80px;
+}
+@media (max-width: 900px) {
+  .p-topAboutUs__btn {
+    height: 50px;
+    margin: 20px auto 0px;
+  }
+}
 
 .p-topBusiness__background {
   background-color: #26226B;

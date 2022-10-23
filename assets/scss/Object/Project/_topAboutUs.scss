@@ -85,4 +85,13 @@
   &__text:not(:first-child) {
     margin-top: 20px;
   }
+  &__btn {
+    margin-top: 40px;
+    width: 250px;
+    height: 80px;
+    @include mq('tab') {
+      height: 50px;
+      margin: 20px auto 0px;
+    }
+  }
 }
