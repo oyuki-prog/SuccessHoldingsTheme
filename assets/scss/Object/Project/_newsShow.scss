@@ -1,0 +1,40 @@
+@use "../../Foundation/global" as *;
+
+.p-newsShow {
+  padding: 160px 0;
+  @include mq("sp") {
+    padding: 100px 0;
+  }
+
+  &__container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  &__date {
+    color: $color-main;
+  }
+
+  //PCでは文字サイズを32pxに指定してあったが、
+  //SPでは少し大きい気がしたのでSPのfont-sizeを小さく指定
+  &__title {
+    margin-top: 20px;
+    color: $color-main;
+    font-size: 32px;
+    @include mq("sp") {
+      font-size: 24px;
+    }
+  }
+
+  &__textContainer {
+    margin-top: 40px;
+  }
+
+  &__space + &__space {
+    margin-top: 20px;
+  }
+
+  &__text {
+    color: $color-text;
+  }
+}
