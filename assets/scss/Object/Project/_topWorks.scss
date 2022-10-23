@@ -50,6 +50,9 @@
   &__img {
     width: 100%;
     aspect-ratio: 19 / 16;
+    @include mq('tab') {
+      aspect-ratio: 67 / 48;
+    }
   }
   &__hoverBox {
     width: 100%;
@@ -63,7 +66,7 @@
       opacity: $hover-opacity;
       background-color: black;
       transition: 0.5s;
-      & .p-works__textBox {
+      & .p-topWorks__textBox {
         opacity: 1;
       }
     }
@@ -81,8 +84,8 @@
     text-align: center;
     padding: 0% 10%;
     transition: 0.1s;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translateX(-50%) translateY(-50%);
     @include mq('tab') {
       position: static;

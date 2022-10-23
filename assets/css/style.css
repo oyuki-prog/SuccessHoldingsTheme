@@ -708,6 +708,11 @@ select {
   width: 100%;
   aspect-ratio: 19/16;
 }
+@media (max-width: 900px) {
+  .p-topWorks__img {
+    aspect-ratio: 67/48;
+  }
+}
 .p-topWorks__hoverBox {
   width: 100%;
   height: 100%;
@@ -724,7 +729,7 @@ select {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.p-topWorks__hoverBox:hover .p-works__textBox {
+.p-topWorks__hoverBox:hover .p-topWorks__textBox {
   opacity: 1;
 }
 @media (max-width: 900px) {
@@ -1008,6 +1013,11 @@ select {
 .p-works__img {
   width: 100%;
   aspect-ratio: 19/16;
+}
+@media (max-width: 900px) {
+  .p-works__img {
+    aspect-ratio: 67/48;
+  }
 }
 .p-works__hoverBox {
   width: 100%;
