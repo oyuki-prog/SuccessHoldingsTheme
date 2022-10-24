@@ -1,1 +1,100 @@
 @use '../../Foundation/global'as *;
+
+.p-worksShow {
+    padding: 160px 0;
+    &__clientTitle {
+        text-align: center;
+        font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+    }
+    &__name {
+        margin-top: 80px;
+        padding-bottom: 10px;
+        border-bottom: solid 2px;
+        font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+    }
+    &__container {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        max-width: 500px;
+        max-height: 500px;
+        width: 100%;
+    }
+    &__list {
+        list-style: none;
+        max-width: 660px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        display: flex;
+        min-height: 100px;
+        box-sizing: border-box;
+        border-top: solid 1px #C1C1C1;
+        border-bottom: solid 1px #707070;
+        border-right: solid 1px #C1C1C1;
+        &:last-child {
+            border-bottom: solid 1px #C1C1C1;
+        }
+    }
+    &__summary {
+        max-width: 200px;
+        // min-width: ;
+        min-height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-background-sub;
+        background-color: $color-main;
+    }
+    &__detail {
+        max-width: 460px;
+        min-height: 100px;
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        background-color: $color-background-sub;
+    }
+
+    &__introList {
+        list-style: none;
+        margin-top: 180px;
+        padding: 0;
+    }
+    &__introItem {
+        margin-top: 160px;
+        &:first-child {
+            margin: 0;
+        }
+    }
+    &__introTitle {
+        text-align: center;
+        font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+    }
+    &__introSummary {
+        margin-top: 80px;
+        padding-bottom: 10px;
+        border-bottom: solid 2px;
+        font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+    }
+    &__introDetail {
+        margin-top: 80px;
+    }
+    &__btn {
+        margin: 80px auto 0;
+        max-width: 250px;
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__btnText{
+        // text-align: center;
+        // padding: 13px 0;
+    }
+}
