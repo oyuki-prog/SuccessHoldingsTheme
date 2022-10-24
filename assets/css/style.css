@@ -1374,14 +1374,8 @@ select {
     font-size: 24px;
   }
 }
-.p-newsShow__textContainer {
+.p-newsShow__contentWrapper {
   margin-top: 40px;
-}
-.p-newsShow__space + .p-newsShow__space {
-  margin-top: 20px;
-}
-.p-newsShow__text {
-  color: #3B4043;
 }
 
 .u-hidden {

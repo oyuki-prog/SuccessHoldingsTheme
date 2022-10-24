@@ -15,8 +15,6 @@
     color: $color-main;
   }
 
-  //PCでは文字サイズを32pxに指定してあったが、
-  //SPでは少し大きい気がしたのでSPのfont-sizeを小さく指定
   &__title {
     margin-top: 20px;
     color: $color-main;
@@ -26,15 +24,7 @@
     }
   }
 
-  &__textContainer {
+  &__contentWrapper {
     margin-top: 40px;
-  }
-
-  &__space + &__space {
-    margin-top: 20px;
-  }
-
-  &__text {
-    color: $color-text;
   }
 }
