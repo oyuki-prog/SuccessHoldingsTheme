@@ -1052,6 +1052,21 @@ select {
   border: solid 1px #DDDDDD;
   height: 45px;
 }
+.p-recruitForm__inputColumn > input::-webkit-input-placeholder {
+  color: #CCCCCC;
+}
+.p-recruitForm__inputColumn > input::-moz-placeholder {
+  color: #CCCCCC;
+}
+.p-recruitForm__inputColumn > input:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+.p-recruitForm__inputColumn > input::-ms-input-placeholder {
+  color: #CCCCCC;
+}
+.p-recruitForm__inputColumn > input::placeholder {
+  color: #CCCCCC;
+}
 .p-recruitForm__attention {
   margin-left: 10px;
   padding: 5px 10px;
@@ -1082,7 +1097,7 @@ select {
   height: 45px;
 }
 .p-recruitForm__choiceColumn > select:invalid {
-  color: #828282;
+  color: #CCCCCC;
 }
 .p-recruitForm__otherColumn {
   display: -webkit-box;
@@ -1105,6 +1120,21 @@ select {
   width: 100%;
   height: 240px;
 }
+.p-recruitForm__otherColumn > textarea::-webkit-input-placeholder {
+  color: #CCCCCC;
+}
+.p-recruitForm__otherColumn > textarea::-moz-placeholder {
+  color: #CCCCCC;
+}
+.p-recruitForm__otherColumn > textarea:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+.p-recruitForm__otherColumn > textarea::-ms-input-placeholder {
+  color: #CCCCCC;
+}
+.p-recruitForm__otherColumn > textarea::placeholder {
+  color: #CCCCCC;
+}
 .p-recruitForm__otherColumn > p {
   margin-top: 30px;
 }
@@ -1123,7 +1153,7 @@ select {
   height: 80px;
   background-color: #F2F2F2;
   border: none;
-  color: #828282;
+  color: #CCCCCC;
   font-size: 22px;
 }
 
