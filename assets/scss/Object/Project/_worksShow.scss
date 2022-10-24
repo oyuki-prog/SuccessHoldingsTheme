@@ -2,6 +2,9 @@
 
 .p-worksShow {
     padding: 160px 0;
+    @include mq('tab') {
+        padding: 80px 0;
+    }
     &__clientTitle {
         text-align: center;
         font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
@@ -11,65 +14,99 @@
         padding-bottom: 10px;
         border-bottom: solid 2px;
         font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+        @include mq('tab') {
+            margin-top: 40px;
+        }
     }
     &__container {
         margin-top: 80px;
         display: flex;
         justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        @include mq('tab') {
+            margin: 80px auto 0;
+            flex-direction: column;
+            justify-content: center;
+
+            max-width: 660px;
+        }
+        @include mq('sp') {
+            margin-top: 40px;
+        }
     }
     &__img {
         max-width: 500px;
         max-height: 500px;
         width: 100%;
+        @include mq('tab') {
+            max-width: 100%;
+        }
     }
     &__list {
         list-style: none;
         max-width: 660px;
         width: 100%;
-        margin: 0;
+        margin-left: 3%;
         padding: 0;
+        @include mq('tab') {
+            margin-top: 40px;
+            margin-left: 0;
+        }
     }
     &__item {
         display: flex;
         min-height: 100px;
-        box-sizing: border-box;
-        border-top: solid 1px #C1C1C1;
-        border-bottom: solid 1px #707070;
-        border-right: solid 1px #C1C1C1;
-        &:last-child {
-            border-bottom: solid 1px #C1C1C1;
-        }
     }
     &__summary {
         max-width: 200px;
-        // min-width: ;
+        min-width: 100px;
         min-height: 100px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-top: solid 1px #C1C1C1;
+        border-bottom: solid 1px #707070;
         color: $color-background-sub;
         background-color: $color-main;
+        @include mq('sp') {
+            max-width: 130px;
+            min-width: 70px;
+        }
     }
     &__detail {
         max-width: 460px;
+        min-width: 300px;
         min-height: 100px;
         width: 100%;
         padding: 0 20px;
         display: flex;
         align-items: center;
+        border-top: solid 1px #C1C1C1;
+        border-bottom: solid 1px #707070;
+        border-right: solid 1px #C1C1C1;
         background-color: $color-background-sub;
+        @include mq('sp') {
+            min-width: 250px;
+            padding: 0 10px;
+        }
     }
 
     &__introList {
         list-style: none;
         margin-top: 180px;
-        padding: 0;
+        @include mq('tab') {
+            margin-top: 90px;
+        }
     }
     &__introItem {
         margin-top: 160px;
         &:first-child {
             margin: 0;
+        }
+        @include mq('tab') {
+            margin-top: 80px;
         }
     }
     &__introTitle {
@@ -81,9 +118,15 @@
         padding-bottom: 10px;
         border-bottom: solid 2px;
         font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+        @include mq('sp') {
+            margin-top: 40px;
+        }
     }
     &__introDetail {
-        margin-top: 80px;
+        margin-top: 60px;
+        @include mq('sp') {
+            margin-top: 40px;
+        }
     }
     &__btn {
         margin: 80px auto 0;
@@ -92,9 +135,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    &__btnText{
-        // text-align: center;
-        // padding: 13px 0;
+        @include mq('tab') {
+            margin-top: 40px;
+        }
     }
 }

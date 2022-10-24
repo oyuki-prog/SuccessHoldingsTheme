@@ -15,12 +15,15 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+ul,
+li{
   margin: 0;
+  padding: 0;
 }
 
-ul[role="list"],
-ol[role="list"] {
+ul,
+ol{
   list-style: none;
 }
 
@@ -38,10 +41,17 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a,
+a:hover,
+a:visited {
+  color: inherit;
+}
+
 img,
 picture {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   display: block;
   height: 100%;
   object-fit: cover;
