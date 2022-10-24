@@ -1,5 +1,5 @@
 @use "../../Foundation/global" as *;
-.p-company {
+.p-topCompany {
   padding-bottom: 160px;
   &__titleBox {
     text-align: center;
@@ -7,6 +7,9 @@
   &__title {
     font-size: 32px;
     color: $color-text;
+    @include mq('sp') {
+      font-size: 24px;
+    }
   }
   &__subTitle {
     font-size: $font-size-base;
