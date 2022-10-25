@@ -84,6 +84,7 @@
         border-top: solid 1px #C1C1C1;
         border-bottom: solid 1px #707070;
         border-right: solid 1px #C1C1C1;
+        word-break: break-all;
         background-color: $color-background-sub;
         @include mq('sp') {
             min-width: 250px;
