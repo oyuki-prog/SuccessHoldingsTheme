@@ -135,7 +135,10 @@
         justify-content: center;
         align-items: center;
         @include mq('tab') {
-            margin-top: 40px;
+            margin: 40px auto 0;
         }
+    }
+    &__btnText{
+        font-weight: bold;
     }
 }
