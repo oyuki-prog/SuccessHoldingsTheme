@@ -22,7 +22,6 @@
         margin-top: 80px;
         display: flex;
         justify-content: space-between;
-        max-width: 1200px;
         width: 100%;
         @include mq('tab') {
             margin: 80px auto 0;
@@ -35,18 +34,15 @@
     }
     &__img {
         max-width: 500px;
-        max-height: 500px;
         width: 100%;
         @include mq('tab') {
             max-width: 100%;
         }
     }
     &__list {
-        list-style: none;
         max-width: 660px;
         width: 100%;
         margin-left: 3%;
-        padding: 0;
         @include mq('tab') {
             margin-top: 40px;
             margin-left: 0;
@@ -56,10 +52,8 @@
         display: flex;
         min-height: 100px;
     }
-    &__summary {
+    &__outline {
         max-width: 200px;
-        min-width: 100px;
-        min-height: 100px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -69,14 +63,12 @@
         color: $color-background-sub;
         background-color: $color-main;
         @include mq('sp') {
-            max-width: 130px;
-            min-width: 70px;
+            width: 100px;
         }
     }
     &__detail {
         max-width: 460px;
         min-width: 300px;
-        min-height: 100px;
         width: 100%;
         padding: 0 20px;
         display: flex;
@@ -87,13 +79,12 @@
         word-break: break-all;
         background-color: $color-background-sub;
         @include mq('sp') {
-            min-width: 250px;
+            flex: 1;
+            min-width: 0;
             padding: 0 10px;
         }
     }
-
     &__introList {
-        list-style: none;
         margin-top: 180px;
         @include mq('tab') {
             margin-top: 90px;
@@ -112,7 +103,7 @@
         text-align: center;
         font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
     }
-    &__introSummary {
+    &__introOutline {
         margin-top: 80px;
         padding-bottom: 10px;
         border-bottom: solid 2px;
@@ -128,17 +119,15 @@
         }
     }
     &__btn {
+        display: grid;
+        place-items: center;
+        cursor: pointer;
         margin: 80px auto 0;
         max-width: 250px;
         min-height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-weight: bold;
         @include mq('tab') {
             margin: 40px auto 0;
         }
-    }
-    &__btnText{
-        font-weight: bold;
     }
 }
