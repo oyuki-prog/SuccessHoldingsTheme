@@ -1,0 +1,30 @@
+@use "../../Foundation/global" as *;
+
+.p-newsShow {
+  padding: 160px 0;
+  @include mq("sp") {
+    padding: 100px 0;
+  }
+
+  &__container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  &__date {
+    color: $color-main;
+  }
+
+  &__title {
+    margin-top: 20px;
+    color: $color-main;
+    font-size: 32px;
+    @include mq("sp") {
+      font-size: 24px;
+    }
+  }
+
+  &__contentWrapper {
+    margin-top: 40px;
+  }
+}
