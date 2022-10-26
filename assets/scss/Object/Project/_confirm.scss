@@ -46,18 +46,6 @@
       margin-left: 20px;
     }
   }
-  &__subject {
-    margin-top: 20px;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      border: 1px solid #DDDDDD;
-      background-color: $color-main;
-    }
-  }
   &__listText {
     margin-top: 20px;
   }
@@ -73,10 +61,14 @@
       gap: 20px;
     }
   }
-  &__btn {
+  &__prevBtn {
     width: 250px;
     height: 80px;
     border: 1px solid #707070;
     border-radius: 4px;
+  }
+  &__sendBtn {
+    width: 250px;
+    height: 80px;
   }
 }

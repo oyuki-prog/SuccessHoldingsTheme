@@ -1604,18 +1604,6 @@ select {
   padding: 3px 8px;
   margin-left: 20px;
 }
-.p-confirm__subject {
-  margin-top: 20px;
-}
-.p-confirm__subject::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid #DDDDDD;
-  background-color: #26226B;
-}
 .p-confirm__listText {
   margin-top: 20px;
 }
@@ -1649,11 +1637,15 @@ select {
     gap: 20px;
   }
 }
-.p-confirm__btn {
+.p-confirm__prevBtn {
   width: 250px;
   height: 80px;
   border: 1px solid #707070;
   border-radius: 4px;
+}
+.p-confirm__sendBtn {
+  width: 250px;
+  height: 80px;
 }
 
 .u-hidden {
