@@ -1011,6 +1011,14 @@ select {
   min-width: 300px;
 }
 .p-recruitForm__wrapper label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 18px;
   font-weight: 900;
   font-family: "Yu Gothic";
@@ -1062,8 +1070,9 @@ select {
   color: #CCCCCC;
 }
 .p-recruitForm__attention {
+  height: 20px;
   margin-left: 10px;
-  padding: 3px 8px 5px;
+  padding: 0 8px 5px;
   font-size: 12px;
   font-weight: 100;
   background-color: #FF7F00;
