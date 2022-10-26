@@ -1,21 +1,30 @@
 @use '../../Foundation/global'as *;
 .p-main {
     margin: 0;
-    padding: 150px 10%;
+    padding: 160px 10%;
     min-width: 250px;
     font-family: '游ゴシック体';
     background-color: #EDEBEB;
     color: #3B4043;
+    @include mq(sp) {
+        padding: 80px 20px;
+    }
     &__wrapper {
         text-align: center;
     }
     &__title {
         font-size: 32px;
+        @include mq(sp) {
+            font-size: 24px;
+        }
     }
     &__list {
-        margin-top: 100px;
+        margin-top: 82px;
         padding: 0;
         border: solid 1px #707070;
+        @include mq(sp) {
+            margin-top: 51px;
+        }
     }
     &__listItem {
         list-style: solid 1px #DDDDDD;
@@ -48,6 +57,9 @@
         &:not(:first-child) {
             border-bottom: solid 2px #C1C1C1;
         }
+        @include mq(sp) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -68,23 +80,36 @@
     &__title {
         font-size: 36px;
         text-align: center;
+        @include mq(sp) {
+            font-size: 24px;
+        }
     }
     &__lead {
         text-align: center;
     }
     &__precautions {
         max-width: 450px;
-        margin: 10px auto 0;
+        margin: 51px auto 0;
+        @include mq(sp) {
+            margin: 32px auto 0;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+    &__precautionsText {
+        @include mq(sp) {
+        width: 270px;
+        margin: 0 auto;
+        }
     }
     &__inputColumn {
-
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-top: 30px;
+        padding-top: 40px;
         & > input {
-            margin-top: 17px;
-            padding-left: 10px;
+            margin-top: 16px;
+            padding-left: 16px;
             border-radius: 5px;
             border: solid 1px #DDDDDD;
             height: 45px;
@@ -108,10 +133,10 @@
         flex-direction: column;
         max-width: 340px;
         width: 100%;
-        padding-top: 30px;
+        padding-top: 40px;
         & > select {
-            margin-top: 17px;
-            padding-left: 10px;
+            margin-top: 16px;
+            padding-left: 16px;
             border-radius: 5px;
             border: solid 1px #DDDDDD;
             height: 45px;
@@ -126,8 +151,8 @@
         width: 100%;
         padding-top: 43px;
         & > textarea {
-            margin-top: 30px;
-            padding: 20px 0 0 10px;
+            margin-top: 43px;
+            padding: 19px 0 0 16px;
             border-radius: 5px;
             border: solid 1px #DDDDDD;
             width: 100%;
@@ -172,12 +197,18 @@
         color: #fff;
         font-size: 48px;
         font-family: '游ゴシック体';
+        @include mq(sp) {
+            font-size: 32px;
+        }
     }
     &__text {
         margin-top: 40px;
         color: #fff;
         font-size: 28px;
         font-family: '游ゴシック体';
+        @include mq(sp) {
+            font-size: 20px;
+        }
     }
     &__btn {
         position: relative;
@@ -187,6 +218,7 @@
         padding: 28px 100px 28px 40px;
         text-decoration: none;
         font-size: 16px;
+        font-weight: 600;
         font-family: '源ノ角ゴシック JP';
         display: inline-block;
         &::after {
@@ -200,6 +232,9 @@
             border-top: solid 3px;
             border-right: solid 3px;
             transform: rotate(45deg) translateY(-50%);
+        }
+        @include mq(sp) {
+            padding: 13px 65px 13px 25px;
         }
     }
 

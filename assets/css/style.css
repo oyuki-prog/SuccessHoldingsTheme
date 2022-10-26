@@ -930,11 +930,16 @@ select {
 
 .p-main {
   margin: 0;
-  padding: 150px 10%;
+  padding: 160px 10%;
   min-width: 250px;
   font-family: "游ゴシック体";
   background-color: #EDEBEB;
   color: #3B4043;
+}
+@media (max-width: 599px) {
+  .p-main {
+    padding: 80px 20px;
+  }
 }
 .p-main__wrapper {
   text-align: center;
@@ -942,10 +947,20 @@ select {
 .p-main__title {
   font-size: 32px;
 }
+@media (max-width: 599px) {
+  .p-main__title {
+    font-size: 24px;
+  }
+}
 .p-main__list {
-  margin-top: 100px;
+  margin-top: 82px;
   padding: 0;
   border: solid 1px #707070;
+}
+@media (max-width: 599px) {
+  .p-main__list {
+    margin-top: 51px;
+  }
 }
 .p-main__listItem {
   list-style: solid 1px #DDDDDD;
@@ -1003,6 +1018,11 @@ select {
 .p-main__listText:not(:first-child) {
   border-bottom: solid 2px #C1C1C1;
 }
+@media (max-width: 599px) {
+  .p-main__listText {
+    font-size: 14px;
+  }
+}
 
 .p-recruitForm__wrapper {
   padding-top: 100px;
@@ -1027,12 +1047,30 @@ select {
   font-size: 36px;
   text-align: center;
 }
+@media (max-width: 599px) {
+  .p-recruitForm__title {
+    font-size: 24px;
+  }
+}
 .p-recruitForm__lead {
   text-align: center;
 }
 .p-recruitForm__precautions {
   max-width: 450px;
-  margin: 10px auto 0;
+  margin: 51px auto 0;
+}
+@media (max-width: 599px) {
+  .p-recruitForm__precautions {
+    margin: 32px auto 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+@media (max-width: 599px) {
+  .p-recruitForm__precautionsText {
+    width: 270px;
+    margin: 0 auto;
+  }
 }
 .p-recruitForm__inputColumn {
   display: -webkit-box;
@@ -1045,11 +1083,11 @@ select {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .p-recruitForm__inputColumn > input {
-  margin-top: 17px;
-  padding-left: 10px;
+  margin-top: 16px;
+  padding-left: 16px;
   border-radius: 5px;
   border: solid 1px #DDDDDD;
   height: 45px;
@@ -1091,11 +1129,11 @@ select {
           flex-direction: column;
   max-width: 340px;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .p-recruitForm__choiceColumn > select {
-  margin-top: 17px;
-  padding-left: 10px;
+  margin-top: 16px;
+  padding-left: 16px;
   border-radius: 5px;
   border: solid 1px #DDDDDD;
   height: 45px;
@@ -1117,8 +1155,8 @@ select {
   padding-top: 43px;
 }
 .p-recruitForm__otherColumn > textarea {
-  margin-top: 30px;
-  padding: 20px 0 0 10px;
+  margin-top: 43px;
+  padding: 19px 0 0 16px;
   border-radius: 5px;
   border: solid 1px #DDDDDD;
   width: 100%;
@@ -1174,11 +1212,21 @@ select {
   font-size: 48px;
   font-family: "游ゴシック体";
 }
+@media (max-width: 599px) {
+  .p-contactAccess__title {
+    font-size: 32px;
+  }
+}
 .p-contactAccess__text {
   margin-top: 40px;
   color: #fff;
   font-size: 28px;
   font-family: "游ゴシック体";
+}
+@media (max-width: 599px) {
+  .p-contactAccess__text {
+    font-size: 20px;
+  }
 }
 .p-contactAccess__btn {
   position: relative;
@@ -1188,6 +1236,7 @@ select {
   padding: 28px 100px 28px 40px;
   text-decoration: none;
   font-size: 16px;
+  font-weight: 600;
   font-family: "源ノ角ゴシック JP";
   display: inline-block;
 }
@@ -1203,6 +1252,11 @@ select {
   border-right: solid 3px;
   -webkit-transform: rotate(45deg) translateY(-50%);
           transform: rotate(45deg) translateY(-50%);
+}
+@media (max-width: 599px) {
+  .p-contactAccess__btn {
+    padding: 13px 65px 13px 25px;
+  }
 }
 
 .u-hidden {
