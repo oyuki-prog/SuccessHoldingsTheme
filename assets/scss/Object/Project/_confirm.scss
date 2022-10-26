@@ -13,6 +13,9 @@
   }
   &__title {
     font-size: 36px;
+    @include mq('sp') {
+      font-size: 24px;
+    }
   }
   &__titleText {
     margin-top: 80px;
@@ -32,6 +35,9 @@
   &__listTitle {
     font-size: 18px;
     font-weight: bold;
+    display: flex;
+    height: 20px;
+    align-items: center;
   }
   &__require {
     &::after {
@@ -42,8 +48,10 @@
       font-size: 12px;
       font-weight: bold;
       color: $color-background-sub;
-      padding: 3px 8px;
       margin-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   &__listText {

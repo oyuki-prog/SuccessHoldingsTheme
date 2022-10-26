@@ -2223,6 +2223,11 @@ select {
 .p-confirm__title {
   font-size: 36px;
 }
+@media (max-width: 599px) {
+  .p-confirm__title {
+    font-size: 24px;
+  }
+}
 .p-confirm__titleText {
   margin-top: 80px;
 }
@@ -2241,6 +2246,15 @@ select {
 .p-confirm__listTitle {
   font-size: 18px;
   font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .p-confirm__require::after {
   content: "必須";
@@ -2250,8 +2264,19 @@ select {
   font-size: 12px;
   font-weight: bold;
   color: #FFF;
-  padding: 3px 8px;
   margin-left: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .p-confirm__listText {
   margin-top: 20px;
