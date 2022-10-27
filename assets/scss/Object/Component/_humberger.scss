@@ -1,15 +1,16 @@
 @use "../../Foundation/global" as *;
 
 @include mq("tab") {
-  #c-humberger {
+  .c-humberger {
     position: relative;
     height: 20px;
     width: 70px;
     display: inline-block;
     box-sizing: border-box;
     margin-left: auto;
+    z-index: 100;
   }
-  #c-humberger div {
+  .c-humberger div {
     position: absolute;
     left: 20px;
     height: 2px;
@@ -19,26 +20,29 @@
     display: inline-block;
     box-sizing: border-box;
   }
-  #c-humberger div:nth-of-type(1) {
+  .c-humberger div:nth-of-type(1) {
+    transition-duration: 0.5s;
     bottom: 20px;
   }
-  #c-humberger div:nth-of-type(2) {
+  .c-humberger div:nth-of-type(2) {
     bottom: 10px;
+    transition-duration: 0.5s;
   }
-  #c-humberger div:nth-of-type(3) {
+  .c-humberger div:nth-of-type(3) {
     bottom: 0;
+    transition-duration: 0.5s;
   }
 }
 
 @include mq("sp") {
-  #c-humberger {
+  .c-humberger {
     position: relative;
     height: 20px;
     width: 70px;
     display: inline-block;
     box-sizing: border-box;
   }
-  #c-humberger div {
+  .c-humberger div {
     position: absolute;
     left: 20px;
     height: 2px;
@@ -48,13 +52,13 @@
     display: inline-block;
     box-sizing: border-box;
   }
-  #c-humberger div:nth-of-type(1) {
+  .c-humberger div:nth-of-type(1) {
     bottom: 20px;
   }
-  #c-humberger div:nth-of-type(2) {
+  .c-humberger div:nth-of-type(2) {
     bottom: 10px;
   }
-  #c-humberger div:nth-of-type(3) {
+  .c-humberger div:nth-of-type(3) {
     bottom: 0;
   }
 }
