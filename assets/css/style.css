@@ -1208,7 +1208,6 @@ select {
   background-size: cover;
   padding: 80px 0 84px;
   text-align: center;
-  height: 400px;
   border: solid 2px #26226B;
 }
 @media (max-width: 599px) {
@@ -1244,7 +1243,6 @@ select {
   border: solid 2px #26226B;
   padding: 28px 100px 28px 40px;
   text-decoration: none;
-  font-size: 16px;
   font-weight: 600;
   font-family: "源ノ角ゴシック JP";
   display: inline-block;
