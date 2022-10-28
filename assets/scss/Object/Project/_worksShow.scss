@@ -1,9 +1,11 @@
 @use '../../Foundation/global'as *;
 
 .p-worksShow {
-    padding: 160px 0;
+    margin-top: 160px;
+    padding-bottom: 160px;
     @include mq('tab') {
-        padding: 80px 0;
+        margin-top: 80px;
+        padding-bottom: 80px;
     }
     &__clientTitle {
         text-align: center;
