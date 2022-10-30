@@ -1,0 +1,7 @@
+@use "../../Foundation/global" as *;
+
+.fix.active {
+  @include mq("tab") {
+    overflow: hidden;
+  }
+}
