@@ -998,7 +998,7 @@ select {
   max-width: 250px;
   text-align: center;
   background-color: #26226B;
-  color: #fff;
+  color: #FFF;
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
           align-self: stretch;
@@ -1017,7 +1017,7 @@ select {
       -ms-flex: 1;
           flex: 1;
   padding: 20px 10px;
-  background-color: #fff;
+  background-color: #FFF;
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
           align-self: stretch;
@@ -1124,7 +1124,7 @@ select {
   font-size: 12px;
   font-weight: 100;
   background-color: #FF7F00;
-  color: #fff;
+  color: #FFF;
 }
 .p-recruitForm__choiceColumn {
   display: -webkit-box;
@@ -1220,7 +1220,7 @@ select {
   }
 }
 .p-contactAccess__title {
-  color: #fff;
+  color: #FFF;
   font-size: 48px;
   font-family: "游ゴシック体";
 }
@@ -1231,7 +1231,7 @@ select {
 }
 .p-contactAccess__text {
   margin-top: 40px;
-  color: #fff;
+  color: #FFF;
   font-size: 28px;
   font-family: "游ゴシック体";
 }
@@ -1243,7 +1243,7 @@ select {
 .p-contactAccess__btn {
   position: relative;
   margin-top: 40px;
-  background-color: #fff;
+  background-color: #FFF;
   border: solid 2px #26226B;
   padding: 28px 100px 28px 40px;
   text-decoration: none;

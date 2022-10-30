@@ -4,8 +4,8 @@
     padding: 160px 140px;
     min-width: 250px;
     font-family: '游ゴシック体';
-    background-color: #EDEBEB;
-    color: #3B4043;
+    background-color: $color-background;
+    color: $color-text;
     @include mq(sp) {
         padding: 80px 20px;
     }
@@ -48,8 +48,8 @@
         width: 30%;
         max-width: 250px;
         text-align: center;
-        background-color: #26226B;
-        color: #fff;
+        background-color: $color-main;
+        color: $color-background-sub;
         align-self: stretch;
     }
     &__listText {
@@ -57,7 +57,7 @@
         align-items: center;
         flex: 1;
         padding: 20px 10px;
-        background-color: #fff;
+        background-color:$color-background-sub;
         align-self: stretch;
         @include mq(sp) {
             font-size: 14px;
@@ -133,7 +133,7 @@
         font-size: 12px;
         font-weight: 100;
         background-color: #FF7F00;
-        color: #fff;
+        color: $color-background-sub;
     }
     &__choiceColumn {
         display: flex;
@@ -202,7 +202,7 @@
         }
     }
     &__title {
-        color: #fff;
+        color: $color-background-sub;
         font-size: 48px;
         font-family: '游ゴシック体';
         @include mq(sp) {
@@ -211,7 +211,7 @@
     }
     &__text {
         margin-top: 40px;
-        color: #fff;
+        color: $color-background-sub;
         font-size: 28px;
         font-family: '游ゴシック体';
         @include mq(sp) {
@@ -221,7 +221,7 @@
     &__btn {
         position: relative;
         margin-top: 40px;
-        background-color: #fff;
+        background-color: $color-background-sub;
         border: solid 2px #26226B;
         padding: 28px 100px 28px 40px;
         text-decoration: none;
