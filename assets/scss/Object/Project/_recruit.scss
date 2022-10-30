@@ -1,5 +1,5 @@
 @use '../../Foundation/global'as *;
-.p-main {
+.p-recruit {
     margin: 0;
     padding: 160px 10%;
     min-width: 250px;
@@ -34,10 +34,10 @@
         width: 100%;
         min-height: 100px;
         &:not(:last-of-type) {
-            & > .p-main__listTitle {
+            & > .p-recruit__listTitle {
                 border-bottom: solid 2px #F0F1F3;
             }
-            & > .p-main__listText {
+            & > .p-recruit__listText {
                 border-bottom: solid 2px #C1C1C1;
             }
         }
