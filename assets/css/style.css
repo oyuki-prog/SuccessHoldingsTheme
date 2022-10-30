@@ -1095,7 +1095,7 @@ select {
 .p-form__inputColumn > input::placeholder {
   color: #CCCCCC;
 }
-.p-formitem {
+.p-form__item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1135,15 +1135,7 @@ select {
   color: #CCCCCC;
 }
 .p-form__otherColumn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: block;
   width: 100%;
   margin-top: 45px;
 }
