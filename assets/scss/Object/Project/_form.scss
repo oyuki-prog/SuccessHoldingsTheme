@@ -5,13 +5,6 @@
         margin: 0 auto;
         max-width: 680px;
         min-width: 300px;
-        & label {
-            display: flex;
-            align-items: center;
-            font-size: 18px;
-            font-weight: 900;
-            font-family: 'Yu Gothic';
-        }
     }
     &__title {
         font-size: 36px;
@@ -57,6 +50,13 @@
                 color: #CCCCCC;
             }
         }
+    }
+    &item {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 900;
+        font-family: 'Yu Gothic';        
     }
     &__attention {
         height: 20px;
