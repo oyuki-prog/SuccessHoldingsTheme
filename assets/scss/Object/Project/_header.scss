@@ -8,6 +8,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    position: relative;
   }
   &__logoWrapper {
     height: 50px;
@@ -25,7 +26,7 @@
 
   &__text {
     text-align: center;
-    color: black;
+    color: #000000;
     @include mq("sp") {
       line-height: 60px;
       margin: auto 0;
@@ -33,9 +34,22 @@
     }
   }
 
-  //画像幅900近くのとき、ロゴと重ならないようにマルチクラスにてtab以降はdisplay:noneを指定
   &__nav {
     margin-left: auto;
+    @include mq("tab") {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      background-color: #000000;
+      transform: translateX(100%);
+      transition: ease 0.4s;
+    }
+  }
+  .active &__nav {
+    transform: translateX(0);
   }
 
   &__navList {
@@ -43,19 +57,58 @@
     align-items: center;
     list-style: none;
     gap: 30px;
+    @include mq("tab") {
+      text-align: left;
+      display: inline-block;
+      padding: 200px 0;
+      margin-right: 100%;
+      margin-left: 10%;
+    }
   }
 
   &__items {
     white-space: nowrap;
+    color: #000000;
+    @include mq("tab") {
+      color: $color-background-sub;
+      margin-top: 20px;
+    }
   }
 
   &__contact {
     white-space: nowrap;
+    color: $color-background-sub;
+
+    @include mq("tab") {
+      margin-top: 20px;
+    }
   }
   &__contactBtn {
     display: block;
     width: 150px;
     text-align: center;
     line-height: 50px;
+    @include mq("tab") {
+      width: auto;
+      display: inline-block;
+      line-height: normal;
+      background: transparent;
+    }
+  }
+}
+
+.fadein {
+  @include mq("tab") {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(5px);
+  }
+}
+
+.fadein.active {
+  @include mq("tab") {
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 0.6s;
   }
 }
