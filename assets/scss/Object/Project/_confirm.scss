@@ -1,0 +1,82 @@
+@use "../../Foundation/global" as *;
+
+.p-confirm {
+  max-width: 600px;
+  padding: 160px 0px;
+  margin: 0 auto;
+  @include mq('tab') {
+    width: 100%;
+    padding: 80px 30px;
+  }
+  &__titleBox {
+    text-align: center;
+  }
+  &__title {
+    font-size: 36px;
+    @include mq('sp') {
+      font-size: 24px;
+    }
+  }
+  &__titleText {
+    margin-top: 80px;
+    @include mq('tab') {
+      margin-top: 40px;
+    }
+  }
+  &__list {
+    margin-top: 80px;
+    text-align: left;
+  }
+  &__listItem {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+  &__listTitle {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    height: 20px;
+    align-items: center;
+  }
+  &__require {
+    &::after {
+      content: "必須";
+      background-color: #FF7F00;
+      width: 40px;
+      height: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      color: $color-background-sub;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__listText {
+    margin-top: 20px;
+  }
+  &__btnArea {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    @include mq('tab') {
+      flex-direction: column;
+      justify-content: normal;
+      margin-top: 40px;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  &__prevBtn {
+    width: 250px;
+    height: 80px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+  }
+  &__sendBtn {
+    width: 250px;
+    height: 80px;
+  }
+}
