@@ -1028,13 +1028,13 @@ select {
   }
 }
 
-.p-recruitForm__wrapper {
+.p-form__wrapper {
   padding-top: 100px;
   margin: 0 auto;
   max-width: 680px;
   min-width: 300px;
 }
-.p-recruitForm__wrapper label {
+.p-form__wrapper label {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1047,36 +1047,36 @@ select {
   font-weight: 900;
   font-family: "Yu Gothic";
 }
-.p-recruitForm__title {
+.p-form__title {
   font-size: 36px;
   text-align: center;
 }
 @media (max-width: 599px) {
-  .p-recruitForm__title {
+  .p-form__title {
     font-size: 24px;
   }
 }
-.p-recruitForm__lead {
+.p-form__lead {
   text-align: center;
 }
-.p-recruitForm__precautions {
+.p-form__precautions {
   max-width: 450px;
   margin: 51px auto 0;
 }
 @media (max-width: 599px) {
-  .p-recruitForm__precautions {
+  .p-form__precautions {
     margin: 32px auto 0;
     text-align: center;
     font-size: 14px;
   }
 }
 @media (max-width: 599px) {
-  .p-recruitForm__precautionsText {
+  .p-form__precautionsText {
     width: 270px;
     margin: 0 auto;
   }
 }
-.p-recruitForm__inputColumn {
+.p-form__inputColumn {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1088,35 +1088,35 @@ select {
           flex-direction: column;
   width: 100%;
 }
-.p-recruitForm__inputColumn:first-child {
+.p-form__inputColumn:first-child {
   padding-top: 40px;
 }
-.p-recruitForm__inputColumn:not(:first-child) {
+.p-form__inputColumn:not(:first-child) {
   margin-top: 40px;
 }
-.p-recruitForm__inputColumn > input {
+.p-form__inputColumn > input {
   margin-top: 16px;
   padding-left: 16px;
   border-radius: 5px;
   border: solid 1px #DDDDDD;
   height: 45px;
 }
-.p-recruitForm__inputColumn > input::-webkit-input-placeholder {
+.p-form__inputColumn > input::-webkit-input-placeholder {
   color: #CCCCCC;
 }
-.p-recruitForm__inputColumn > input::-moz-placeholder {
+.p-form__inputColumn > input::-moz-placeholder {
   color: #CCCCCC;
 }
-.p-recruitForm__inputColumn > input:-ms-input-placeholder {
+.p-form__inputColumn > input:-ms-input-placeholder {
   color: #CCCCCC;
 }
-.p-recruitForm__inputColumn > input::-ms-input-placeholder {
+.p-form__inputColumn > input::-ms-input-placeholder {
   color: #CCCCCC;
 }
-.p-recruitForm__inputColumn > input::placeholder {
+.p-form__inputColumn > input::placeholder {
   color: #CCCCCC;
 }
-.p-recruitForm__attention {
+.p-form__attention {
   height: 20px;
   margin-left: 10px;
   padding: 0 8px;
@@ -1126,7 +1126,7 @@ select {
   background-color: #FF7F00;
   color: #FFF;
 }
-.p-recruitForm__choiceColumn {
+.p-form__choiceColumn {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1140,17 +1140,17 @@ select {
   width: 100%;
   margin-top: 40px;
 }
-.p-recruitForm__choiceColumn > select {
+.p-form__choiceColumn > select {
   margin-top: 16px;
   padding-left: 16px;
   border-radius: 5px;
   border: solid 1px #DDDDDD;
   height: 45px;
 }
-.p-recruitForm__choiceColumn > select:invalid {
+.p-form__choiceColumn > select:invalid {
   color: #CCCCCC;
 }
-.p-recruitForm__otherColumn {
+.p-form__otherColumn {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1163,7 +1163,7 @@ select {
   width: 100%;
   margin-top: 43px;
 }
-.p-recruitForm__otherColumn > textarea {
+.p-form__otherColumn > textarea {
   margin-top: 43px;
   padding: 19px 0 0 16px;
   border-radius: 5px;
@@ -1171,32 +1171,32 @@ select {
   width: 100%;
   height: 240px;
 }
-.p-recruitForm__otherColumn > textarea::-webkit-input-placeholder {
+.p-form__otherColumn > textarea::-webkit-input-placeholder {
   color: #CCCCCC;
 }
-.p-recruitForm__otherColumn > textarea::-moz-placeholder {
+.p-form__otherColumn > textarea::-moz-placeholder {
   color: #CCCCCC;
 }
-.p-recruitForm__otherColumn > textarea:-ms-input-placeholder {
+.p-form__otherColumn > textarea:-ms-input-placeholder {
   color: #CCCCCC;
 }
-.p-recruitForm__otherColumn > textarea::-ms-input-placeholder {
+.p-form__otherColumn > textarea::-ms-input-placeholder {
   color: #CCCCCC;
 }
-.p-recruitForm__otherColumn > textarea::placeholder {
+.p-form__otherColumn > textarea::placeholder {
   color: #CCCCCC;
 }
-.p-recruitForm__otherColumn > p {
+.p-form__otherColumn > p {
   margin-top: 40px;
 }
-.p-recruitForm__otherColumn > p > a {
+.p-form__otherColumn > p > a {
   text-decoration: none;
 }
-.p-recruitForm__btm {
+.p-form__btm {
   margin-top: 40px;
   text-align: center;
 }
-.p-recruitForm__btm > input {
+.p-form__btm > input {
   padding: 0;
   min-width: 300px;
   max-width: 440px;

@@ -1,0 +1,127 @@
+@use "../../Foundation/global" as *;
+.p-form {
+    &__wrapper {
+        padding-top: 100px;
+        margin: 0 auto;
+        max-width: 680px;
+        min-width: 300px;
+        & label {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 900;
+            font-family: 'Yu Gothic';
+        }
+    }
+    &__title {
+        font-size: 36px;
+        text-align: center;
+        @include mq(sp) {
+            font-size: 24px;
+        }
+    }
+    &__lead {
+        text-align: center;
+    }
+    &__precautions {
+        max-width: 450px;
+        margin: 51px auto 0;
+        @include mq(sp) {
+            margin: 32px auto 0;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+    &__precautionsText {
+        @include mq(sp) {
+        width: 270px;
+        margin: 0 auto;
+        }
+    }
+    &__inputColumn {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &:first-child {
+            padding-top: 40px;
+        }
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
+        & > input {
+            margin-top: 16px;
+            padding-left: 16px;
+            border-radius: 5px;
+            border: solid 1px #DDDDDD;
+            height: 45px;
+            &::placeholder {
+                color: #CCCCCC;
+            }
+        }
+    }
+    &__attention {
+        height: 20px;
+        margin-left: 10px;
+        padding: 0 8px;
+        vertical-align: middle;
+        font-size: 12px;
+        font-weight: 100;
+        background-color: #FF7F00;
+        color: $color-background-sub;
+    }
+    &__choiceColumn {
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+        width: 100%;
+        margin-top: 40px;
+        & > select {
+            margin-top: 16px;
+            padding-left: 16px;
+            border-radius: 5px;
+            border: solid 1px #DDDDDD;
+            height: 45px;
+        }
+        & > select:invalid {
+            color: #CCCCCC;
+        }
+    }
+    &__otherColumn {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 43px;
+        & > textarea {
+            margin-top: 43px;
+            padding: 19px 0 0 16px;
+            border-radius: 5px;
+            border: solid 1px #DDDDDD;
+            width: 100%;
+            height: 240px;
+            &::placeholder {
+                color: #CCCCCC;
+            }
+        }
+        & > p {
+            margin-top: 40px;
+            & > a {
+                text-decoration: none;
+            }
+        }
+    }
+    &__btm {
+        margin-top: 40px;
+        text-align: center;
+        & > input {
+            padding: 0;
+            min-width: 300px;
+            max-width: 440px;
+            width: 100%;
+            height: 80px;
+            background-color: #F2F2F2;
+            border: none;
+            color: #CCCCCC;
+            font-size: 22px;
+        }
+    }
+}
