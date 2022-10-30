@@ -2,10 +2,11 @@ $(window).on("load", function () {
   jQuery(function ($) {
     const hamburger = $("#js-hamburger");
     const fadein = $(".fadein");
-    const triger = $(".triger");
+    // const triger = $(".triger");
+    const body = $("body");
 
     hamburger.on("click", function () {
-      triger.toggleClass("active");
+      body.toggleClass("active");
 
       fadein.each(function (i, element) {
         setTimeout(function () {

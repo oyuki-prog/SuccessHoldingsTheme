@@ -46,10 +46,10 @@
       background-color: #000000;
       transform: translateX(100%);
       transition: ease 0.4s;
-      &.active {
-        transform: translateX(0);
-      }
     }
+  }
+  .active &__nav {
+    transform: translateX(0);
   }
 
   &__navList {
