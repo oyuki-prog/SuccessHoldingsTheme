@@ -17,13 +17,13 @@ blockquote,
 dl,
 dd,
 ul,
-li{
+li {
   margin: 0;
   padding: 0;
 }
 
 ul,
-ol{
+ol {
   list-style: none;
 }
 
@@ -42,8 +42,7 @@ a:not([class]) {
 }
 
 a,
-a:hover,
-a:visited {
+a:hover {
   color: inherit;
 }
 
