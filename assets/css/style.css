@@ -964,7 +964,6 @@ select {
   }
 }
 .p-recruit__listItem {
-  list-style: solid 1px #DDDDDD;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
