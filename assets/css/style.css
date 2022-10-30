@@ -1108,15 +1108,14 @@ select {
   font-weight: 900;
   font-family: "Yu Gothic";
 }
-.p-form__attention {
-  height: 20px;
+.p-form__require::after {
+  content: "必須";
+  color: #FFF;
   margin-left: 10px;
   padding: 0 8px;
-  vertical-align: middle;
+  background-color: #FF7F00;
   font-size: 12px;
   font-weight: 100;
-  background-color: #FF7F00;
-  color: #FFF;
 }
 .p-form__choiceColumn {
   display: block;
