@@ -1061,7 +1061,7 @@ select {
 }
 .p-form__precautions {
   max-width: 450px;
-  margin: 51px auto 0;
+  margin: 50px auto 0;
 }
 @media (max-width: 599px) {
   .p-form__precautions {
@@ -1161,11 +1161,11 @@ select {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-top: 43px;
+  margin-top: 45px;
 }
 .p-form__otherColumn > textarea {
-  margin-top: 43px;
-  padding: 19px 0 0 16px;
+  margin-top: 45px;
+  padding: 20px 0 0 15px;
   border-radius: 5px;
   border: solid 1px #DDDDDD;
   width: 100%;
@@ -1211,12 +1211,12 @@ select {
 .p-contactAccess__image {
   background-image: url(../images/img-sample.jpg);
   background-size: cover;
-  padding: 80px 0 84px;
+  padding: 80px 0 85px;
   text-align: center;
 }
 @media (max-width: 599px) {
   .p-contactAccess__image {
-    padding: 44px 0 76px;
+    padding: 45px 0 75px;
   }
 }
 .p-contactAccess__title {
