@@ -41,8 +41,8 @@
         }
         & > input {
             width: 100%;
-            margin-top: 16px;
-            padding-left: 16px;
+            height: 45px;
+            padding: 0 16px;
             border-radius: 5px;
             border: solid 1px #DDDDDD;
             height: 45px;
@@ -75,7 +75,6 @@
         margin-top: 40px;
         & > select {
             width: 100%;
-            margin-top: 16px;
             padding-left: 16px;
             border-radius: 5px;
             border: solid 1px #DDDDDD;
@@ -91,7 +90,7 @@
         margin-top: 45px;
         & > textarea {
             margin-top: 45px;
-            padding: 20px 0 0 15px;
+            padding: 20px 15px;
             border-radius: 5px;
             border: solid 1px #DDDDDD;
             width: 100%;
