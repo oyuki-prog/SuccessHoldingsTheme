@@ -936,6 +936,11 @@ select {
   background-color: #EDEBEB;
   color: #3B4043;
 }
+@media (max-width: 900px) {
+  .p-recruit {
+    padding: 120px 60px;
+  }
+}
 @media (max-width: 599px) {
   .p-recruit {
     padding: 80px 20px;
