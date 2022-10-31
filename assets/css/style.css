@@ -1166,11 +1166,11 @@ select {
 .p-form__otherColumn > p > a {
   text-decoration: none;
 }
-.p-form__btm {
+.p-form__btn {
   margin-top: 40px;
   text-align: center;
 }
-.p-form__btm > input {
+.p-form__btn > input {
   padding: 0;
   min-width: 300px;
   max-width: 440px;
