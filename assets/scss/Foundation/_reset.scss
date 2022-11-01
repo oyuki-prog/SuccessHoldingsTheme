@@ -15,12 +15,15 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+ul,
+li {
   margin: 0;
+  padding: 0;
 }
 
-ul[role="list"],
-ol[role="list"] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -38,11 +41,19 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a,
+a:hover {
+  color: inherit;
+}
+
 img,
 picture {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
   display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 input,
@@ -52,7 +63,7 @@ select {
   font: inherit;
 }
 
-@media(prefers-reduced-motion:reduce) {
+@media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
   }
@@ -60,9 +71,9 @@ select {
   *,
   *::before,
   *::after {
-    animation-duration: .01ms !important;
+    animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: .01ms !important;
-    scroll-behavior: auto !important
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

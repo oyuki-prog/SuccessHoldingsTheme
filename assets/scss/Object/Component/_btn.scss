@@ -1,0 +1,7 @@
+@use "../../Foundation/global" as *;
+.c-btn {
+  color: $color-background-sub;
+  background: linear-gradient(to right, rgb(3, 3, 83), rgb(218, 214, 244));
+  border: none;
+  text-decoration: none;
+}

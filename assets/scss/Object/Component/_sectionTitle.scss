@@ -1,0 +1,18 @@
+@use "../../Foundation/global" as *;
+
+.c-sectionTitle {
+    width: 100%;
+    text-align: center;
+    &__mainTitle {
+        font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+        &--white {
+            color: $color-background-sub;
+        }
+    }
+    &__subTitle {
+        font-size: 16px;
+        &--white {
+            color: $color-background-sub;
+        }
+    }
+}
