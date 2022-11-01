@@ -15,38 +15,42 @@
     <div class="p-header">
       <div class="l-container p-header__inner">
         <div class="p-header__logoWrapper">
-          <img class="p-header__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png" />
+          <img
+            class="p-header__img"
+            src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png"
+          />
         </div>
         <p class="p-header__text">SuccessHD</p>
-        <div id="c-humberger" class="u-hidden-pc">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div id="js-hamburger" class="c-hamburger u-hidden-pc">
+          <div class="c-hamburger__line"></div>
+          <div class="c-hamburger__line"></div>
+          <div class="c-hamburger__line"></div>
         </div>
-        <nav class="p-header__nav u-hidden-tab u-hidden-sp">
-          <ul class="p-header__navList">
-            <li class="p-header__items">
+        <nav class="p-header__nav" id="js-nav">
+          <ul class="p-header__navList nav__items nav-items">
+            <li class="p-header__items fadein">
               <a class="p-headerLink c-link" href="#">サービス</a>
             </li>
-            <li class="p-header__items">
+            <li class="p-header__items fadein">
               <a class="p-headerLink c-link" href="#">導入事例</a>
             </li>
-            <li class="p-header__items">
+            <li class="p-header__items fadein">
               <a class="p-headerLink c-link" href="#">ニュース</a>
             </li>
-            <li class="p-header__items">
+            <li class="p-header__items fadein">
               <a class="p-headerLink c-link" href="#">会社情報</a>
             </li>
-            <li class="p-header__items">
+            <li class="p-header__items fadein">
               <a class="p-headerLink c-link" href="#">採用情報</a>
             </li>
-            <li class="p-header__contact">
-              <a class="p-header__contactBtn c-btn" href="#">お問い合わせ</a>
+            <li class="p-header__contact fadein">
+              <a class="p-header__contactBtn c-btn" href="#"
+                >お問い合わせ</a
+              >
             </li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-
   <main class="l-main">
