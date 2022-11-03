@@ -1254,9 +1254,11 @@ select {
 }
 
 .p-form__wrapper {
-  padding-top: 100px;
   margin: 0 auto;
   max-width: 680px;
+}
+.p-form__wrapperRecruit {
+  padding-top: 100px;
 }
 .p-form__title {
   font-size: 36px;
@@ -1290,11 +1292,14 @@ select {
 .p-form__inputColumn {
   display: block;
 }
-.p-form__inputColumn:first-child {
-  padding-top: 40px;
-}
 .p-form__inputColumn:not(:first-child) {
   margin-top: 40px;
+}
+.p-form__topColumRecruit {
+  padding-top: 40px;
+}
+.p-form__topColumContact {
+  padding-top: 80px;
 }
 .p-form__entry {
   width: 100%;
@@ -1340,6 +1345,13 @@ select {
   background-color: #FF7F00;
   font-size: 12px;
   font-weight: 100;
+}
+.p-form__options {
+  display: block;
+  font-weight: 600;
+}
+.p-form__options:not(:first-child) {
+  margin-top: 18px;
 }
 .p-form__choiceColumn {
   display: block;
@@ -1390,6 +1402,7 @@ select {
 }
 .p-form__policyLink {
   text-decoration: none;
+  color: #1571DA;
 }
 .p-form__btn {
   margin-top: 40px;
@@ -2967,6 +2980,25 @@ select {
 @media (max-width: 900px) {
   .p-worksShow__btn {
     margin: 40px auto 0;
+  }
+}
+
+.p-contact {
+  margin: 0;
+  padding: 160px 140px;
+  min-width: 250px;
+  font-family: "游ゴシック体";
+  background-color: #EDEBEB;
+  color: #3B4043;
+}
+@media (max-width: 900px) {
+  .p-contact {
+    padding: 120px 60px;
+  }
+}
+@media (max-width: 599px) {
+  .p-contact {
+    padding: 80px 20px;
   }
 }
 
