@@ -8,6 +8,7 @@
                 'post_type' => 'post',
                 'posts_per_page' => 6,
                 'category_name' => 'achievements',
+                'supports' => array('thumbnail')
               );
               $the_query = new WP_Query($args);
             ?>
@@ -16,7 +17,7 @@
                 <?php $the_query->the_post(); ?>
                 <li class="p-works__listItem">
                   <a href="<?php the_permalink(); ?>">
-                    <div class="p-works__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
+                    <?php the_post_thumbnail( '', array( 'class' => 'p-works__img' ) ); ?>
                     <div class="p-works__hoverBox">
                       <div class="p-works__textBox">
                         <p class="p-works__companyName"><?php the_title(); ?></p>
