@@ -1269,6 +1269,10 @@ select {
     font-size: 24px;
   }
 }
+.p-form__titleContact {
+  font-size: 36px;
+  text-align: center;
+}
 .p-form__lead {
   text-align: center;
 }
@@ -1287,6 +1291,17 @@ select {
   .p-form__precautionsText {
     width: 270px;
     margin: 0 auto;
+  }
+}
+.p-form__precautionsTextContact {
+  max-width: 450px;
+  margin: 50px auto 0;
+}
+@media (max-width: 599px) {
+  .p-form__precautionsTextContact {
+    width: 270px;
+    margin: 32px auto 0;
+    font-size: 14px;
   }
 }
 .p-form__inputColumn {
@@ -1405,11 +1420,8 @@ select {
   color: #1571DA;
 }
 .p-form__btn {
-  margin-top: 40px;
-  text-align: center;
-}
-.p-form__btnEntry {
-  padding: 0;
+  display: block;
+  margin: 40px auto 0;
   max-width: 440px;
   width: 100%;
   height: 80px;

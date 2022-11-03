@@ -15,15 +15,13 @@
     <main class="p-contact">
         <section class="p-form">
             <div class="p-form__wrapper">
-                <h2 class="p-form__title">お問い合わせ</h2>
+                <h2 class="p-form__titleContact">お問い合わせ</h2>
                 <p class="p-form__lead">Contact</p>
-                <div class="p-form__precautions">
-                    <p class="p-form__precautionsText">以下のフォームに必要事項をご入力の上、ご登録ください。</p>
-                </div>
+                    <p class="p-form__precautions p-form__precautionsTextContact">以下のフォームに必要事項をご入力の上、ご登録ください。</p>
                 <form action="" method="post">
                     <div class="p-form__inputColumn p-form__topColumContact">
                         <label class="p-form__item p-form__require" for="company">会社名</label>
-                        <input class="p-form__entry" type="text" id="company" name="company" placeholder="例）株式会社ベイジ" required>
+                        <input class="p-form__entry" type="text" id="company" name="company" placeholder="例）株式会社〇〇〇" required>
                     </div>
                     <div class="p-form__inputColumn">
                         <label class="p-form__item p-form__require" for="name">お名前</label>
@@ -122,9 +120,7 @@
                         <textarea class="p-form__otherEntry" id="message" name="message" placeholder="ご自由にご記入ください。"></textarea>
                         <p class="p-form__lead p-form__policy"><a class="p-form__policyLink" href="">個人情報保護方針&#10064;</a>に同意したものとします。</p>
                     </div>
-                    <div class="p-form__btn">
-                        <input class="p-form__btnEntry" type="submit" value="問い合わせる">
-                    </div>
+                    <input class="p-form__btn" type="submit" value="問い合わせる">
                 </form>
             </div>
         </section>
