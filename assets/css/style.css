@@ -1253,12 +1253,17 @@ select {
   }
 }
 
+.p-form__top {
+  padding-top: 160px;
+}
+@media (max-width: 599px) {
+  .p-form__top {
+    padding-top: 80px;
+  }
+}
 .p-form__wrapper {
   margin: 0 auto;
   max-width: 680px;
-}
-.p-form__wrapperRecruit {
-  padding-top: 100px;
 }
 .p-form__title {
   font-size: 36px;
