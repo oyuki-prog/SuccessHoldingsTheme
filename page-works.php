@@ -17,13 +17,17 @@
                 <?php $the_query->the_post(); ?>
                 <li class="p-works__listItem">
                   <a href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail( '', array( 'class' => 'p-works__img' ) ); ?>
-                    <div class="p-works__hoverBox">
-                      <div class="p-works__textBox">
-                        <p class="p-works__companyName"><?php the_title(); ?></p>
-                        <p class="p-works__text"><?php the_excerpt(); ?></p>
-                      </div>
-                    </div>
+                    <?php if (has_post_thumbnail()) : ?>
+                      <?php the_post_thumbnail( '', array( 'class' => 'p-works__img' ) ); ?>
+                    <?php else: ?>
+                      <img class="p-works__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
+                    <?php endif; ?>
+                        <div class="p-works__hoverBox">
+                          <div class="p-works__textBox">
+                            <p class="p-works__companyName"><?php the_title(); ?></p>
+                            <p class="p-works__text"><?php the_excerpt(); ?></p>
+                          </div>
+                        </div>
                   </a>
                 </li>
               <?php endwhile; ?>
