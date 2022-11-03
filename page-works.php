@@ -3,72 +3,31 @@
       <section class="p-works">
         <div class="l-container">
           <ul class="p-works__list">
-            <li class="p-works__listItem">
-              <a href="">
-                <div class="p-works__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
-                <div class="p-works__hoverBox">
-                  <div class="p-works__textBox">
-                    <p class="p-works__companyName">株式会社〇〇〇〇</p>
-                    <p class="p-works__text">新人研修</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="p-works__listItem">
-              <a href="">
-                <div class="p-works__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
-                <div class="p-works__hoverBox">
-                  <div class="p-works__textBox">
-                    <p class="p-works__companyName">株式会社〇〇〇〇</p>
-                    <p class="p-works__text">新人研修</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="p-works__listItem">
-              <a href="">
-                <div class="p-works__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
-                <div class="p-works__hoverBox">
-                  <div class="p-works__textBox">
-                    <p class="p-works__companyName">株式会社〇〇〇〇</p>
-                    <p class="p-works__text">新人研修</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="p-works__listItem">
-              <a href="">
-                <div class="p-works__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
-                <div class="p-works__hoverBox">
-                  <div class="p-works__textBox">
-                    <p class="p-works__companyName">株式会社〇〇〇〇</p>
-                    <p class="p-works__text">新人研修</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="p-works__listItem">
-              <a href="">
-                <div class="p-works__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
-                <div class="p-works__hoverBox">
-                  <div class="p-works__textBox">
-                    <p class="p-works__companyName">株式会社〇〇〇〇</p>
-                    <p class="p-works__text">新人研修</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="p-works__listItem">
-              <a href="">
-                <div class="p-works__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
-                <div class="p-works__hoverBox">
-                  <div class="p-works__textBox">
-                    <p class="p-works__companyName">株式会社〇〇〇〇</p>
-                    <p class="p-works__text">新人研修</p>
-                  </div>
-                </div>
-              </a>
-            </li>
+            <?php
+              $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 6,
+                'category_name' => 'achievements',
+              );
+              $the_query = new WP_Query($args);
+            ?>
+            <?php if ($the_query->have_posts()): ?>
+              <?php while ($the_query->have_posts()) : ?>
+                <?php $the_query->the_post(); ?>
+                <li class="p-works__listItem">
+                  <a href="<?php the_permalink(); ?>">
+                    <div class="p-works__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt=""></div>
+                    <div class="p-works__hoverBox">
+                      <div class="p-works__textBox">
+                        <p class="p-works__companyName"><?php the_title(); ?></p>
+                        <p class="p-works__text"><?php the_excerpt(); ?></p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
           </ul>
         </div>
       </section>
