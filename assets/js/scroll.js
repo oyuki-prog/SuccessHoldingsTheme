@@ -7,7 +7,7 @@ jQuery(function($){
       PageTopCheck(winScrollTop, scrollTop);
     });
   })
- 
+
   function PageTopCheck(topY, scrollY) {
     alert("ok")
     if (topY >= scrollY) {
