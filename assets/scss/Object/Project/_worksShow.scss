@@ -1,0 +1,135 @@
+@use '../../Foundation/global'as *;
+
+.p-worksShow {
+    margin-top: 160px;
+    padding-bottom: 160px;
+    @include mq('tab') {
+        margin-top: 80px;
+        padding-bottom: 80px;
+    }
+    &__clientTitle {
+        text-align: center;
+        font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+    }
+    &__name {
+        margin-top: 80px;
+        padding-bottom: 10px;
+        border-bottom: solid 2px;
+        font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+        @include mq('tab') {
+            margin-top: 40px;
+        }
+    }
+    &__container {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include mq('tab') {
+            margin: 80px auto 0;
+            flex-direction: column;
+            max-width: 660px;
+        }
+        @include mq('sp') {
+            margin-top: 40px;
+        }
+    }
+    &__img {
+        max-width: 500px;
+        width: 100%;
+        @include mq('tab') {
+            max-width: 100%;
+        }
+    }
+    &__list {
+        max-width: 660px;
+        width: 100%;
+        margin-left: 3%;
+        @include mq('tab') {
+            margin-top: 40px;
+            margin-left: 0;
+        }
+    }
+    &__item {
+        display: flex;
+        min-height: 100px;
+    }
+    &__outline {
+        max-width: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: solid 1px #C1C1C1;
+        border-bottom: solid 1px #707070;
+        color: $color-background-sub;
+        background-color: $color-main;
+        @include mq('sp') {
+            width: 100px;
+        }
+    }
+    &__detail {
+        max-width: 460px;
+        min-width: 300px;
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        border-top: solid 1px #C1C1C1;
+        border-bottom: solid 1px #707070;
+        border-right: solid 1px #C1C1C1;
+        word-break: break-all;
+        background-color: $color-background-sub;
+        @include mq('sp') {
+            flex: 1;
+            min-width: 0;
+            padding: 0 10px;
+        }
+    }
+    &__introList {
+        margin-top: 180px;
+        @include mq('tab') {
+            margin-top: 90px;
+        }
+    }
+    &__introItem {
+        margin-top: 160px;
+        &:first-child {
+            margin: 0;
+        }
+        @include mq('tab') {
+            margin-top: 80px;
+        }
+    }
+    &__introTitle {
+        text-align: center;
+        font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+    }
+    &__introOutline {
+        margin-top: 80px;
+        padding-bottom: 10px;
+        border-bottom: solid 2px;
+        font-size: clamp(1.5rem, 1.286rem + 0.95vw, 2rem);
+        @include mq('sp') {
+            margin-top: 40px;
+        }
+    }
+    &__introDetail {
+        margin-top: 60px;
+        @include mq('sp') {
+            margin-top: 40px;
+        }
+    }
+    &__btn {
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        margin: 80px auto 0;
+        max-width: 250px;
+        min-height: 50px;
+        font-weight: bold;
+        @include mq('tab') {
+            margin: 40px auto 0;
+        }
+    }
+}

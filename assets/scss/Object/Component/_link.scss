@@ -3,4 +3,7 @@
 .c-link {
   text-decoration: none;
   color: black;
+  @include mq("tab") {
+    color: #fff;
+  }
 }
