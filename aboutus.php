@@ -5,7 +5,7 @@
         <ul class="p-aboutusNav__list">
           <li class="p-aboutusNav__item">
             <a class="p-aboutusNav__link" href="#aboutusMessage">
-              <p class="p-aboutusNav__text">代表挨拶</p>
+              <p class="p-aboutusNav__text">代表挨</p>
               <div class="p-aboutusNav__arrow"></div>
             </a>
           </li>
