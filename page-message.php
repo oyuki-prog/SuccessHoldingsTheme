@@ -22,7 +22,7 @@
             <br>
             今後とも格別のご支援、ご愛好を賜りますようよろしくお願い申し上げます。
           </p>
-          <a href="" class="c-btn p-message__btn">会社情報TOPへ</a>
+          <a href="<?php echo home_url( '/' ); ?>" class="c-btn p-message__btn">会社情報TOPへ</a>
         </div>
       </section>
   </main>
