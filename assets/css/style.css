@@ -2995,6 +2995,14 @@ select {
     margin-top: 40px;
   }
 }
+.p-thanks__btn {
+  margin-top: 100px;
+}
+@media (max-width: 900px) {
+  .p-thanks__btn {
+    margin-top: 50px;
+  }
+}
 
 .u-hidden {
   display: none;
