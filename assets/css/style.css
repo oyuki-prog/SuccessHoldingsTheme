@@ -2970,6 +2970,32 @@ select {
   }
 }
 
+.p-thanks {
+  padding: 160px 0px;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .p-thanks {
+    padding: 80px 30px;
+  }
+}
+.p-thanks__title {
+  font-size: 36px;
+}
+@media (max-width: 900px) {
+  .p-thanks__title {
+    font-size: 24px;
+  }
+}
+.p-thanks__text {
+  margin-top: 80px;
+}
+@media (max-width: 900px) {
+  .p-thanks__text {
+    margin-top: 40px;
+  }
+}
+
 .u-hidden {
   display: none;
 }
