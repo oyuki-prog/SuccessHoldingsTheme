@@ -33,17 +33,10 @@
             font-size: 14px;
         }
     }
-    &__precautionsText {
-        @include mq(sp) {
-            width: 270px;
-            margin: 0 auto;
-        }
-    }
     &__precautionsTextContact {
         max-width: 450px;
         margin: 50px auto 0;
         @include mq(sp) {
-            width: 270px;
             margin: 32px auto 0;
             font-size: 14px;
         }

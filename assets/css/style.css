@@ -1292,19 +1292,12 @@ select {
     font-size: 14px;
   }
 }
-@media (max-width: 599px) {
-  .p-form__precautionsText {
-    width: 270px;
-    margin: 0 auto;
-  }
-}
 .p-form__precautionsTextContact {
   max-width: 450px;
   margin: 50px auto 0;
 }
 @media (max-width: 599px) {
   .p-form__precautionsTextContact {
-    width: 270px;
     margin: 32px auto 0;
     font-size: 14px;
   }
