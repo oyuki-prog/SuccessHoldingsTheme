@@ -1,0 +1,20 @@
+@use "../../Foundation/global" as *;
+.p-thanks {
+  padding: 160px 0px;
+  text-align: center;
+  @include mq('tab') {
+    padding: 80px 30px;
+  }
+  &__title {
+    font-size: 36px;
+    @include mq('tab') {
+      font-size: 24px;
+    }
+  }
+  &__text {
+    margin-top: 80px;
+    @include mq('tab') {
+      margin-top: 40px;
+    }
+  }
+}
