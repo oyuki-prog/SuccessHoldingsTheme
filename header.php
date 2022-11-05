@@ -14,6 +14,7 @@
     ></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/scroll.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/recruit.js"></script>
 <?php wp_head(); ?>
 </head>
 
@@ -51,7 +52,7 @@
               <a class="p-headerLink c-link" href="<?php echo home_url("/recruit"); ?>">採用情報</a>
             </li>
             <li class="p-header__contact fadein">
-              <a class="p-header__contactBtn c-btn" href="<?php echo home_url("/confirm"); ?>"
+              <a class="p-header__contactBtn c-btn" href="<?php echo home_url("/contact"); ?>"
                 >お問い合わせ
                 </a>
             </li>
