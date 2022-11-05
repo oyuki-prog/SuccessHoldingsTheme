@@ -48,7 +48,7 @@
             </p>
         </li>
     </ul>
-    <section class="p-form">
+    <section class="p-form p-form__top">
         <div class="p-form__wrapper">
             <h2 class="p-form__title">採用フォーム</h2>
             <p class="p-form__lead">Recruit&thinsp;Form</p>
@@ -57,7 +57,6 @@
                 <p>※採用以外のお問合せに関しましては<a href="">こちらへ</a></p>
             </div>
             <?php the_content(); ?>
-
         </div>
     </section>
     </main>

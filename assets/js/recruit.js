@@ -1,31 +1,11 @@
-$(window).on("load", function () {
-  jQuery(function ($) {
-    const hamburger = $("#js-hamburger");
-    const fadein = $(".fadein");
-    // const triger = $(".triger");
-    const body = $("body");
-
-    hamburger.on("click", function () {
-      body.toggleClass("active");
-
-      fadein.each(function (i, element) {
-        setTimeout(function () {
-          $(element).toggleClass("active");
-        }, i * 200);
-      });
-    });
-
-    let companyFlag = false;
+$(window).on("load", function(){
+  jQuery(function($){
     let nameFlag = false;
     let kanaFlag = false;
     let telFlag = false;
     let emailFlag = false;
     let municipalitiesFlag = false;
 
-
-    $("#company").change(function(){
-      requireCheck();
-    });
     $("#name").change(function(){
       requireCheck();
     });
@@ -43,25 +23,21 @@ $(window).on("load", function () {
     })
 
     function requireCheck(){
-
-      companyFlag = ($("#company").val() == "") ? false : true;
       nameFlag = ($("#name").val() == "") ? false : true;
       kanaFlag = ($("#kana").val() === "") ? false : true;
       telFlag = ($("#tel").val() === "") ? false : true;
       emailFlag = ($("#email").val() === "") ? false : true;
       municipalitiesFlag = ($("#municipalities").val() === "") ? false : true;
-      if(companyFlag && nameFlag && kanaFlag && telFlag && emailFlag && municipalitiesFlag) {
+      if(nameFlag && kanaFlag && telFlag && emailFlag && municipalitiesFlag) {
         buttonActive = true;
       } else {
         buttonActive = false;
       }
       if( buttonActive ) {
-        $('.p-form__btn').addClass("c-btn");
+        $('.p-form__btnEntry').addClass("c-btn");
       }else{
-        $('.p-form__btn').removeClass("c-btn");
+        $('.p-form__btnEntry').removeClass("c-btn");
       }
     }
-  });
-});
-
-
+  })
+})

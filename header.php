@@ -14,6 +14,7 @@
     ></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/scroll.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/recruit.js"></script>
 <?php wp_head(); ?>
 </head>
 
