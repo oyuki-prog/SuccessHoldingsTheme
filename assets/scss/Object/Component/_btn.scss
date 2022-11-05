@@ -5,4 +5,8 @@
   border: none;
   text-decoration: none;
   cursor: pointer;
+  &:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
 }

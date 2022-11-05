@@ -1,31 +1,11 @@
-$(window).on("load", function () {
-  jQuery(function ($) {
-    const hamburger = $("#js-hamburger");
-    const fadein = $(".fadein");
-    // const triger = $(".triger");
-    const body = $("body");
-
-    hamburger.on("click", function () {
-      body.toggleClass("active");
-
-      fadein.each(function (i, element) {
-        setTimeout(function () {
-          $(element).toggleClass("active");
-        }, i * 200);
-      });
-    });
-
-    let companyFlag = false;
+$(window).on("load", function(){
+  jQuery(function($){
     let nameFlag = false;
     let kanaFlag = false;
     let telFlag = false;
     let emailFlag = false;
     let municipalitiesFlag = false;
 
-
-    $("#company").change(function(){
-      requireCheck();
-    });
     $("#name").change(function(){
       requireCheck();
     });
@@ -43,8 +23,6 @@ $(window).on("load", function () {
     })
 
     function requireCheck(){
-
-      companyFlag = ($("#company").val() == "") ? false : true;
       nameFlag = ($("#name").val() == "") ? false : true;
       kanaFlag = ($("#kana").val() === "") ? false : true;
       telFlag = ($("#tel").val() === "") ? false : true;
@@ -61,7 +39,5 @@ $(window).on("load", function () {
         $('.p-form__btn').removeClass("c-btn");
       }
     }
-  });
-});
-
-
+  })
+})

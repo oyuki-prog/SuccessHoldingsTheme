@@ -57,6 +57,7 @@ a:not([class]) {
 a,
 a:hover {
   color: inherit;
+  text-decoration: none;
 }
 
 img,
@@ -170,6 +171,11 @@ select {
   background: linear-gradient(to right, rgb(3, 3, 83), rgb(218, 214, 244));
   border: none;
   text-decoration: none;
+  cursor: pointer;
+}
+.c-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
 }
 
 @media (max-width: 900px) {
@@ -368,6 +374,7 @@ select {
   display: flex;
   gap: 40px;
   padding: 40px;
+  text-decoration: none;
 }
 @media (max-width: 900px) {
   .p-topHero__newsBox {
@@ -688,6 +695,7 @@ select {
   text-align: center;
   border: 2px solid #FFF;
   background-color: #26226B;
+  cursor: pointer;
 }
 @media (max-width: 599px) {
   .p-topBusiness__btn {
@@ -1253,8 +1261,15 @@ select {
   }
 }
 
+.p-form__top {
+  padding-top: 160px;
+}
+@media (max-width: 599px) {
+  .p-form__top {
+    padding-top: 80px;
+  }
+}
 .p-form__wrapper {
-  padding-top: 100px;
   margin: 0 auto;
   max-width: 680px;
 }
@@ -1266,6 +1281,10 @@ select {
   .p-form__title {
     font-size: 24px;
   }
+}
+.p-form__titleContact {
+  font-size: 36px;
+  text-align: center;
 }
 .p-form__lead {
   text-align: center;
@@ -1281,20 +1300,27 @@ select {
     font-size: 14px;
   }
 }
+.p-form__precautionsTextContact {
+  max-width: 450px;
+  margin: 50px auto 0;
+}
 @media (max-width: 599px) {
-  .p-form__precautionsText {
-    width: 270px;
-    margin: 0 auto;
+  .p-form__precautionsTextContact {
+    margin: 32px auto 0;
+    font-size: 14px;
   }
 }
 .p-form__inputColumn {
   display: block;
 }
-.p-form__inputColumn:first-child {
-  padding-top: 40px;
-}
 .p-form__inputColumn:not(:first-child) {
   margin-top: 40px;
+}
+.p-form__topColumRecruit {
+  padding-top: 40px;
+}
+.p-form__topColumContact {
+  padding-top: 80px;
 }
 .p-form__entry {
   width: 100%;
@@ -1340,6 +1366,10 @@ select {
   background-color: #FF7F00;
   font-size: 12px;
   font-weight: 100;
+}
+.p-form__options {
+  display: block;
+  margin-top: 18px;
 }
 .p-form__choiceColumn {
   display: block;
@@ -1390,12 +1420,11 @@ select {
 }
 .p-form__policyLink {
   text-decoration: none;
+  color: #1571DA;
 }
 .p-form__btn {
-  margin-top: 40px;
-  text-align: center;
-}
-.p-form__btnEntry {
+  display: block;
+  margin: 40px auto 0;
   padding: 0;
   max-width: 440px;
   width: 100%;
@@ -3001,6 +3030,25 @@ select {
 @media (max-width: 900px) {
   .p-thanks__btn {
     margin-top: 50px;
+  }
+}
+
+.p-contact {
+  margin: 0;
+  padding: 160px 140px;
+  min-width: 250px;
+  font-family: "游ゴシック体";
+  background-color: #EDEBEB;
+  color: #3B4043;
+}
+@media (max-width: 900px) {
+  .p-contact {
+    padding: 120px 60px;
+  }
+}
+@media (max-width: 599px) {
+  .p-contact {
+    padding: 80px 20px;
   }
 }
 
