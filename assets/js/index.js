@@ -56,9 +56,9 @@ $(window).on("load", function () {
         buttonActive = false;
       }
       if( buttonActive ) {
-        $('.p-form__btn').addClass("c-btn");
+        $('.p-form__btnEntry').addClass("c-btn");
       }else{
-        $('.p-form__btn').removeClass("c-btn");
+        $('.p-form__btnEntry').removeClass("c-btn");
       }
     }
   });
