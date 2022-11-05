@@ -1,7 +1,12 @@
 @use "../../Foundation/global" as *;
 .p-form {
+    &__top {
+        padding-top: 160px;
+        @include mq(sp) {
+            padding-top: 80px;
+        }
+    }
     &__wrapper {
-        padding-top: 100px;
         margin: 0 auto;
         max-width: 680px;
     }
@@ -11,6 +16,10 @@
         @include mq(sp) {
             font-size: 24px;
         }
+    }
+    &__titleContact {
+        font-size: 36px;
+        text-align: center;
     }
     &__lead {
         text-align: center;
@@ -24,20 +33,25 @@
             font-size: 14px;
         }
     }
-    &__precautionsText {
+    &__precautionsTextContact {
+        max-width: 450px;
+        margin: 50px auto 0;
         @include mq(sp) {
-        width: 270px;
-        margin: 0 auto;
+            margin: 32px auto 0;
+            font-size: 14px;
         }
     }
     &__inputColumn {
-        display: block;
-        &:first-child {
-            padding-top: 40px;
-        }
+    display: block;
         &:not(:first-child) {
             margin-top: 40px;
         }
+    }
+    &__topColumRecruit {
+        padding-top: 40px;
+    }
+    &__topColumContact {
+        padding-top: 80px;
     }
     &__entry {
         width: 100%;
@@ -67,6 +81,10 @@
             font-size: 12px;
             font-weight: 100;
         }
+    }
+    &__options {
+        display: block;
+        margin-top: 18px;
     }
     &__choiceColumn {
         display: block;
@@ -105,12 +123,11 @@
     }
     &__policyLink {
         text-decoration: none;
+        color: #1571DA;
     }
     &__btn {
-        margin-top: 40px;
-        text-align: center;
-    }
-    &__btnEntry {
+        display: block;
+        margin: 40px auto 0;
         padding: 0;
         max-width: 440px;
         width: 100%;
