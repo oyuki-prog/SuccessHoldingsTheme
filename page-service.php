@@ -64,4 +64,5 @@
     </div>
   </div>
 </section>
+<?php get_template_part('contact');  ?>
 <?php get_footer(); ?>

@@ -25,4 +25,5 @@
     <a href="<?php echo home_url('/'); ?>" class="c-btn p-message__btn">会社情報TOPへ</a>
   </div>
 </section>
+<?php get_template_part('contact');  ?>
 <?php get_footer(); ?>
