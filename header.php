@@ -29,24 +29,24 @@
         <nav class="p-header__nav" id="js-nav">
           <ul class="p-header__navList nav__items nav-items">
             <li class="p-header__items fadein">
-              <a class="p-headerLink c-link" href="#">サービス</a>
+              <a class="p-headerLink c-link" href="service">サービス</a>
             </li>
             <li class="p-header__items fadein">
-              <a class="p-headerLink c-link" href="#">導入事例</a>
+              <a class="p-headerLink c-link" href="works">導入事例</a>
             </li>
             <li class="p-header__items fadein">
-              <a class="p-headerLink c-link" href="#">ニュース</a>
+              <a class="p-headerLink c-link" href="news">ニュース</a>
             </li>
             <li class="p-header__items fadein">
-              <a class="p-headerLink c-link" href="#">会社情報</a>
+              <a class="p-headerLink c-link" href="aboutUs">会社情報</a>
             </li>
             <li class="p-header__items fadein">
-              <a class="p-headerLink c-link" href="#">採用情報</a>
+              <a class="p-headerLink c-link" href="recruit">採用情報</a>
             </li>
             <li class="p-header__contact fadein">
-              <a class="p-header__contactBtn c-btn" href="#"
-                >お問い合わせ</a
-              >
+              <a class="p-header__contactBtn c-btn" href="confirm"
+                >お問い合わせ
+                </a>
             </li>
           </ul>
         </nav>
