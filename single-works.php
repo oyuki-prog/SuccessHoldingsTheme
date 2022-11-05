@@ -62,7 +62,7 @@
             </p>
           </li>
         </ul>
-        <a href="<?php home_url("/works"); ?>" class=" c-btn p-worksShow__btn">導入事例一覧</a>
+        <a href="<?php echo home_url("/works"); ?>" class=" c-btn p-worksShow__btn">導入事例一覧</a>
       </div>
     </section>
   <?php endwhile; ?>
