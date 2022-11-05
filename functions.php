@@ -1,4 +1,5 @@
 <?php
+
 function display_title() {
     if (is_page()) {
         echo (get_the_title());
@@ -26,4 +27,5 @@ function display_tabTitle() {
         echo get_the_title() . " | 株式会社サクセスホールディングス";
     }
 }
+
 add_theme_support('post-thumbnails');
