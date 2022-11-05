@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<?php get_template_part('hero'); ?>
 <?php if (have_posts()) : ?>
   <?php while (have_posts()) : ?>
     <?php the_post(); ?>
+    <?php get_template_part('hero'); ?>
     <section class="p-worksShow">
       <div class="l-container">
         <h2 class="p-worksShow__clientTitle">お客様概要</h2>
@@ -67,4 +67,5 @@
     </section>
   <?php endwhile; ?>
 <?php endif; ?>
+<?php get_template_part('contact');  ?>
 <?php get_footer(); ?>
