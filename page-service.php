@@ -29,7 +29,7 @@
           人材の可能性を最大化させます。
 
         </p>
-        <button class="p-service__btn c-btn" type="button">詳細</button>
+        <button class="p-service__btn c-btn" type="button" onclick="location.href='<?php echo home_url("/service/hrd"); ?>'">詳細</button>
       </div>
     </div>
     <div class="p-service__container">
@@ -45,7 +45,7 @@
           戦略と戦術を思考し<br>
           再現性の高い営業組織を実現させます。
         </p>
-        <button class="p-service__btn c-btn" type="button">詳細</button>
+        <button class="p-service__btn c-btn" type="button" onclick="location.href='<?php echo home_url("/service/sales"); ?>'">詳細</button>
       </div>
     </div>
     <div class="p-service__container">
@@ -59,7 +59,7 @@
           経営における決断と実行を促進し<br>
           事業拡大をさせます。
         </p>
-        <button class="p-service__btn c-btn" type="button">詳細</button>
+        <button class="p-service__btn c-btn" type="button" onclick="location.href='<?php echo home_url("/service/consultant"); ?>'">詳細</button>
       </div>
     </div>
   </div>
