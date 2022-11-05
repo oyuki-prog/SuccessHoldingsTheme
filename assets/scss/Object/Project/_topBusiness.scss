@@ -101,6 +101,7 @@
     text-align: center;
     border: 2px solid $color-background-sub;
     background-color: $color-main;
+    cursor: pointer;
     @include mq('sp') {
       height: 50px;
       margin: 40px auto 0px;
