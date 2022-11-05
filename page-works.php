@@ -7,7 +7,7 @@
       $args = array(
         'post_type' => 'post',
         'posts_per_page' => 6,
-        'category_name' => 'achievements',
+        'category_name' => 'works',
         'supports' => array('thumbnail')
       );
       $the_query = new WP_Query($args);
