@@ -158,7 +158,7 @@
       <?php endif; ?>
     </ul>
     <button onclick="location.href='/works'" class="p-topWorks__btn c-btn" type="button">
-      会社情報はこちら
+      導入事例一覧
     </button>
   </div>
 </section>
