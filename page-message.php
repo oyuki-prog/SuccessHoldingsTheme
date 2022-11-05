@@ -25,5 +25,4 @@
     <a href="<?php echo home_url('/'); ?>" class="c-btn p-message__btn">会社情報TOPへ</a>
   </div>
 </section>
-</main>
 <?php get_footer(); ?>
