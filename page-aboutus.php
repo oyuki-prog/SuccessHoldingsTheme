@@ -48,9 +48,11 @@
             <p class="p-aboutusMessage__post">代表取締役社長</p>
             <p class="p-aboutusMessage__name">小林　大祐</p>
           </div>
-          <div class="c-btn p-aboutusMessage__btn">
-            <p class="p-aboutusMessage__btnText">メッセージ</p>
-          </div>
+          <a href="<?php echo home_url("/message"); ?>">
+            <div class="c-btn p-aboutusMessage__btn">
+              <p class="p-aboutusMessage__btnText">メッセージ</p>
+            </div>
+          </a>
         </div>
         <div class="p-aboutusMessage__img">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
