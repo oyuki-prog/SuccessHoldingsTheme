@@ -28,15 +28,15 @@ $(window).on("load", function(){
       telFlag = ($("#tel").val() === "") ? false : true;
       emailFlag = ($("#email").val() === "") ? false : true;
       municipalitiesFlag = ($("#municipalities").val() === "") ? false : true;
-      if(companyFlag && nameFlag && kanaFlag && telFlag && emailFlag && municipalitiesFlag) {
+      if(nameFlag && kanaFlag && telFlag && emailFlag && municipalitiesFlag) {
         buttonActive = true;
       } else {
         buttonActive = false;
       }
       if( buttonActive ) {
-        $('.p-form__btn').addClass("c-btn");
+        $('.p-form__btnEntry').addClass("c-btn");
       }else{
-        $('.p-form__btn').removeClass("c-btn");
+        $('.p-form__btnEntry').removeClass("c-btn");
       }
     }
   })
