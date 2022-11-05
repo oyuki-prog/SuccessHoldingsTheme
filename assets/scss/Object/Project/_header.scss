@@ -11,17 +11,14 @@
     position: relative;
   }
   &__logoWrapper {
-    height: 50px;
+    display: flex;
+    align-items: center;
+    height: 80%;
   }
 
   &__img {
-    @include mq("tab") {
-      height: 40px;
-    }
-    @include mq("sp") {
-      height: 40px;
-      margin: auto;
-    }
+    width: 200px;
+    height: 55px;
   }
 
   &__text {
