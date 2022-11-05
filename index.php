@@ -29,7 +29,7 @@
     <?php endif; ?>
   </div>
 </section>
-<section class="p-topAboutUs">
+<section class="p-topAboutUs" id="scroll">
   <div class="p-topAboutUs__background"></div>
   <div class="l-container">
     <h2 class="p-topAboutUs__title">ABOUT US</h2>
@@ -214,7 +214,7 @@
 </section>
 <div class="c-contact"></div>
 <div class="p-topScroll">
-  <a href="#scroll" class="p-topScroll__text--message">
+  <a href="#scroll" class="p-topScroll__text--message p-topScroll__view">
     <span>Scroll</span>
   </a>
   <a href="#top" class="p-topScroll__text--top">

@@ -7,6 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php display_tabTitle(); ?></title>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+  <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/scroll.js"></script>
 <?php wp_head(); ?>
 </head>
 
@@ -53,4 +60,4 @@
       </div>
     </div>
   </header>
-  <main class="l-main">
+  <main class="l-main" id="top">
