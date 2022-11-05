@@ -22,13 +22,12 @@
   <header class="l-header">
     <div class="p-header">
       <div class="l-container p-header__inner">
-        <div class="p-header__logoWrapper">
+        <a class="p-header__logoWrapper" href="<?php echo home_url(); ?>">
           <img
             class="p-header__img"
-            src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png"
+            src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"
           />
-        </div>
-        <p class="p-header__text">SuccessHD</p>
+        </a>
         <div id="js-hamburger" class="c-hamburger u-hidden-pc">
           <div class="c-hamburger__line"></div>
           <div class="c-hamburger__line"></div>
