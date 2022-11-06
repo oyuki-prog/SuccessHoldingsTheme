@@ -13,9 +13,19 @@
       crossorigin="anonymous"
     ></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/scroll.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/recruit.js"></script>
-<?php wp_head(); ?>
+    <?php 
+      if(strpos(get_the_permalink(),'contact') !== false) {
+        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/contact.js\"</script>";
+      }
+      if(strpos(get_the_permalink(),'recruit') !== false) {
+        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/recruit.js\"</script>";
+      }
+      if(is_home()) {
+        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/scroll.js\"></script></script>";
+      }
+    ?>
+    
+    <?php wp_head(); ?>
 </head>
 
 <body>
