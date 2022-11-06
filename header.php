@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
-    <?php 
+    <?php
       if(strpos(get_the_permalink(),'contact') !== false) {
         echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/contact.js\"></script>";
       }
@@ -24,7 +24,6 @@
         echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/scroll.js\"></script>";
       }
     ?>
-    
     <?php wp_head(); ?>
 </head>
 
@@ -46,19 +45,19 @@
         <nav class="p-header__nav" id="js-nav">
           <ul class="p-header__navList nav__items nav-items">
             <li class="p-header__items fadein">
+              <a class="p-headerLink c-link" href="<?php echo home_url("/aboutUs"); ?>">会社情報</a>
+            </li>
+            <li class="p-header__items fadein">
               <a class="p-headerLink c-link" href="<?php echo home_url("/service"); ?>">サービス</a>
             </li>
             <li class="p-header__items fadein">
               <a class="p-headerLink c-link" href="<?php echo home_url("/work"); ?>">導入事例</a>
             </li>
             <li class="p-header__items fadein">
-              <a class="p-headerLink c-link" href="<?php echo home_url("/news"); ?>">ニュース</a>
-            </li>
-            <li class="p-header__items fadein">
-              <a class="p-headerLink c-link" href="<?php echo home_url("/aboutUs"); ?>">会社情報</a>
-            </li>
-            <li class="p-header__items fadein">
               <a class="p-headerLink c-link" href="<?php echo home_url("/recruit"); ?>">採用情報</a>
+            </li>
+            <li class="p-header__items fadein">
+              <a class="p-headerLink c-link" href="<?php echo home_url("/news"); ?>">ニュース</a>
             </li>
             <li class="p-header__contact fadein">
               <a class="p-header__contactBtn c-btn" href="<?php echo home_url("/contact"); ?>"
