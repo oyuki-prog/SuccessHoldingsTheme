@@ -15,13 +15,13 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
     <?php 
       if(strpos(get_the_permalink(),'contact') !== false) {
-        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/contact.js\"</script>";
+        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/contact.js\"></script></script>";
       }
       if(strpos(get_the_permalink(),'recruit') !== false) {
-        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/recruit.js\"</script>";
+        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/recruit.js\"></script></script>";
       }
       if(is_home()) {
-        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/scroll.js\"></script></script>";
+        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/scroll.js\"></script>";
       }
     ?>
     

@@ -975,6 +975,18 @@ select {
   color: #FFF;
   letter-spacing: 0.05em;
 }
+.p-topScroll__text--top::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  width: 1px;
+  height: 100px;
+  background-color: #FFF;
+  -webkit-animation: pathTop 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+          animation: pathTop 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+  opacity: 1;
+  left: 54%;
+}
 .p-topScroll__view {
   opacity: 1;
   visibility: visible;
@@ -1032,6 +1044,58 @@ select {
             transform: scale(1, 0);
     -webkit-transform-origin: 0 100%;
             transform-origin: 0 100%;
+  }
+}
+@-webkit-keyframes pathTop {
+  0% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+  51% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+}
+@keyframes pathTop {
+  0% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+  51% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
   }
 }
 .p-works {
