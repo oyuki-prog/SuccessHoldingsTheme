@@ -40,8 +40,8 @@
       <div class="p-aboutusMessage__contents">
         <div class="p-aboutusMessage__greetingWrapper">
           <p class="p-aboutusMessage__greeting">
-            サンプルサンプル<br>
-            サンプルサンプル
+            成功を定義し<br>
+            成功に導く
           </p>
           <p class="p-aboutusMessage__company">株式会社サクセスホールディングス</p>
           <div class="p-aboutusMessage__greeter">
