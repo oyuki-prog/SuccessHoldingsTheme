@@ -14,36 +14,5 @@ $(window).on("load", function () {
         }, i * 200);
       });
     });
-
-    let companyFlag = false;
-    let nameFlag = false;
-    let kanaFlag = false;
-    let telFlag = false;
-    let emailFlag = false;
-    let municipalitiesFlag = false;
-
-
-    $("#company").change(function(){
-      requireCheck();
-    });
-    $("#name").change(function(){
-      requireCheck();
-    });
-    $("#kana").change(function(){
-      requireCheck();
-    });
-    $("#tel").change(function(){
-      requireCheck();
-    });
-    $("#email").change(function(){
-      requireCheck();
-    });
-    $("#municipalities").change(function(){
-      requireCheck();
-    })
-
-    
   });
 });
-
-

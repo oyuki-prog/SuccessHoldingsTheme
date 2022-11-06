@@ -20,10 +20,10 @@ $(window).on("load", function(){
     });
     $("#municipalities").change(function(){
       requireCheck();
-    })
+    });
 
     function requireCheck(){
-      nameFlag = ($("#name").val() == "") ? false : true;
+      nameFlag = ($("#name").val() === "") ? false : true;
       kanaFlag = ($("#kana").val() === "") ? false : true;
       telFlag = ($("#tel").val() === "") ? false : true;
       emailFlag = ($("#email").val() === "") ? false : true;
@@ -33,11 +33,11 @@ $(window).on("load", function(){
       } else {
         buttonActive = false;
       }
-      if( buttonActive ) {
+      if(buttonActive) {
         $('.p-form__btnEntry').addClass("c-btn");
       }else{
         $('.p-form__btnEntry').removeClass("c-btn");
-      }
-    }
-  })
-})
+      };
+    };
+  });
+});
