@@ -925,7 +925,7 @@ select {
 .p-topScroll__text--message {
   position: fixed;
   left: 10px;
-  bottom: 200px; /* back to page  とかぶって見えなかったので200pxにしてあります */
+  bottom: 100px;
   display: block;
   width: 20px;
   height: 160px;
