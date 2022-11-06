@@ -4,7 +4,7 @@
 <section class="p-message">
   <div class="l-container">
     <div class="p-message__img">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ceo-img.png" alt="">
     </div>
     <p class="p-message__text">
       私ども株式会社サクセスホールディングスは創業以来、「成功を定義し、成功に導く」を企業理念に、
