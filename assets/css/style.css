@@ -310,12 +310,12 @@ select {
   position: relative;
   background-color: #26226B;
   overflow: hidden;
-  height: 80vh;
+  height: 90vh;
 }
 .p-topHero__img {
   position: absolute;
   top: 0;
-  left: 10%;
+  left: 5%;
   width: calc(100% + (100vw - 100%) / 2);
   overflow: hidden;
   height: 100%;
@@ -334,7 +334,7 @@ select {
 .p-topHero__titleBox {
   position: absolute;
   top: 30%;
-  left: 10%;
+  left: 5%;
 }
 @media (max-width: 900px) {
   .p-topHero__titleBox {
@@ -343,7 +343,7 @@ select {
 }
 .p-topHero__title {
   font-size: 3.5vw;
-  color: black;
+  color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -361,7 +361,7 @@ select {
 .p-topHero__newsBox {
   position: absolute;
   bottom: 0;
-  left: 10%;
+  left: 5%;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -556,6 +556,9 @@ select {
     height: 50px;
     margin: 20px auto 0px;
   }
+}
+.p-topAboutUs__container {
+  padding-top: 40px;
 }
 
 .p-topBusiness__background {
@@ -1549,7 +1552,6 @@ select {
   position: relative;
   margin-top: 40px;
   background-color: #FFF;
-  border: solid 2px #26226B;
   padding: 28px 100px 28px 40px;
   text-decoration: none;
   font-weight: 600;
