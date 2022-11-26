@@ -2,7 +2,7 @@
 <section class="p-topHero">
   <div class="l-container">
     <div class="p-topHero__img">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top.jpg" alt="" />
     </div>
     <div class="p-topHero__titleBox">
       <h1 class="p-topHero__title">成功を定義し、成功へ導く</h1>
@@ -138,7 +138,7 @@
         <?php while ($the_query->have_posts()) : ?>
           <?php $the_query->the_post(); ?>
           <li class="p-topWorks__listItem">
-            <a href="">
+            <a href="<?php the_permalink(); ?>">
               <div class="p-topWorks__img">
                 <?php if (has_post_thumbnail()) : ?>
                   <?php the_post_thumbnail('', array('class' => 'p-works__img')); ?>
@@ -158,7 +158,7 @@
       <?php endif; ?>
     </ul>
     <button onclick="location.href='/works'" class="p-topWorks__btn c-btn" type="button">
-      導入事例一覧
+      会社情報はこちら
     </button>
   </div>
 </section>
@@ -171,37 +171,37 @@
     <ul class="p-topCompany__list">
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-jyounetsu.jpg" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-partsone.jpeg" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-aichisangyo.jpg" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-asto.png" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-grip.png" alt="" />
         </div>
       </li>
-      <li class="p-topCompany__listItem">
+      <!-- <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-redish.webp" alt="" />
         </div>
-      </li>
+      </li> -->
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-tmr.jpeg" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">

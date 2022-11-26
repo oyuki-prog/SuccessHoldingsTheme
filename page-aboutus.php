@@ -41,7 +41,7 @@
         <div class="p-aboutusMessage__greetingWrapper">
           <p class="p-aboutusMessage__greeting">
             成功を定義し<br>
-            成功に導く
+            成功へ導く
           </p>
           <p class="p-aboutusMessage__company">株式会社サクセスホールディングス</p>
           <div class="p-aboutusMessage__greeter">
@@ -55,7 +55,7 @@
           </a>
         </div>
         <div class="p-aboutusMessage__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ceo-img.jpg" alt="">
         </div>
       </div>
     </div>
@@ -74,7 +74,7 @@
         </div>
         <div class="p-aboutusPhilosophy__ideology">
           <p class="p-aboutusPhilosophy__summary">ミッション</p>
-          <p class="p-aboutusPhilosophy__detail">成功を定義し<span class="u-hidden-tab u-hidden-sp">、</span><br class="u-hidden-pc">成功に導く</p>
+          <p class="p-aboutusPhilosophy__detail">成功を定義し<span class="u-hidden-tab u-hidden-sp">、</span><br class="u-hidden-pc">成功へ導く</p>
         </div>
       </li>
       <li class="p-aboutusPhilosophy__item">
@@ -142,30 +142,33 @@
       </li>
       <li class="p-aboutusCompany__item">
         <p class="p-aboutusCompany__summary">設立</p>
-        <p class="p-aboutusCompany__detail">2021/6</p>
+        <p class="p-aboutusCompany__detail">2021年6月1日</p>
       </li>
       <li class="p-aboutusCompany__item">
         <p class="p-aboutusCompany__summary">資本金</p>
-        <p class="p-aboutusCompany__detail">5.000.000円</p>
+        <p class="p-aboutusCompany__detail">500,000円</p>
       </li>
       <li class="p-aboutusCompany__item">
         <p class="p-aboutusCompany__summary">代表者名</p>
-        <p class="p-aboutusCompany__detail">小林　大祐</p>
+        <p class="p-aboutusCompany__detail">小林 大祐</p>
       </li>
       <li class="p-aboutusCompany__item">
         <p class="p-aboutusCompany__summary">従業員数</p>
-        <p class="p-aboutusCompany__detail">12名</p>
+        <p class="p-aboutusCompany__detail">10名 (パート・アルバイト含む)</p>
       </li>
       <li class="p-aboutusCompany__item">
         <p class="p-aboutusCompany__summary">住所</p>
         <p class="p-aboutusCompany__detail">
-          <span class="u-hidden-sp">東京都・・・・・・・・・・</span>
-          <span class="u-hidden-pc u-hidden-tab">東京都多摩区</span>
+          東京都多摩市関戸2丁目39-16 センチュリーコート5F
         </p>
       </li>
       <li class="p-aboutusCompany__item">
-        <p class="p-aboutusCompany__summary">主要事業</p>
-        <p class="p-aboutusCompany__detail">・・・・・・・</p>
+        <p class="p-aboutusCompany__summary">取引銀行</p>
+        <p class="p-aboutusCompany__detail">三菱UFJ銀行<br>住信SBIネット銀行</p>
+      </li>
+      <li class="p-aboutusCompany__item">
+        <p class="p-aboutusCompany__summary">顧問</p>
+        <p class="p-aboutusCompany__detail">岩月靖夫税理士事務所<br>社会保険労務士法人藤田事務所</p>
       </li>
     </ul>
   </div>
@@ -179,34 +182,7 @@
     <ul class="p-aboutusMember__list">
       <li class="p-aboutusMember__item">
         <div class="p-aboutusMember__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
-        </div>
-        <div class="p-aboutusMember__employee">
-          <p class="p-aboutusMember__post">代表取締役社長</p>
-          <p class="p-aboutusMember__name">小林　大祐　<br class="u-hidden-pc u-hidden-sp">Daisuke Kobayashi</p>
-        </div>
-      </li>
-      <li class="p-aboutusMember__item">
-        <div class="p-aboutusMember__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
-        </div>
-        <div class="p-aboutusMember__employee">
-          <p class="p-aboutusMember__post">代表取締役社長</p>
-          <p class="p-aboutusMember__name">小林　大祐　<br class="u-hidden-pc u-hidden-sp">Daisuke Kobayashi</p>
-        </div>
-      </li>
-      <li class="p-aboutusMember__item">
-        <div class="p-aboutusMember__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
-        </div>
-        <div class="p-aboutusMember__employee">
-          <p class="p-aboutusMember__post">代表取締役社長</p>
-          <p class="p-aboutusMember__name">小林　大祐　<br class="u-hidden-pc u-hidden-sp">Daisuke Kobayashi</p>
-        </div>
-      </li>
-      <li class="p-aboutusMember__item">
-        <div class="p-aboutusMember__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ceo-img.jpg" alt="">
         </div>
         <div class="p-aboutusMember__employee">
           <p class="p-aboutusMember__post">代表取締役社長</p>
