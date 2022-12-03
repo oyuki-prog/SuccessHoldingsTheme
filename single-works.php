@@ -1,15 +1,19 @@
 <?php get_header(); ?>
-<?php get_template_part('hero'); ?>
 <?php if (have_posts()) : ?>
   <?php while (have_posts()) : ?>
     <?php the_post(); ?>
+    <?php get_template_part('hero'); ?>
     <section class="p-worksShow">
       <div class="l-container">
         <h2 class="p-worksShow__clientTitle">お客様概要</h2>
         <h3 class="p-worksShow__name"><?php the_title(); ?></h3>
         <div class="p-worksShow__container">
           <div class="p-worksShow__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
+            <?php if (has_post_thumbnail()) : ?>
+              <?php the_post_thumbnail('', array('class' => 'p-works__img')); ?>
+            <?php else : ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+            <?php endif; ?>
           </div>
           <ul class="p-worksShow__list">
             <li class="p-worksShow__item">
@@ -36,20 +40,20 @@
         </div>
         <ul class="p-worksShow__introList">
           <li class="p-worksShow__introItem">
+            <h2 class="p-worksShow__introTitle">導入背景</h2>
+            <h3 class="p-worksShow__introOutline">
+              <?php echo post_custom("導入背景タイトル"); ?> </h3>
+            <p class="p-worksShow__introDetail">
+              <?php echo post_custom("導入背景テキスト"); ?>
+            </p>
+          </li>
+          <li class="p-worksShow__introItem">
             <h2 class="p-worksShow__introTitle">導入内容</h2>
             <h3 class="p-worksShow__introOutline">
               <?php echo post_custom("導入内容タイトル"); ?>
             </h3>
             <p class="p-worksShow__introDetail">
               <?php echo post_custom("導入内容テキスト"); ?>
-            </p>
-          </li>
-          <li class="p-worksShow__introItem">
-            <h2 class="p-worksShow__introTitle">導入背景</h2>
-            <h3 class="p-worksShow__introOutline">
-              <?php echo post_custom("導入背景タイトル"); ?> </h3>
-            <p class="p-worksShow__introDetail">
-              <?php echo post_custom("導入背景テキスト"); ?>
             </p>
           </li>
           <li class="p-worksShow__introItem">
@@ -67,4 +71,5 @@
     </section>
   <?php endwhile; ?>
 <?php endif; ?>
+<?php get_template_part('contact');  ?>
 <?php get_footer(); ?>

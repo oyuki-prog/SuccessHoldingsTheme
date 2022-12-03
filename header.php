@@ -13,22 +13,30 @@
       crossorigin="anonymous"
     ></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/scroll.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/recruit.js"></script>
-<?php wp_head(); ?>
+    <?php
+      if(strpos(get_the_permalink(),'contact') !== false) {
+        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/contact.js\"></script>";
+      }
+      if(strpos(get_the_permalink(),'recruit') !== false) {
+        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/recruit.js\"></script>";
+      }
+      if(is_home()) {
+        echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/scroll.js\"></script>";
+      }
+    ?>
+    <?php wp_head(); ?>
 </head>
 
 <body>
   <header class="l-header">
     <div class="p-header">
       <div class="l-container p-header__inner">
-        <div class="p-header__logoWrapper">
+        <a class="p-header__logoWrapper" href="<?php echo home_url(); ?>">
           <img
             class="p-header__img"
-            src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sample.png"
+            src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"
           />
-        </div>
-        <p class="p-header__text">SuccessHD</p>
+        </a>
         <div id="js-hamburger" class="c-hamburger u-hidden-pc">
           <div class="c-hamburger__line"></div>
           <div class="c-hamburger__line"></div>
@@ -37,19 +45,19 @@
         <nav class="p-header__nav" id="js-nav">
           <ul class="p-header__navList nav__items nav-items">
             <li class="p-header__items fadein">
+              <a class="p-headerLink c-link" href="<?php echo home_url("/aboutUs"); ?>">会社情報</a>
+            </li>
+            <li class="p-header__items fadein">
               <a class="p-headerLink c-link" href="<?php echo home_url("/service"); ?>">サービス</a>
             </li>
             <li class="p-header__items fadein">
               <a class="p-headerLink c-link" href="<?php echo home_url("/work"); ?>">導入事例</a>
             </li>
             <li class="p-header__items fadein">
-              <a class="p-headerLink c-link" href="<?php echo home_url("/news"); ?>">ニュース</a>
-            </li>
-            <li class="p-header__items fadein">
-              <a class="p-headerLink c-link" href="<?php echo home_url("/aboutUs"); ?>">会社情報</a>
-            </li>
-            <li class="p-header__items fadein">
               <a class="p-headerLink c-link" href="<?php echo home_url("/recruit"); ?>">採用情報</a>
+            </li>
+            <li class="p-header__items fadein">
+              <a class="p-headerLink c-link" href="<?php echo home_url("/news"); ?>">ニュース</a>
             </li>
             <li class="p-header__contact fadein">
               <a class="p-header__contactBtn c-btn" href="<?php echo home_url("/contact"); ?>"

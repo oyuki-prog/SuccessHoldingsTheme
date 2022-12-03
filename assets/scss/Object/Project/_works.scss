@@ -2,6 +2,7 @@
 
 .p-works {
   padding: 80px 0px 300px;
+  background-color: $color-background-sub;
   @include mq('tab') {
     padding: 80px 0px 185px;
   }
@@ -31,6 +32,7 @@
   &__img {
     width: 100%;
     aspect-ratio: 19 / 16;
+    object-fit: contain;
     @include mq('tab') {
       aspect-ratio: 67 / 48;
     }

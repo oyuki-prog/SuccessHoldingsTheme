@@ -7,7 +7,7 @@
   &__text--message {
     position: fixed;
     left: 10px;
-    bottom: 200px; /* back to page  とかぶって見えなかったので200pxにしてあります */
+    bottom: 100px;
     display: block;
     width: 20px;
     height: 160px;
@@ -49,6 +49,17 @@
       color: $color-background-sub;
       letter-spacing: 0.05em;
     }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      width: 1px;
+      height: 100px;
+      background-color: $color-background-sub;
+      animation: pathTop 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+      opacity: 1;
+      left: 54%;
+    }
   }
   &__view {
     opacity: 1;
@@ -73,5 +84,24 @@
   100% {
     transform: scale(1, 0);
     transform-origin: 0 100%;
+  }
+}
+
+@keyframes pathTop {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  51% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  100% {
+    transform: scale(1 , 0);
+    transform-origin: 0 0;
   }
 }

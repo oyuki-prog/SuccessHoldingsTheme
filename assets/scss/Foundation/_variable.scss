@@ -9,15 +9,7 @@ $width-side: 360px; // サイドバーの幅
 
 // フォント関係の設定--------------------
 $font-base:
-"Hiragino Sans W3",
-"Hiragino Kaku Gothic ProN",
-"ヒラギノ角ゴ ProN W3",
-"メイリオ",
-Meiryo,
-"ＭＳ Ｐゴシック",
-"MS PGothic",
-sans-serif;
-;
+"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 $font-serif: serif;
 $font-size-base: 16px;
 $font-weight-base: 400;

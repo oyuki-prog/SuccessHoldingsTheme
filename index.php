@@ -2,10 +2,10 @@
 <section class="p-topHero">
   <div class="l-container">
     <div class="p-topHero__img">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top.jpg" alt="" />
     </div>
     <div class="p-topHero__titleBox">
-      <h1 class="p-topHero__title">成功を定義し、成功へ導く</h1>
+      <h1 class="p-topHero__title">営業を科学するプロフェッショナル集団</h1>
     </div>
     <?php
     $args = array(
@@ -31,23 +31,23 @@
 </section>
 <section class="p-topAboutUs" id="scroll">
   <div class="p-topAboutUs__background"></div>
-  <div class="l-container">
+  <div class="l-container p-topAboutUs__container">
     <h2 class="p-topAboutUs__title">ABOUT US</h2>
     <div class="p-topAboutUs__content">
       <ul class="p-topAboutUs__imgList">
         <li class="p-topAboutUs__imgListItem">
           <div class="p-topAboutUs__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/human.jpg" alt="" />
           </div>
         </li>
         <li class="p-topAboutUs__imgListItem">
           <div class="p-topAboutUs__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/business.jpg" alt="" />
           </div>
         </li>
         <li class="p-topAboutUs__imgListItem">
           <div class="p-topAboutUs__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/consulting.jpg" alt="" />
           </div>
         </li>
       </ul>
@@ -78,7 +78,7 @@
         <li class="p-topBusiness__listItem">
           <a href="">
             <div class="p-topBusiness__listImg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/human.jpg" alt="" />
             </div>
             <div class="p-topBusiness__textBox">
               <h3 class="p-topBusiness__listTitle">人材育成</h3>
@@ -91,7 +91,7 @@
         <li class="p-topBusiness__listItem">
           <a href="">
             <div class="p-topBusiness__listImg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/business.jpg" alt="" />
             </div>
             <div class="p-topBusiness__textBox">
               <h3 class="p-topBusiness__listTitle">営業支援</h3>
@@ -104,7 +104,7 @@
         <li class="p-topBusiness__listItem">
           <a href="">
             <div class="p-topBusiness__listImg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/consulting.jpg" alt="" />
             </div>
             <div class="p-topBusiness__textBox">
               <h3 class="p-topBusiness__listTitle">組織コンサル</h3>
@@ -138,7 +138,7 @@
         <?php while ($the_query->have_posts()) : ?>
           <?php $the_query->the_post(); ?>
           <li class="p-topWorks__listItem">
-            <a href="">
+            <a href="<?php the_permalink(); ?>">
               <div class="p-topWorks__img">
                 <?php if (has_post_thumbnail()) : ?>
                   <?php the_post_thumbnail('', array('class' => 'p-works__img')); ?>
@@ -171,42 +171,37 @@
     <ul class="p-topCompany__list">
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-jyounetsu.jpg" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-partsone.jpeg" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-aichisangyo.jpg" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-asto.png" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-grip.png" alt="" />
         </div>
       </li>
-      <li class="p-topCompany__listItem">
+      <!-- <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-redish.webp" alt="" />
         </div>
-      </li>
+      </li> -->
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
-        </div>
-      </li>
-      <li class="p-topCompany__listItem">
-        <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-tmr.jpeg" alt="" />
         </div>
       </li>
     </ul>
@@ -221,4 +216,5 @@
     <span>Back to top</span>
   </a>
 </div>
+<?php get_template_part('contact');  ?>
 <?php get_footer(); ?>

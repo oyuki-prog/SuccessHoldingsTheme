@@ -1,11 +1,15 @@
 $(window).on("load", function(){
   jQuery(function($){
+    let companyFlag = false;
     let nameFlag = false;
     let kanaFlag = false;
     let telFlag = false;
     let emailFlag = false;
     let municipalitiesFlag = false;
 
+    $("#company").change(function(){
+      requireCheck();
+    });
     $("#name").change(function(){
       requireCheck();
     });
@@ -23,12 +27,13 @@ $(window).on("load", function(){
     });
 
     function requireCheck(){
+      companyFlag = ($("#company").val() === "") ? false : true;
       nameFlag = ($("#name").val() === "") ? false : true;
       kanaFlag = ($("#kana").val() === "") ? false : true;
       telFlag = ($("#tel").val() === "") ? false : true;
       emailFlag = ($("#email").val() === "") ? false : true;
       municipalitiesFlag = ($("#municipalities").val() === "") ? false : true;
-      if(nameFlag && kanaFlag && telFlag && emailFlag && municipalitiesFlag) {
+      if(companyFlag && nameFlag && kanaFlag && telFlag && emailFlag && municipalitiesFlag) {
         buttonActive = true;
       } else {
         buttonActive = false;
