@@ -15,18 +15,22 @@
     );
     $the_query = new WP_Query($args);
     ?>
-    <?php if ($the_query->have_posts()) : ?>
-      <?php while ($the_query->have_posts()) : ?>
-        <?php $the_query->the_post(); ?>
-        <a href="<?php the_permalink(); ?>" class="p-topHero__newsBox">
-          <p class="p-topHero__newsTitle">News</p>
-          <div class="p-topHero__newsContent">
-            <p class="p-topHero__newsDate"><?php the_time('Y/m/d'); ?></p>
-            <p class="p-topHero__newsText"><?php the_title(); ?></p>
-          </div>
-        </a>
-      <?php endwhile; ?>
-    <?php endif; ?>
+    <div class="p-topNews">
+      <p class="p-topNews__title">News</p>
+      <ul class="p-topNews__list">
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          <li class="p-topNews__listItem">
+            <p class="p-topNews__date"><?= get_the_date('Y.m.d'); ?></p>
+            <a href="<?php the_permalink(); ?>" class="p-topNews__link"><?php the_title(); ?></a>
+          </li>
+        <?php endwhile; else: ?>
+          <li class="p-topNews__listItem">
+            <p class="p-topNews__date">-</p>
+            <p class="p-topNews__link">新着情報はありません</p>
+          </li>
+        <?php endif; ?>
+      </ul>
+    </div>
   </div>
 </section>
 <section class="p-topAboutUs" id="scroll">

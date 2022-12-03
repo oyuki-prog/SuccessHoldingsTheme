@@ -1,0 +1,39 @@
+@use '../../Foundation/global'as *;
+
+.p-topNews {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  align-items: center;
+  background-color: $color-background-sub;
+  display: flex;
+  gap: 40px;
+  padding: 0 40px;
+  text-decoration: none;
+  @include mq("tab") {
+    padding: 25px 20px;
+    left: 5%;
+    align-items: center;
+    font-size: 14px;
+    width: 95%;
+    right: 0;
+  }
+  &__listItem {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 40px 0;
+    @include mq("sp") {
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start;
+    }
+  }
+  &__link {
+    text-align: left;
+  }
+}
+.bx-wrapper {
+  margin-bottom: 0;
+  box-shadow: none;
+}
