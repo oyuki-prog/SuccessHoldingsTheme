@@ -1,13 +1,11 @@
 jQuery(function ($) {
   // loader表示
   $('body').append(
-    '<div class="c-loading"><div class="c-loading__origin"></div><p class="c-loadeing__text">Loading...</p></div>'
+    '<div class="c-loading"><div class="c-loading__origin"></div><p class="c-loading__text">Loading...</p></div>'
   );
   $(window).on("load", function () {
     // loader非表示
-    // setTimeout(() => {
-    //   $('.c-loading').addClass('c-loading__completed');
-    // }, 1000);
+    $('.c-loading').addClass('c-loading__completed');
     const hamburger = $("#js-hamburger");
     const fadein = $(".fadein");
     // const triger = $(".triger");
