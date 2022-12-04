@@ -5,10 +5,10 @@
       <div class="p-footer__content">
         <ul class="p-footer__textBox">
           <li class="p-footer__text">
-            <a href="">プライバシーポリシー</a>
+            <a href="<?php echo home_url("/privacy-policy"); ?>">プライバシーポリシー</a>
           </li>
           <li class="p-footer__text">
-            <a href="">サイトマップ</a>
+            <a href="<?php echo home_url("/privacy-policy"); ?>">サイトマップ</a>
           </li>
         </ul>
         <ul class="p-footer__menu">
