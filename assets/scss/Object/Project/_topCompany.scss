@@ -1,6 +1,7 @@
 @use "../../Foundation/global" as *;
 .p-topCompany {
   padding-bottom: 160px;
+  background-color: $color-background-sub;
   &__titleBox {
     text-align: center;
   }
@@ -32,6 +33,8 @@
   }
   &__listItem {
     width: 21%;
+    display: flex;
+    align-items: center;
     @include mq('tab') {
       width: 47%;
     }

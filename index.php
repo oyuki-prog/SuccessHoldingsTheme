@@ -2,52 +2,56 @@
 <section class="p-topHero">
   <div class="l-container">
     <div class="p-topHero__img">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top.jpg" alt="" />
     </div>
     <div class="p-topHero__titleBox">
-      <h1 class="p-topHero__title">成功を定義し、成功へ導く</h1>
+      <h1 class="p-topHero__title">営業を科学するプロフェッショナル集団</h1>
     </div>
     <?php
-    $args = array(
-      'post_type' => 'post',
-      'posts_per_page' => 1,
+    $args = [
       'category_name' => 'news',
-    );
-    $the_query = new WP_Query($args);
+      'posts_per_page' => 1
+    ];
+    $news_posts = get_posts($args);
     ?>
-    <?php if ($the_query->have_posts()) : ?>
-      <?php while ($the_query->have_posts()) : ?>
-        <?php $the_query->the_post(); ?>
-        <a href="<?php the_permalink(); ?>" class="p-topHero__newsBox">
-          <p class="p-topHero__newsTitle">News</p>
-          <div class="p-topHero__newsContent">
-            <p class="p-topHero__newsDate"><?php the_time('Y/m/d'); ?></p>
-            <p class="p-topHero__newsText"><?php the_title(); ?></p>
-          </div>
-        </a>
-      <?php endwhile; ?>
-    <?php endif; ?>
+    <div class="p-topNews">
+      <p class="p-topNews__title">News</p>
+      <ul class="p-topNews__list">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <li class="p-topNews__listItem">
+              <p class="p-topNews__date"><?= get_the_date('Y.m.d'); ?></p>
+              <a href="<?php the_permalink(); ?>" class="p-topNews__link"><?php the_title(); ?></a>
+            </li>
+          <?php endwhile;
+        else : ?>
+          <li class="p-topNews__listItem">
+            <p class="p-topNews__date">-</p>
+            <p class="p-topNews__link">新着情報はありません</p>
+          </li>
+        <?php endif; ?>
+      </ul>
+    </div>
   </div>
 </section>
 <section class="p-topAboutUs" id="scroll">
   <div class="p-topAboutUs__background"></div>
-  <div class="l-container">
+  <div class="l-container p-topAboutUs__container">
     <h2 class="p-topAboutUs__title">ABOUT US</h2>
     <div class="p-topAboutUs__content">
       <ul class="p-topAboutUs__imgList">
         <li class="p-topAboutUs__imgListItem">
           <div class="p-topAboutUs__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/human.jpg" alt="" />
           </div>
         </li>
         <li class="p-topAboutUs__imgListItem">
           <div class="p-topAboutUs__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/business.jpg" alt="" />
           </div>
         </li>
         <li class="p-topAboutUs__imgListItem">
           <div class="p-topAboutUs__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/consulting.jpg" alt="" />
           </div>
         </li>
       </ul>
@@ -78,7 +82,7 @@
         <li class="p-topBusiness__listItem">
           <a href="">
             <div class="p-topBusiness__listImg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/human.jpg" alt="" />
             </div>
             <div class="p-topBusiness__textBox">
               <h3 class="p-topBusiness__listTitle">人材育成</h3>
@@ -91,7 +95,7 @@
         <li class="p-topBusiness__listItem">
           <a href="">
             <div class="p-topBusiness__listImg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/business.jpg" alt="" />
             </div>
             <div class="p-topBusiness__textBox">
               <h3 class="p-topBusiness__listTitle">営業支援</h3>
@@ -104,7 +108,7 @@
         <li class="p-topBusiness__listItem">
           <a href="">
             <div class="p-topBusiness__listImg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/consulting.jpg" alt="" />
             </div>
             <div class="p-topBusiness__textBox">
               <h3 class="p-topBusiness__listTitle">組織コンサル</h3>
@@ -138,7 +142,7 @@
         <?php while ($the_query->have_posts()) : ?>
           <?php $the_query->the_post(); ?>
           <li class="p-topWorks__listItem">
-            <a href="">
+            <a href="<?php the_permalink(); ?>">
               <div class="p-topWorks__img">
                 <?php if (has_post_thumbnail()) : ?>
                   <?php the_post_thumbnail('', array('class' => 'p-works__img')); ?>
@@ -158,7 +162,7 @@
       <?php endif; ?>
     </ul>
     <button onclick="location.href='/works'" class="p-topWorks__btn c-btn" type="button">
-      導入事例一覧
+      会社情報はこちら
     </button>
   </div>
 </section>
@@ -171,42 +175,37 @@
     <ul class="p-topCompany__list">
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-jyounetsu.jpg" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-partsone.jpeg" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-aichisangyo.jpg" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-asto.png" alt="" />
         </div>
       </li>
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-grip.png" alt="" />
         </div>
       </li>
-      <li class="p-topCompany__listItem">
+      <!-- <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-redish.webp" alt="" />
         </div>
-      </li>
+      </li> -->
       <li class="p-topCompany__listItem">
         <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
-        </div>
-      </li>
-      <li class="p-topCompany__listItem">
-        <div class="p-topCompany__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-tmr.jpeg" alt="" />
         </div>
       </li>
     </ul>

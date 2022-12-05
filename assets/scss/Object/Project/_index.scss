@@ -1,5 +1,6 @@
 @use "example";
 @use "topHero";
+@use "topNews";
 @use "topAboutUs";
 @use "topBusiness";
 @use "topWorks";
@@ -21,8 +22,10 @@
 @use "serviceShow";
 @use "news";
 @use "confirm";
+@use "privacyPolicy";
 @use "newsShow";
 @use "message";
 @use "worksShow";
 @use "thanks";
+@use "notFound";
 @use "contact";
