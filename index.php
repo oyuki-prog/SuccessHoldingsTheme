@@ -2,7 +2,8 @@
 <section class="p-topHero">
   <div class="l-container">
     <div class="p-topHero__img">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top.jpg" alt="" />
+      <img class="u-hidden-sp" src="<?php echo get_template_directory_uri(); ?>/assets/images/top-pc.jpg" alt="" />
+      <img class="u-hidden-pc" src="<?php echo get_template_directory_uri(); ?>/assets/images/top-sp.jpg" alt="" />
     </div>
     <div class="p-topHero__titleBox">
       <h1 class="p-topHero__title">営業を科学するプロフェッショナル集団</h1>

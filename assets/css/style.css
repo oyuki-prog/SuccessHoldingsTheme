@@ -430,6 +430,14 @@ select {
   color: white;
   line-height: 25%;
 }
+.c-hero__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  top: 0;
+}
 
 .c-sectionTitle {
   width: 100%;
@@ -1677,15 +1685,20 @@ select {
 }
 
 .p-contactAccess__image {
-  background-image: url(../images/img-sample.jpg);
-  background-size: cover;
-  padding: 80px 0 85px;
+  position: relative;
+  padding: 40px 0 85px;
   text-align: center;
+  background-image: url(../images/contact.jpg);
+  background-size: cover;
+  background-position: center;
 }
 @media (max-width: 599px) {
   .p-contactAccess__image {
-    padding: 45px 0 75px;
+    padding: 30px 0 75px;
   }
+}
+.p-contactAccess__item {
+  position: relative;
 }
 .p-contactAccess__title {
   color: #FFF;
@@ -1695,17 +1708,6 @@ select {
 @media (max-width: 599px) {
   .p-contactAccess__title {
     font-size: 32px;
-  }
-}
-.p-contactAccess__text {
-  margin-top: 40px;
-  color: #FFF;
-  font-size: 28px;
-  font-family: "游ゴシック体";
-}
-@media (max-width: 599px) {
-  .p-contactAccess__text {
-    font-size: 20px;
   }
 }
 .p-contactAccess__btn {
@@ -1735,6 +1737,14 @@ select {
   .p-contactAccess__btn {
     padding: 13px 65px 13px 25px;
   }
+}
+.p-contactAccess__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  top: 0;
 }
 
 .p-footer {
