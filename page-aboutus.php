@@ -70,7 +70,7 @@
     <ul class="p-aboutusPhilosophy__list">
       <li class="p-aboutusPhilosophy__item">
         <div class="p-aboutusPhilosophy__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mission.jpg" alt="">
         </div>
         <div class="p-aboutusPhilosophy__ideology">
           <p class="p-aboutusPhilosophy__summary">ミッション</p>
@@ -79,7 +79,7 @@
       </li>
       <li class="p-aboutusPhilosophy__item">
         <div class="p-aboutusPhilosophy__img p-aboutusPhilosophy__img--reverse">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vision.jpg" alt="">
         </div>
         <div class="p-aboutusPhilosophy__ideology p-aboutusPhilosophy__ideology--reverse">
           <p class="p-aboutusPhilosophy__summary p-aboutusPhilosophy__summary--reverse">ビジョン</p>

@@ -1,9 +1,9 @@
-jQuery(function ($) {
+$(window).on("load", function () {
+  jQuery(function ($) {
   // loader表示
   $('body').append(
     '<div class="c-loading"><div class="c-loading__origin"></div><p class="c-loading__text">Loading...</p></div>'
   );
-  $(window).on("load", function () {
     // loader非表示
     $('.c-loading').addClass('c-loading__completed');
     const hamburger = $("#js-hamburger");

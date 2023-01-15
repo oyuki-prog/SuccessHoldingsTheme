@@ -1,6 +1,14 @@
     <section class="c-hero">
       <div class="c-hero__imgWrapper">
-        <img class="c-hero__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
+        <div class="c-hero__bg"></div>
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php if (has_post_thumbnail()) : ?>
+              <?php the_post_thumbnail("full", array("alt" => get_the_title(), "class" => "c-hero__img")); ?>
+            <?php else : ?>
+              <img class="c-hero__img" src="<?php echo get_template_directory_uri() ?>/assets/images/img-sample.jpg" />
+            <?php endif; ?>
+        <?php endwhile;
+        endif; ?>
       </div>
       <div class="c-hero__container">
         <h1 class="c-hero__mainTitle"><?php display_title(); ?></h1>
