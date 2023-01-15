@@ -9,26 +9,26 @@
     </div>
     <?php
     $args = array(
-      'post_type' => 'post',
-      'posts_per_page' => 1,
-      'category_name' => 'news',
+      'orderby' => 'date', // 日付でソート
+      'order' => 'DESC', // DESCで最新から表示、ASCで最古から表示
+      'category_name' => 'news' // 表示したいカテゴリーのスラッグを指定
     );
-    $the_query = new WP_Query($args);
+    $posts = new WP_Query( $args );
     ?>
     <div class="p-topNews">
       <p class="p-topNews__title">News</p>
       <ul class="p-topNews__list">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          <li class="p-topNews__listItem">
-            <p class="p-topNews__date"><?= get_the_date('Y.m.d'); ?></p>
-            <a href="<?php the_permalink(); ?>" class="p-topNews__link"><?php the_title(); ?></a>
-          </li>
-        <?php endwhile; else: ?>
-          <li class="p-topNews__listItem">
-            <p class="p-topNews__date">-</p>
-            <p class="p-topNews__link">新着情報はありません</p>
-          </li>
-        <?php endif; ?>
+      <?php if( $posts->have_posts()): while ($posts->have_posts()) : $posts->the_post(); ?>
+        <li class="p-topNews__listItem">
+          <p class="p-topNews__date"><?= get_the_date('Y.m.d'); ?></p>
+          <a href="<?php the_permalink(); ?>" class="p-topNews__link"><?php the_title(); ?></a>
+        </li>
+      <?php endwhile; else: ?>
+        <li class="p-topNews__listItem">
+          <p class="p-topNews__date">-</p>
+          <p class="p-topNews__link">新着情報はありません</p>
+        </li>
+      <?php endif; wp_reset_postdata(); ?>
       </ul>
     </div>
   </div>
