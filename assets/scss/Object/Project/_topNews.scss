@@ -11,18 +11,23 @@
   padding: 0 40px;
   text-decoration: none;
   @include mq("tab") {
-    padding: 25px 20px;
+    flex-direction: column;
     left: 5%;
     align-items: center;
     font-size: 14px;
     width: 95%;
-    right: 0;
+    gap: 0;
+    padding: 20px 10px;
   }
   &__listItem {
     display: flex;
     gap: 10px;
     align-items: center;
+    width: 100% !important; // CDN上書き
     padding: 40px 0;
+    @include mq("tab") {
+      padding: 10px 0;
+    }
     @include mq("sp") {
       flex-direction: column;
       text-align: left;
@@ -30,10 +35,18 @@
     }
   }
   &__link {
-    text-align: left;
+    max-width: 300px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    @include mq("tab") {
+      max-width: none;
+    }
   }
 }
 .bx-wrapper {
+  width: 100%;
+  max-width: none;
   margin-bottom: 0;
   box-shadow: none;
 }
