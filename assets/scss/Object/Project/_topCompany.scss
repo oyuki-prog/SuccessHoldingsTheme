@@ -39,4 +39,14 @@
       width: 47%;
     }
   }
+  &__img {
+    width: 100%;
+    & img {
+      object-fit: contain;
+    }
+    @include mq('tab') {
+      height: 25vw;
+    }
+  }
+
 }
