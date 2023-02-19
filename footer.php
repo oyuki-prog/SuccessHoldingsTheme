@@ -48,6 +48,7 @@ defer
 ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" defer></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js" defer></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
 </body>
 
 </html>
