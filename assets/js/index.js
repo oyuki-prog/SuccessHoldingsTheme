@@ -30,10 +30,6 @@ $(function() {
       });
     });
 
-    //bxsliderの初期化
-    $(document).ready(function(){
-      $('.bxslider').bxSlider();
-    });
     // ニュースティッカー(wpとの相性のためjQuery再読み込み)
     jQuery(function($){
       $('.p-topNews__list').bxSlider({
