@@ -6,6 +6,8 @@
         <?php the_post_thumbnail("full", array("alt" => get_the_title(), "class" => "c-hero__img")); ?>
       <?php else: ?>
         <img class="c-hero__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
+        <?php else(is_page("works")): ?>
+          <img class="c-hero__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" alt="">
       <?php endif; ?>
 
       </div>
