@@ -54,7 +54,7 @@
       <p class="p-form__lead">Recruit&thinsp;Form</p>
       <div class="p-form__precautions">
         <p class="p-form__precautionsText">以下のフォームに必要事項をご入力の上、ご登録ください。</p>
-        <p>※採用以外のお問合せに関しましては<a href="">こちらへ</a></p>
+        <p>※採用以外のお問合せに関しましては<a href="<?php echo home_url("/contact"); ?>">こちらへ</a></p>
       </div>
       <?php the_content(); ?>
     </div>
