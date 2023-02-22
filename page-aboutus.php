@@ -85,7 +85,7 @@
           <p class="p-aboutusPhilosophy__summary p-aboutusPhilosophy__summary--reverse">ビジョン</p>
           <p class="p-aboutusPhilosophy__detail p-aboutusPhilosophy__detail--reverse">
             日々の生活から色彩豊かで<br>
-            明るい人生を歩めるように。
+            明るい人生を歩めるように
           </p>
         </div>
       </li>
