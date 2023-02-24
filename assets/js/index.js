@@ -14,13 +14,12 @@ $(window).on("load", function () {
         }, i * 200);
       });
     });
-    // ニュースティッカー
-    $('.p-topNews__list').bxSlider({
-      touchEnabled:false,
-      mode: 'vertical',
-      controls: false,
-      auto: 'true',
-      pager: false
+
+    $(".slider").slick({
+      autoplay: true,
+      vertical: true,
+      verticalSwiping: true,
+      arrows: false,
     });
   });
 });

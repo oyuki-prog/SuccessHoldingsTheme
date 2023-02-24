@@ -6,25 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php display_tabTitle(); ?></title>
-  <script
-  src="https://code.jquery.com/jquery-3.6.1.min.js"
-  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-  crossorigin="anonymous"
-  ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" defer></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
-  <?php
-    if(strpos(get_the_permalink(),'contact') !== false) {
-      echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/contact.js\"></script>";
-    }
-    if(strpos(get_the_permalink(),'recruit') !== false) {
-      echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/recruit.js\"></script>";
-    }
-    if(is_home()) {
-      echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/scroll.js\"></script>";
-    }
-  ?>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+  />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
   <?php wp_head(); ?>
 </head>

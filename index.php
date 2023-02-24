@@ -17,19 +17,19 @@
     ?>
     <div class="p-topNews">
       <p class="p-topNews__title">News</p>
-      <ul class="p-topNews__list">
+      <div class="p-topNews__list slider">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          <li class="p-topNews__listItem">
+          <div class="p-topNews__listItem">
             <p class="p-topNews__date"><?= get_the_date('Y.m.d'); ?></p>
             <a href="<?php the_permalink(); ?>" class="p-topNews__link"><?php the_title(); ?></a>
-          </li>
+          </div>
         <?php endwhile; else: ?>
-          <li class="p-topNews__listItem">
+          <div class="p-topNews__listItem">
             <p class="p-topNews__date">-</p>
             <p class="p-topNews__link">新着情報はありません</p>
-          </li>
+          </div>
         <?php endif; ?>
-      </ul>
+      </div>
     </div>
   </div>
 </section>
