@@ -2,33 +2,34 @@
 <section class="p-topHero">
   <div class="l-container">
     <div class="p-topHero__img">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top.jpg" alt="" />
+      <img class="u-hidden-sp" src="<?php echo get_template_directory_uri(); ?>/assets/images/top-pc.jpg" alt="" />
+      <img class="u-hidden-pc" src="<?php echo get_template_directory_uri(); ?>/assets/images/top-sp.jpg" alt="" />
     </div>
     <div class="p-topHero__titleBox">
       <h1 class="p-topHero__title">営業を科学するプロフェッショナル集団</h1>
     </div>
     <?php
     $args = array(
-      'post_type' => 'post',
-      'posts_per_page' => 1,
-      'category_name' => 'news',
+      'orderby' => 'date', // 日付でソート
+      'order' => 'DESC', // DESCで最新から表示、ASCで最古から表示
+      'category_name' => 'news' // 表示したいカテゴリーのスラッグを指定
     );
-    $the_query = new WP_Query($args);
+    $posts = new WP_Query( $args );
     ?>
     <div class="p-topNews">
       <p class="p-topNews__title">News</p>
-      <div class="p-topNews__list slider">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          <div class="p-topNews__listItem">
-            <p class="p-topNews__date"><?= get_the_date('Y.m.d'); ?></p>
-            <a href="<?php the_permalink(); ?>" class="p-topNews__link"><?php the_title(); ?></a>
-          </div>
-        <?php endwhile; else: ?>
-          <div class="p-topNews__listItem">
-            <p class="p-topNews__date">-</p>
-            <p class="p-topNews__link">新着情報はありません</p>
-          </div>
-        <?php endif; ?>
+      <div class="p-topNews__list">
+      <?php if( $posts->have_posts()): while ($posts->have_posts()) : $posts->the_post(); ?>
+        <div class="p-topNews__listItem">
+          <p class="p-topNews__date"><?= get_the_date('Y.m.d'); ?></p>
+          <a href="<?php the_permalink(); ?>" class="p-topNews__link"><?php the_title(); ?></a>
+        </div>
+      <?php endwhile; else: ?>
+        <div class="p-topNews__listItem">
+          <p class="p-topNews__date">-</p>
+          <p class="p-topNews__link">新着情報はありません</p>
+        </div>
+      <?php endif; wp_reset_postdata(); ?>
       </div>
     </div>
   </div>

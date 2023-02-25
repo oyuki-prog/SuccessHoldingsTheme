@@ -19,7 +19,7 @@
   <div class="l-container">
     <div class="p-service__container">
       <div class="p-service__imgContainer">
-        <img class="p-service__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" />
+        <img class="p-service__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/human.jpg" />
       </div>
       <div class="p-service__work">
         <h2 class="p-service__title">人材育成</h2>
@@ -34,7 +34,7 @@
     </div>
     <div class="p-service__container">
       <div class="p-service__imgContainer p-service__imgContainer--reverse">
-        <img class="p-service__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" />
+        <img class="p-service__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/business.jpg" />
       </div>
       <div class="p-service__work--reverse">
         <div>
@@ -50,7 +50,7 @@
     </div>
     <div class="p-service__container">
       <div class="p-service__imgContainer">
-        <img class="p-service__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-sample.jpg" />
+        <img class="p-service__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/consulting.jpg" />
       </div>
       <div class="p-service__work">
         <h2 class="p-service__title">組織コンサル</h2>
