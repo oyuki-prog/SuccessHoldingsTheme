@@ -18,7 +18,7 @@
     ?>
     <div class="p-topNews">
       <p class="p-topNews__title">News</p>
-      <div class="p-topNews__list">
+      <div class="p-topNews__list slider">
       <?php if( $posts->have_posts()): while ($posts->have_posts()) : $posts->the_post(); ?>
         <div class="p-topNews__listItem">
           <p class="p-topNews__date"><?= get_the_date('Y.m.d'); ?></p>

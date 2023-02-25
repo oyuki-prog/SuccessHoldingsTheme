@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php display_tabTitle(); ?></title>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
   <link
     rel="stylesheet"
     type="text/css"
@@ -16,7 +17,7 @@
     type="text/css"
     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
   />
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+  <?php wp_deregister_script( 'jquery' ); ?>
   <?php wp_head(); ?>
 </head>
 

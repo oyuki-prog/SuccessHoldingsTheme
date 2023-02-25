@@ -29,9 +29,11 @@ $(function() {
         }, i * 200);
       });
     });
-
+    console.log($(".slider"));
+    console.log($(".p-topNews__listItem"));
     $(".slider").slick({
       autoplay: true,
+      autoplaySpeed: 3000,
       vertical: true,
       verticalSwiping: true,
       arrows: false,
