@@ -534,7 +534,7 @@ select {
   gap: 40px;
   padding: 0 40px;
   text-decoration: none;
-  max-width: 700px;
+  width: 900px;
 }
 @media (max-width: 900px) {
   .p-topNews {
