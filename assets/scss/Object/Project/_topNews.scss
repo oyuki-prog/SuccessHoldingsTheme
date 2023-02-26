@@ -11,6 +11,9 @@
   padding: 0 40px;
   text-decoration: none;
   width: 700px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   @include mq("tab") {
     max-width: 500px;
     left: 5%;
@@ -35,8 +38,8 @@
   &__link {
     max-width: 300px;
     white-space: nowrap;
-    text-overflow: ellipsis;
     overflow: hidden;
+    text-overflow: ellipsis;
     @include mq("tab") {
       max-width: none;
     }
