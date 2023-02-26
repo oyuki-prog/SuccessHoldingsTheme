@@ -44,16 +44,16 @@
   type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
 ></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
 <?php
   if(strpos(get_the_permalink(),'contact') !== false) {
-    echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/contact.js\"></script>";
+    echo "<script type=\"text/javascript\" src=\"" .  get_template_directory_uri() . "/assets/js/contact.js\"></script>";
   }
   if(strpos(get_the_permalink(),'recruit') !== false) {
-    echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/recruit.js\"></script>";
+    echo "<script type=\"text/javascript\" src=\"" .  get_template_directory_uri() . "/assets/js/recruit.js\"></script>";
   }
   if(is_home()) {
-    echo "<script src=\"" .  get_template_directory_uri() . "/assets/js/scroll.js\"></script>";
+    echo "<script type=\"text/javascript\" src=\"" .  get_template_directory_uri() . "/assets/js/scroll.js\"></script>";
   }
 ?>
 </body>
